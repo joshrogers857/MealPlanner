@@ -11,8 +11,6 @@
 		BD2B0F1027C556C800D3CD6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2B0F0F27C556C800D3CD6A /* ContentView.swift */; };
 		BD2B0F1227C556C900D3CD6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD2B0F1127C556C900D3CD6A /* Assets.xcassets */; };
 		BD2B0F1527C556C900D3CD6A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD2B0F1427C556C900D3CD6A /* Preview Assets.xcassets */; };
-		BD2B0F1727C556C900D3CD6A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2B0F1627C556C900D3CD6A /* Persistence.swift */; };
-		BD2B0F1A27C556C900D3CD6A /* MealPlanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD2B0F1827C556C900D3CD6A /* MealPlanner.xcdatamodeld */; };
 		BD2B0F2427C556C900D3CD6A /* MealPlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2B0F2327C556C900D3CD6A /* MealPlannerTests.swift */; };
 		BD2B0F2E27C556C900D3CD6A /* MealPlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2B0F2D27C556C900D3CD6A /* MealPlannerUITests.swift */; };
 		BD2B0F3027C556C900D3CD6A /* MealPlannerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2B0F2F27C556C900D3CD6A /* MealPlannerUITestsLaunchTests.swift */; };
@@ -41,8 +39,6 @@
 		BD2B0F0F27C556C800D3CD6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BD2B0F1127C556C900D3CD6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD2B0F1427C556C900D3CD6A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BD2B0F1627C556C900D3CD6A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		BD2B0F1927C556C900D3CD6A /* MealPlanner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MealPlanner.xcdatamodel; sourceTree = "<group>"; };
 		BD2B0F1F27C556C900D3CD6A /* MealPlannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MealPlannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD2B0F2327C556C900D3CD6A /* MealPlannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlannerTests.swift; sourceTree = "<group>"; };
 		BD2B0F2927C556C900D3CD6A /* MealPlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MealPlannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,8 +97,6 @@
 				BD2B0F0D27C556C800D3CD6A /* MealPlannerApp.swift */,
 				BD2B0F0F27C556C800D3CD6A /* ContentView.swift */,
 				BD2B0F1127C556C900D3CD6A /* Assets.xcassets */,
-				BD2B0F1627C556C900D3CD6A /* Persistence.swift */,
-				BD2B0F1827C556C900D3CD6A /* MealPlanner.xcdatamodeld */,
 				BD2B0F1327C556C900D3CD6A /* Preview Content */,
 			);
 			path = MealPlanner;
@@ -263,10 +257,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD2B0F1727C556C900D3CD6A /* Persistence.swift in Sources */,
 				BD2B0F1027C556C800D3CD6A /* ContentView.swift in Sources */,
 				BD2B0F0E27C556C800D3CD6A /* MealPlannerApp.swift in Sources */,
-				BD2B0F1A27C556C900D3CD6A /* MealPlanner.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,19 +585,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		BD2B0F1827C556C900D3CD6A /* MealPlanner.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				BD2B0F1927C556C900D3CD6A /* MealPlanner.xcdatamodel */,
-			);
-			currentVersion = BD2B0F1927C556C900D3CD6A /* MealPlanner.xcdatamodel */;
-			path = MealPlanner.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = BD2B0F0227C556C800D3CD6A /* Project object */;
 }
