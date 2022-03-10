@@ -6,49 +6,6 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>9004ECA0-6EF1-484C-92BE-411663278D15</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>F23AB347-60ED-4E7F-9CCE-64C245E24963</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.unit.cocoaUnitTest</string>
-			<key>fileName</key>
-			<string>Test-MealPlanner-2022.03.10_11-27-06-+0000.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>MealPlanner project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>MealPlanner</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Test MealPlanner</string>
-			<key>timeStartedRecording</key>
-			<real>668604426.97800899</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Test MealPlanner</string>
-			<key>uniqueIdentifier</key>
-			<string>9004ECA0-6EF1-484C-92BE-411663278D15</string>
-		</dict>
 		<key>F7E8A69D-52C3-4DBF-99B4-29612499B0D7</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>

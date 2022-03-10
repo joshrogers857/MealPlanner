@@ -1,5 +1,5 @@
 //
-//  RecipeList.swift
+//  RecipeListView.swift
 //  MealPlanner
 //
 //  Created by Joshua Rogers on 10/03/2022.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RecipeList: View {
+struct RecipeListView: View {
     @EnvironmentObject var recipeListViewModel: RecipeListViewModel
     
     var body: some View {
@@ -27,8 +27,8 @@ struct RecipeList: View {
     }
 }
 
-struct RecipeList_Previews: PreviewProvider {
+struct RecipeListView_Previews: PreviewProvider {
     static var previews: some View {
-        RecipeList().environmentObject(RecipeListViewModel())
+        RecipeListView().environmentObject(RecipeListViewModel())
     }
 }
