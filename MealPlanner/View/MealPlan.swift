@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MealPlan: View {
     var body: some View {
         Text("Test")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct MealPlan_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MealPlan()
     }
 }
