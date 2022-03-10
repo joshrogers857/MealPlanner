@@ -18,7 +18,7 @@ struct RecipeListView: View {
                 } else {
                     ForEach(recipeListViewModel.recipeList) {
                         recipe in
-                        Text(recipe.name).tag(recipe.name)
+                        RecipeListItemView(name: recipe.name)
                     }
                 }
             }
