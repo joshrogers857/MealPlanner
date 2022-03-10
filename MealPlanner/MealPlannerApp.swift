@@ -11,7 +11,8 @@ import SwiftUI
 struct MealPlannerApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView().environmentObject(RecipeListViewModel())
+            MainView()
+                .environmentObject(RecipeListViewModel())
         }
     }
 }

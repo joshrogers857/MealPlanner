@@ -7,7 +7,10 @@
 
 import Foundation
 
-struct MealPlanStage {
+struct MealPlanStage: Identifiable {
+    var id: String {
+        name.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+    }
     var name: String
     var recipes: [Recipe]
 }
