@@ -10,7 +10,11 @@ import XCTest
 
 class RecipeListViewModelTests: XCTestCase {
     
-    func testRecipeListViewModel_Should_Exist() throws {
-        let _ = RecipeListViewModel()
+    func test_RecipeListViewModel_WhenCreated_RecipeListShouldHave15Recipes() {
+        let vm = RecipeListViewModel()
+        
+        let numberOfRecipes = vm.recipeList.count
+        
+        XCTAssertEqual(numberOfRecipes, 15)
     }
 }
