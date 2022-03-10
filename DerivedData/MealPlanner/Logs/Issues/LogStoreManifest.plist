@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>1B223474-70A1-45C3-AD79-A42167427989</key>
+		<key>121D4322-2078-4882-A25F-ACFCDC7AA9A7</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.bundle</string>
 			<key>fileName</key>
-			<string>1B223474-70A1-45C3-AD79-A42167427989.xcactivitylog</string>
+			<string>121D4322-2078-4882-A25F-ACFCDC7AA9A7.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -26,43 +26,15 @@
 			<key>signature</key>
 			<string>MealPlannerTests-cnavxnuytvfcyngzxneikxxwqyxs</string>
 			<key>timeStartedRecording</key>
-			<real>668616044.67084706</real>
+			<real>668634695.09239304</real>
 			<key>timeStoppedRecording</key>
-			<real>668616045.13413596</real>
+			<real>668634695.49523699</real>
 			<key>title</key>
 			<string>Build target MealPlannerTests</string>
 			<key>uniqueIdentifier</key>
-			<string>1B223474-70A1-45C3-AD79-A42167427989</string>
+			<string>121D4322-2078-4882-A25F-ACFCDC7AA9A7</string>
 		</dict>
-		<key>2A013CBB-4547-45BA-9ACE-B8A37F7505C4</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
-			<key>fileName</key>
-			<string>2A013CBB-4547-45BA-9ACE-B8A37F7505C4.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>signature</key>
-			<string>MealPlanner-cnavxnuytvfcyngzxneikxxwqyxs</string>
-			<key>timeStartedRecording</key>
-			<real>668627930.64366901</real>
-			<key>timeStoppedRecording</key>
-			<real>668627931.051754</real>
-			<key>title</key>
-			<string>Build target MealPlanner</string>
-			<key>uniqueIdentifier</key>
-			<string>2A013CBB-4547-45BA-9ACE-B8A37F7505C4</string>
-		</dict>
-		<key>3A732B29-5BF9-4E3D-B931-FB775C83C174</key>
+		<key>67AF2C53-9835-471C-9DFE-5A4138A6DF9D</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -71,7 +43,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.bundle</string>
 			<key>fileName</key>
-			<string>3A732B29-5BF9-4E3D-B931-FB775C83C174.xcactivitylog</string>
+			<string>67AF2C53-9835-471C-9DFE-5A4138A6DF9D.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -82,13 +54,41 @@
 			<key>signature</key>
 			<string>MealPlannerUITests-cnavxnuytvfcyngzxneikxxwqyxs</string>
 			<key>timeStartedRecording</key>
-			<real>668604428.26024103</real>
+			<real>668633174.18119395</real>
 			<key>timeStoppedRecording</key>
-			<real>668604432.14326894</real>
+			<real>668633175.69015002</real>
 			<key>title</key>
 			<string>Build target MealPlannerUITests</string>
 			<key>uniqueIdentifier</key>
-			<string>3A732B29-5BF9-4E3D-B931-FB775C83C174</string>
+			<string>67AF2C53-9835-471C-9DFE-5A4138A6DF9D</string>
+		</dict>
+		<key>77245326-22F8-4AB6-82F0-9236704A5EAE</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>77245326-22F8-4AB6-82F0-9236704A5EAE.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>MealPlanner-cnavxnuytvfcyngzxneikxxwqyxs</string>
+			<key>timeStartedRecording</key>
+			<real>668634695.49572599</real>
+			<key>timeStoppedRecording</key>
+			<real>668634695.69568002</real>
+			<key>title</key>
+			<string>Build target MealPlanner</string>
+			<key>uniqueIdentifier</key>
+			<string>77245326-22F8-4AB6-82F0-9236704A5EAE</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>
