@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Recipe: Identifiable {
+struct Recipe: Identifiable, Equatable {
     var id: String {
         name.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
     }
