@@ -7,10 +7,14 @@
 
 import Foundation
 
-struct MealPlanStage: Identifiable {
+struct MealPlanStage: Identifiable, Equatable {
     var id: String {
         name.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
     }
     var name: String
     var recipes: [Recipe]
+    
+    static func == (lhs: MealPlanStage, rhs: MealPlanStage) -> Bool {
+        lhs.name == rhs.name && lhs.recipes == rhs.recipes
+    }
 }

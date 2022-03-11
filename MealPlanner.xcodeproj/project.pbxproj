@@ -17,6 +17,7 @@
 		BD2B0F2427C556C900D3CD6A /* MealPlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2B0F2327C556C900D3CD6A /* MealPlannerTests.swift */; };
 		BD2B0F2E27C556C900D3CD6A /* MealPlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2B0F2D27C556C900D3CD6A /* MealPlannerUITests.swift */; };
 		BD2B0F3027C556C900D3CD6A /* MealPlannerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2B0F2F27C556C900D3CD6A /* MealPlannerUITestsLaunchTests.swift */; };
+		BD2FD3BB27DB703D004BABB9 /* RecipeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2FD3BA27DB703D004BABB9 /* RecipeList.swift */; };
 		BD81E7DD27DA7FE00082FF1A /* MealPlanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD81E7DC27DA7FE00082FF1A /* MealPlanViewModel.swift */; };
 		BD81E7DF27DA809F0082FF1A /* MealPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD81E7DE27DA809F0082FF1A /* MealPlan.swift */; };
 		BD81E7E127DA81D80082FF1A /* MealPlanStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD81E7E027DA81D80082FF1A /* MealPlanStage.swift */; };
@@ -58,6 +59,7 @@
 		BD2B0F2927C556C900D3CD6A /* MealPlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MealPlannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD2B0F2D27C556C900D3CD6A /* MealPlannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlannerUITests.swift; sourceTree = "<group>"; };
 		BD2B0F2F27C556C900D3CD6A /* MealPlannerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlannerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BD2FD3BA27DB703D004BABB9 /* RecipeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeList.swift; sourceTree = "<group>"; };
 		BD81E7DC27DA7FE00082FF1A /* MealPlanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanViewModel.swift; sourceTree = "<group>"; };
 		BD81E7DE27DA809F0082FF1A /* MealPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlan.swift; sourceTree = "<group>"; };
 		BD81E7E027DA81D80082FF1A /* MealPlanStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanStage.swift; sourceTree = "<group>"; };
@@ -137,8 +139,8 @@
 		BD2B0F2227C556C900D3CD6A /* MealPlannerTests */ = {
 			isa = PBXGroup;
 			children = (
+				BD2FD3B927DB6C44004BABB9 /* Model */,
 				BD83D48327D7C372003261DE /* View */,
-				BD83D48227D7C36D003261DE /* Model */,
 				BD83D48127D7C35F003261DE /* ViewModel */,
 				BD2B0F2327C556C900D3CD6A /* MealPlannerTests.swift */,
 			);
@@ -154,6 +156,13 @@
 			path = MealPlannerUITests;
 			sourceTree = "<group>";
 		};
+		BD2FD3B927DB6C44004BABB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		BD83D47A27D7BEB7003261DE /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +170,7 @@
 				BD81E7DE27DA809F0082FF1A /* MealPlan.swift */,
 				BD81E7E027DA81D80082FF1A /* MealPlanStage.swift */,
 				BD81E7E427DA83660082FF1A /* MealPlans.swift */,
+				BD2FD3BA27DB703D004BABB9 /* RecipeList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -192,13 +202,6 @@
 				BD81E7E227DA82670082FF1A /* MealPlanViewModelTests.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		BD83D48227D7C36D003261DE /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		BD83D48327D7C372003261DE /* View */ = {
@@ -345,6 +348,7 @@
 				BD81E7E527DA83660082FF1A /* MealPlans.swift in Sources */,
 				BD2B0F0E27C556C800D3CD6A /* MealPlannerApp.swift in Sources */,
 				BD023F4327DA473B007638E9 /* RecipeListView.swift in Sources */,
+				BD2FD3BB27DB703D004BABB9 /* RecipeList.swift in Sources */,
 				BD81E7DF27DA809F0082FF1A /* MealPlan.swift in Sources */,
 				BD83D47E27D7BF3D003261DE /* RecipeListViewModel.swift in Sources */,
 				BD81E7E127DA81D80082FF1A /* MealPlanStage.swift in Sources */,
