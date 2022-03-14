@@ -17,26 +17,12 @@
 		BD2B0F2427C556C900D3CD6A /* MealPlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2B0F2327C556C900D3CD6A /* MealPlannerTests.swift */; };
 		BD2B0F2E27C556C900D3CD6A /* MealPlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2B0F2D27C556C900D3CD6A /* MealPlannerUITests.swift */; };
 		BD2B0F3027C556C900D3CD6A /* MealPlannerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2B0F2F27C556C900D3CD6A /* MealPlannerUITestsLaunchTests.swift */; };
-		BD2FD3BB27DB703D004BABB9 /* RecipeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2FD3BA27DB703D004BABB9 /* RecipeList.swift */; };
 		BD81E7DD27DA7FE00082FF1A /* MealPlanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD81E7DC27DA7FE00082FF1A /* MealPlanViewModel.swift */; };
-		BD81E7DF27DA809F0082FF1A /* MealPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD81E7DE27DA809F0082FF1A /* MealPlan.swift */; };
-		BD81E7E127DA81D80082FF1A /* MealPlanStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD81E7E027DA81D80082FF1A /* MealPlanStage.swift */; };
 		BD81E7E327DA82670082FF1A /* MealPlanViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD81E7E227DA82670082FF1A /* MealPlanViewModelTests.swift */; };
-		BD81E7E527DA83660082FF1A /* MealPlans.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD81E7E427DA83660082FF1A /* MealPlans.swift */; };
 		BD83D47E27D7BF3D003261DE /* RecipeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD83D47D27D7BF3D003261DE /* RecipeListViewModel.swift */; };
 		BD83D48027D7BF81003261DE /* RecipeListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD83D47F27D7BF81003261DE /* RecipeListViewModelTests.swift */; };
-		BD83D48727D7C514003261DE /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD83D48627D7C514003261DE /* Recipe.swift */; };
 		BDDA404F27DF774C000BAE32 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDDA404D27DF774C000BAE32 /* Main.xcdatamodeld */; };
-		BDDA406327DF8A92000BAE32 /* MealPlanStage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDA405927DF8A92000BAE32 /* MealPlanStage+CoreDataClass.swift */; };
-		BDDA406427DF8A92000BAE32 /* MealPlanStage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDA405A27DF8A92000BAE32 /* MealPlanStage+CoreDataProperties.swift */; };
-		BDDA406527DF8A92000BAE32 /* Recipe+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDA405B27DF8A92000BAE32 /* Recipe+CoreDataClass.swift */; };
-		BDDA406627DF8A92000BAE32 /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDA405C27DF8A92000BAE32 /* Recipe+CoreDataProperties.swift */; };
-		BDDA406727DF8A92000BAE32 /* MealPlan+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDA405D27DF8A92000BAE32 /* MealPlan+CoreDataClass.swift */; };
-		BDDA406827DF8A92000BAE32 /* MealPlan+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDA405E27DF8A92000BAE32 /* MealPlan+CoreDataProperties.swift */; };
-		BDDA406927DF8A92000BAE32 /* Ingredient+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDA405F27DF8A92000BAE32 /* Ingredient+CoreDataClass.swift */; };
-		BDDA406A27DF8A92000BAE32 /* Ingredient+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDA406027DF8A92000BAE32 /* Ingredient+CoreDataProperties.swift */; };
-		BDDA406B27DF8A92000BAE32 /* Instruction+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDA406127DF8A92000BAE32 /* Instruction+CoreDataClass.swift */; };
-		BDDA406C27DF8A92000BAE32 /* Instruction+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDA406227DF8A92000BAE32 /* Instruction+CoreDataProperties.swift */; };
+		BDDA406E27DF9EA4000BAE32 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDA406D27DF9EA4000BAE32 /* PersistenceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,26 +56,12 @@
 		BD2B0F2927C556C900D3CD6A /* MealPlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MealPlannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD2B0F2D27C556C900D3CD6A /* MealPlannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlannerUITests.swift; sourceTree = "<group>"; };
 		BD2B0F2F27C556C900D3CD6A /* MealPlannerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlannerUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		BD2FD3BA27DB703D004BABB9 /* RecipeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeList.swift; sourceTree = "<group>"; };
 		BD81E7DC27DA7FE00082FF1A /* MealPlanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanViewModel.swift; sourceTree = "<group>"; };
-		BD81E7DE27DA809F0082FF1A /* MealPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlan.swift; sourceTree = "<group>"; };
-		BD81E7E027DA81D80082FF1A /* MealPlanStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanStage.swift; sourceTree = "<group>"; };
 		BD81E7E227DA82670082FF1A /* MealPlanViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanViewModelTests.swift; sourceTree = "<group>"; };
-		BD81E7E427DA83660082FF1A /* MealPlans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlans.swift; sourceTree = "<group>"; };
 		BD83D47D27D7BF3D003261DE /* RecipeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewModel.swift; sourceTree = "<group>"; };
 		BD83D47F27D7BF81003261DE /* RecipeListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewModelTests.swift; sourceTree = "<group>"; };
-		BD83D48627D7C514003261DE /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		BDDA404E27DF774C000BAE32 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
-		BDDA405927DF8A92000BAE32 /* MealPlanStage+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealPlanStage+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		BDDA405A27DF8A92000BAE32 /* MealPlanStage+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealPlanStage+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
-		BDDA405B27DF8A92000BAE32 /* Recipe+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		BDDA405C27DF8A92000BAE32 /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
-		BDDA405D27DF8A92000BAE32 /* MealPlan+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealPlan+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		BDDA405E27DF8A92000BAE32 /* MealPlan+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealPlan+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
-		BDDA405F27DF8A92000BAE32 /* Ingredient+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		BDDA406027DF8A92000BAE32 /* Ingredient+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
-		BDDA406127DF8A92000BAE32 /* Instruction+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instruction+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		BDDA406227DF8A92000BAE32 /* Instruction+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instruction+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		BDDA406D27DF9EA4000BAE32 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,11 +161,6 @@
 			isa = PBXGroup;
 			children = (
 				BDDA405827DF7C68000BAE32 /* CoreData */,
-				BD83D48627D7C514003261DE /* Recipe.swift */,
-				BD81E7DE27DA809F0082FF1A /* MealPlan.swift */,
-				BD81E7E027DA81D80082FF1A /* MealPlanStage.swift */,
-				BD81E7E427DA83660082FF1A /* MealPlans.swift */,
-				BD2FD3BA27DB703D004BABB9 /* RecipeList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -237,17 +204,8 @@
 		BDDA405827DF7C68000BAE32 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				BDDA405927DF8A92000BAE32 /* MealPlanStage+CoreDataClass.swift */,
-				BDDA405A27DF8A92000BAE32 /* MealPlanStage+CoreDataProperties.swift */,
-				BDDA405B27DF8A92000BAE32 /* Recipe+CoreDataClass.swift */,
-				BDDA405C27DF8A92000BAE32 /* Recipe+CoreDataProperties.swift */,
-				BDDA405D27DF8A92000BAE32 /* MealPlan+CoreDataClass.swift */,
-				BDDA405E27DF8A92000BAE32 /* MealPlan+CoreDataProperties.swift */,
-				BDDA405F27DF8A92000BAE32 /* Ingredient+CoreDataClass.swift */,
-				BDDA406027DF8A92000BAE32 /* Ingredient+CoreDataProperties.swift */,
-				BDDA406127DF8A92000BAE32 /* Instruction+CoreDataClass.swift */,
-				BDDA406227DF8A92000BAE32 /* Instruction+CoreDataProperties.swift */,
 				BDDA404D27DF774C000BAE32 /* Main.xcdatamodeld */,
+				BDDA406D27DF9EA4000BAE32 /* PersistenceController.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -383,28 +341,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD81E7DD27DA7FE00082FF1A /* MealPlanViewModel.swift in Sources */,
-				BDDA406527DF8A92000BAE32 /* Recipe+CoreDataClass.swift in Sources */,
 				BD0B40D927DA656F001F07C4 /* MealPlanView.swift in Sources */,
 				BD0B40DB27DA6C0B001F07C4 /* RecipeListItemView.swift in Sources */,
 				BD2B0F1027C556C800D3CD6A /* MainView.swift in Sources */,
-				BDDA406627DF8A92000BAE32 /* Recipe+CoreDataProperties.swift in Sources */,
-				BD81E7E527DA83660082FF1A /* MealPlans.swift in Sources */,
 				BD2B0F0E27C556C800D3CD6A /* MealPlannerApp.swift in Sources */,
 				BD023F4327DA473B007638E9 /* RecipeListView.swift in Sources */,
-				BD2FD3BB27DB703D004BABB9 /* RecipeList.swift in Sources */,
-				BDDA406327DF8A92000BAE32 /* MealPlanStage+CoreDataClass.swift in Sources */,
 				BDDA404F27DF774C000BAE32 /* Main.xcdatamodeld in Sources */,
-				BDDA406B27DF8A92000BAE32 /* Instruction+CoreDataClass.swift in Sources */,
-				BDDA406427DF8A92000BAE32 /* MealPlanStage+CoreDataProperties.swift in Sources */,
-				BDDA406827DF8A92000BAE32 /* MealPlan+CoreDataProperties.swift in Sources */,
-				BD81E7DF27DA809F0082FF1A /* MealPlan.swift in Sources */,
-				BDDA406C27DF8A92000BAE32 /* Instruction+CoreDataProperties.swift in Sources */,
-				BDDA406A27DF8A92000BAE32 /* Ingredient+CoreDataProperties.swift in Sources */,
+				BDDA406E27DF9EA4000BAE32 /* PersistenceController.swift in Sources */,
 				BD83D47E27D7BF3D003261DE /* RecipeListViewModel.swift in Sources */,
-				BD81E7E127DA81D80082FF1A /* MealPlanStage.swift in Sources */,
-				BD83D48727D7C514003261DE /* Recipe.swift in Sources */,
-				BDDA406927DF8A92000BAE32 /* Ingredient+CoreDataClass.swift in Sources */,
-				BDDA406727DF8A92000BAE32 /* MealPlan+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

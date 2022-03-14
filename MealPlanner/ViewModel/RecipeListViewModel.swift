@@ -9,8 +9,19 @@ import Foundation
 
 class RecipeListViewModel: ObservableObject {
     @Published var recipeList: [Recipe]
+    @Environment(\.managedObjectContext) private var viewContext
     
     init() {
-        recipeList = RecipeList.recipes
+        let request = Recipe.fetchRequest()
+        
+        request.sortDescriptors = [
+            NSSortDescriptor(keyPath: \Recipe.name, ascending: true)
+        ]
+        
+        viewContext.perform {
+            let results = try! request.execute()
+            
+            recipeList = results
+        }
     }
 }
