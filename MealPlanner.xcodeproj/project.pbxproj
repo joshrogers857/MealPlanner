@@ -26,6 +26,7 @@
 		BD83D47E27D7BF3D003261DE /* RecipeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD83D47D27D7BF3D003261DE /* RecipeListViewModel.swift */; };
 		BD83D48027D7BF81003261DE /* RecipeListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD83D47F27D7BF81003261DE /* RecipeListViewModelTests.swift */; };
 		BD83D48727D7C514003261DE /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD83D48627D7C514003261DE /* Recipe.swift */; };
+		BDDA404F27DF774C000BAE32 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDDA404D27DF774C000BAE32 /* Main.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		BD83D47D27D7BF3D003261DE /* RecipeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewModel.swift; sourceTree = "<group>"; };
 		BD83D47F27D7BF81003261DE /* RecipeListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewModelTests.swift; sourceTree = "<group>"; };
 		BD83D48627D7C514003261DE /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		BDDA404E27DF774C000BAE32 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 		BD83D47A27D7BEB7003261DE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BDDA405827DF7C68000BAE32 /* CoreData */,
 				BD83D48627D7C514003261DE /* Recipe.swift */,
 				BD81E7DE27DA809F0082FF1A /* MealPlan.swift */,
 				BD81E7E027DA81D80082FF1A /* MealPlanStage.swift */,
@@ -209,6 +212,14 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		BDDA405827DF7C68000BAE32 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				BDDA404D27DF774C000BAE32 /* Main.xcdatamodeld */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,6 +360,7 @@
 				BD2B0F0E27C556C800D3CD6A /* MealPlannerApp.swift in Sources */,
 				BD023F4327DA473B007638E9 /* RecipeListView.swift in Sources */,
 				BD2FD3BB27DB703D004BABB9 /* RecipeList.swift in Sources */,
+				BDDA404F27DF774C000BAE32 /* Main.xcdatamodeld in Sources */,
 				BD81E7DF27DA809F0082FF1A /* MealPlan.swift in Sources */,
 				BD83D47E27D7BF3D003261DE /* RecipeListViewModel.swift in Sources */,
 				BD81E7E127DA81D80082FF1A /* MealPlanStage.swift in Sources */,
@@ -681,6 +693,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BDDA404D27DF774C000BAE32 /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BDDA404E27DF774C000BAE32 /* Main.xcdatamodel */,
+			);
+			currentVersion = BDDA404E27DF774C000BAE32 /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BD2B0F0227C556C800D3CD6A /* Project object */;
 }
