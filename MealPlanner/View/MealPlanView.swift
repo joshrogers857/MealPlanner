@@ -21,6 +21,8 @@ struct MealPlanView: View {
             VStack {
                 DateSelector(date: $selectedDate)
                 
+                Spacer()
+                
                 if(mealPlan == nil) {
                     Button {
                         mealPlan = try? mealPlanService.createMealPlan(date: selectedDate)
@@ -47,8 +49,10 @@ struct MealPlanView: View {
                         }
                     }
                 }
+                
+                Spacer()
             }
-            .navigationTitle(selectedDate <= Date.now ? "Today's Plan" : "MealPlanner")
+            .navigationTitle("MealPlanner")
             
         }
         .onAppear(perform: {
