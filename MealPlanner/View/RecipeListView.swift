@@ -8,21 +8,25 @@
 import SwiftUI
 
 struct RecipeListView: View {
+    
+    @FetchRequest(
+        entity: Recipe.entity(),
+        sortDescriptors: [
+            NSSortDescriptor(keyPath: \Recipe.name, ascending: true)
+        ]
+    ) var recipeList: FetchedResults<Recipe>
+    
     var body: some View {
         NavigationView {
             List {
-                /*if(recipeListViewModel.recipeList.isEmpty) {
+                if(recipeList.isEmpty) {
                     Text("No recipes found")
                 } else {
-                    ForEach(recipeListViewModel.recipeList) {
+                    ForEach(recipeList, id: \.self) {
                         recipe in
-                        RecipeListItemView(name: recipe.name)
+                        RecipeListItemView(name: recipe.wrappedName)
                     }
-                } */
-                
-                Text("One")
-                Text("Two")
-                Text("Three")
+                }
             }
             .navigationTitle("Recipes")
         }
@@ -31,6 +35,6 @@ struct RecipeListView: View {
 
 struct RecipeListView_Previews: PreviewProvider {
     static var previews: some View {
-        RecipeListView()
+        RecipeListView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }

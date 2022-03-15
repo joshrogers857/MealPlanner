@@ -6,68 +6,70 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct MealPlanView: View {
-    @State var selectedDate: Date = Date.now
+    
+    @Environment(\.managedObjectContext) private var moc
+    
+    @State private var mealPlanService: MealPlanService!
+    @State private var selectedDate: Date = Date.now
+    @State private var mealPlan: MealPlan? = nil
     
     var body: some View {
         NavigationView {
             Group {
-                /*if(mealPlanViewModel.mealPlan == nil) {
-                    VStack {
-                        Text("No meal plan found")
-                        Button("Create Meal Plan") {
-                            mealPlanViewModel.createMealPlan(with: MealPlan(
-                                date: selectedDate,
-                                stages: [
-                                    MealPlanStage(name: "stage1", recipes: [
-                                        recipeListViewModel.recipeList[0]
-                                    ]),
-                                    MealPlanStage(name: "stage2", recipes: [
-                                        recipeListViewModel.recipeList[5],
-                                        recipeListViewModel.recipeList[7]
-                                    ]),
-                                    MealPlanStage(name: "stage3", recipes: [
-                                        recipeListViewModel.recipeList[2]
-                                    ])
-                                ]
-                            ))
-                        }
+                if(mealPlan == nil) {
+                    Button {
+                        mealPlan = try? mealPlanService.createMealPlan(date: selectedDate)
+                    } label: {
+                        Label("Create Meal Plan", systemImage: "plus")
                     }
-                    
-                    
-                    
                 } else {
                     List {
-                        ForEach(mealPlanViewModel.mealPlan!.stages) { stage in
-                            Section(header: Text(stage.name)) {
-                                ForEach(stage.recipes) { recipe in
-                                    RecipeListItemView(name: recipe.name)
+                        ForEach(mealPlan!.stagesArray) {
+                            stage in
+                            
+                            Section(header: Text(stage.wrappedName)) {
+                                
+                                if(stage.recipesArray.isEmpty) {
+                                    Text("No recipes")
+                                } else {
+                                    ForEach(stage.recipesArray) {
+                                        recipe in
+                                        
+                                        RecipeListItemView(name: recipe.wrappedName)
+                                    }
                                 }
                             }
                         }
                     }
-                }*/
-                
-                Text("foobar123")
+                }
             }
-            .navigationTitle(dateToString(date: selectedDate))
+            .navigationTitle(dateToString(selectedDate).0)
         }
         .onAppear(perform: {
-            //code to perform on init here
+            mealPlanService = MealPlanService(moc: moc)
+            
+            mealPlan = mealPlanService.fetchMealPlan(date: selectedDate)
         })
     }
     
-    func dateToString(date: Date) -> String {
+    private func dateToString(_ date: Date) -> (String, String) {
         let df = DateFormatter()
         df.dateFormat = "dd/MM/YYYY"
         
-        return df.string(from: date)
+        let calendar = Calendar.current
+        let hour = calendar.component(.hour, from: date)
+        let minute = calendar.component(.minute, from: date)
+        let second = calendar.component(.second, from: date)
+        
+        return (df.string(from: date), "\(hour):\(minute):\(second)")
     }
 }
 
 struct MealPlanView_Previews: PreviewProvider {
     static var previews: some View {
-        MealPlanView()
+        MealPlanView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }
