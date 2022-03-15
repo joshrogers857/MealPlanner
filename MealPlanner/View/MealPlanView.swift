@@ -18,7 +18,7 @@ struct MealPlanView: View {
     
     var body: some View {
         NavigationView {
-            Group {
+            VStack {
                 if(mealPlan == nil) {
                     Button {
                         mealPlan = try? mealPlanService.createMealPlan(date: selectedDate)
