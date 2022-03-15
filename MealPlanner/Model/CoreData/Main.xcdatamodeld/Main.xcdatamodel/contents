@@ -25,6 +25,12 @@
         <attribute name="body" optional="YES" attributeType="String"/>
         <attribute name="stepNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <relationship name="origin" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Recipe" inverseName="instructions" inverseEntity="Recipe"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="stepNumber"/>
+                <constraint value="origin"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
     </entity>
     <entity name="MealPlan" representedClassName="MealPlan" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
@@ -43,6 +49,11 @@
         <uniquenessConstraints>
             <uniquenessConstraint>
                 <constraint value="name"/>
+                <constraint value="origin"/>
+            </uniquenessConstraint>
+            <uniquenessConstraint>
+                <constraint value="listPosition"/>
+                <constraint value="origin"/>
             </uniquenessConstraint>
         </uniquenessConstraints>
     </entity>

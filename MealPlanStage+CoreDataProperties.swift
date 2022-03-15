@@ -16,8 +16,8 @@ extension MealPlanStage {
         return NSFetchRequest<MealPlanStage>(entityName: "MealPlanStage")
     }
 
-    @NSManaged public var name: String?
     @NSManaged public var listPosition: Int16
+    @NSManaged public var name: String?
     @NSManaged public var origin: MealPlan?
     @NSManaged public var recipes: NSSet?
 
