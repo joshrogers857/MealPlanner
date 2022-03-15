@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21D62" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Ingredient" representedClassName="Ingredient" syncable="YES" codeGenerationType="class">
+    <entity name="Ingredient" representedClassName="Ingredient" syncable="YES">
         <attribute name="calories" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="carbs" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="fat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
@@ -21,12 +21,12 @@
             </uniquenessConstraint>
         </uniquenessConstraints>
     </entity>
-    <entity name="Instruction" representedClassName="Instruction" syncable="YES" codeGenerationType="class">
+    <entity name="Instruction" representedClassName="Instruction" syncable="YES">
         <attribute name="body" optional="YES" attributeType="String"/>
         <attribute name="stepNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <relationship name="origin" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Recipe" inverseName="instructions" inverseEntity="Recipe"/>
     </entity>
-    <entity name="MealPlan" representedClassName="MealPlan" syncable="YES" codeGenerationType="class">
+    <entity name="MealPlan" representedClassName="MealPlan" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <relationship name="stages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MealPlanStage" inverseName="origin" inverseEntity="MealPlanStage"/>
         <uniquenessConstraints>
@@ -35,7 +35,8 @@
             </uniquenessConstraint>
         </uniquenessConstraints>
     </entity>
-    <entity name="MealPlanStage" representedClassName="MealPlanStage" syncable="YES" codeGenerationType="class">
+    <entity name="MealPlanStage" representedClassName="MealPlanStage" syncable="YES">
+        <attribute name="listPosition" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <relationship name="origin" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MealPlan" inverseName="stages" inverseEntity="MealPlan"/>
         <relationship name="recipes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Recipe" inverseName="mealPlanStages" inverseEntity="Recipe"/>
@@ -45,7 +46,7 @@
             </uniquenessConstraint>
         </uniquenessConstraints>
     </entity>
-    <entity name="Recipe" representedClassName="Recipe" syncable="YES" codeGenerationType="class">
+    <entity name="Recipe" representedClassName="Recipe" syncable="YES">
         <attribute name="cookingTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="preparationTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
@@ -61,10 +62,10 @@
         </uniquenessConstraints>
     </entity>
     <elements>
-        <element name="Recipe" positionX="-63" positionY="-18" width="128" height="149"/>
-        <element name="MealPlan" positionX="-54" positionY="-9" width="128" height="59"/>
-        <element name="MealPlanStage" positionX="-36" positionY="27" width="128" height="74"/>
-        <element name="Instruction" positionX="-18" positionY="63" width="128" height="74"/>
         <element name="Ingredient" positionX="0" positionY="90" width="128" height="209"/>
+        <element name="Instruction" positionX="-18" positionY="63" width="128" height="74"/>
+        <element name="MealPlan" positionX="-54" positionY="-9" width="128" height="59"/>
+        <element name="MealPlanStage" positionX="-36" positionY="27" width="128" height="89"/>
+        <element name="Recipe" positionX="-63" positionY="-18" width="128" height="149"/>
     </elements>
 </model>

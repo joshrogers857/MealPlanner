@@ -17,8 +17,6 @@ struct MealPlannerApp: App {
         WindowGroup {
             MainView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
-                .environmentObject(MealPlanViewModel())
-                .environmentObject(RecipeListViewModel())
         }
         .onChange(of: scenePhase) { _ in
             persistenceController.save()

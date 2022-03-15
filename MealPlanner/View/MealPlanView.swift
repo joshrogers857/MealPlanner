@@ -8,14 +8,12 @@
 import SwiftUI
 
 struct MealPlanView: View {
-    @EnvironmentObject var mealPlanViewModel: MealPlanViewModel
-    @EnvironmentObject var recipeListViewModel: RecipeListViewModel
     @State var selectedDate: Date = Date.now
     
     var body: some View {
         NavigationView {
             Group {
-                if(mealPlanViewModel.mealPlan == nil) {
+                /*if(mealPlanViewModel.mealPlan == nil) {
                     VStack {
                         Text("No meal plan found")
                         Button("Create Meal Plan") {
@@ -37,6 +35,8 @@ struct MealPlanView: View {
                         }
                     }
                     
+                    
+                    
                 } else {
                     List {
                         ForEach(mealPlanViewModel.mealPlan!.stages) { stage in
@@ -47,12 +47,14 @@ struct MealPlanView: View {
                             }
                         }
                     }
-                }
+                }*/
+                
+                Text("foobar123")
             }
             .navigationTitle(dateToString(date: selectedDate))
         }
         .onAppear(perform: {
-            mealPlanViewModel.fetchMealPlan(date: selectedDate)
+            //code to perform on init here
         })
     }
     
@@ -67,7 +69,5 @@ struct MealPlanView: View {
 struct MealPlanView_Previews: PreviewProvider {
     static var previews: some View {
         MealPlanView()
-            .environmentObject(MealPlanViewModel())
-            .environmentObject(RecipeListViewModel())
     }
 }
