@@ -19,6 +19,8 @@ struct MealPlanView: View {
     var body: some View {
         NavigationView {
             VStack {
+                DateSelector(date: $selectedDate)
+                
                 if(mealPlan == nil) {
                     Button {
                         mealPlan = try? mealPlanService.createMealPlan(date: selectedDate)
@@ -46,12 +48,16 @@ struct MealPlanView: View {
                     }
                 }
             }
-            .navigationTitle(dateToString(selectedDate).0)
+            .navigationTitle(selectedDate <= Date.now ? "Today's Plan" : "MealPlanner")
+            
         }
         .onAppear(perform: {
             mealPlanService = MealPlanService(moc: moc)
             
             mealPlan = mealPlanService.fetchMealPlan(date: selectedDate)
+        })
+        .onChange(of: selectedDate, perform: { newValue in
+            mealPlan = mealPlanService.fetchMealPlan(date: newValue)
         })
     }
     

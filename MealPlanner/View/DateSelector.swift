@@ -8,41 +8,52 @@
 import SwiftUI
 
 struct DateSelector: View {
-    @State var date: Date
+    @Binding var date: Date
     
     var body: some View {
-        HStack {
-            Button {
-                date = date - 86400
-            } label: {
-                Image(systemName: "arrowtriangle.backward.fill")
+        VStack {
+            HStack {
+                Spacer()
+                
+                Button {
+                    let calendar = Calendar.current
+                    date = calendar.date(byAdding: .day, value: -1, to: date)!
+                } label: {
+                    Image(systemName: "arrowtriangle.backward.fill")
+                }
+                
+                Group {
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                }
+                
+                DatePicker("Selected Date", selection: $date, displayedComponents: [.date])
+                    .labelsHidden()
+                
+                Group {
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                }
+                
+                Button {
+                    let calendar = Calendar.current
+                    date = calendar.date(byAdding: .day, value: 1, to: date)!
+                } label: {
+                    Image(systemName: "arrowtriangle.forward.fill")
+                }
+                
+                Spacer()
             }
-            
-            Text(dateToString(date).0)
-            
-            Button {
-                date = date + 86400
-            } label: {
-                Image(systemName: "arrowtriangle.forward.fill")
-            }
+            .padding(.top, 6)
+            .padding(.bottom, 2)
         }
-    }
-    
-    private func dateToString(_ date: Date) -> (String, String) {
-        let df = DateFormatter()
-        df.dateFormat = "dd/MM/YYYY"
-        
-        let calendar = Calendar.current
-        let hour = calendar.component(.hour, from: date)
-        let minute = calendar.component(.minute, from: date)
-        let second = calendar.component(.second, from: date)
-        
-        return (df.string(from: date), "\(hour):\(minute):\(second)")
     }
 }
 
-struct DateSelector_Previews: PreviewProvider {
+/*struct DateSelector_Previews: PreviewProvider {
     static var previews: some View {
-        DateSelector(date: Date.now)
+        DateSelector(date: Binding<Date>)
     }
-}
+}*/
