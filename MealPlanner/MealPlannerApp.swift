@@ -9,11 +9,17 @@ import SwiftUI
 
 @main
 struct MealPlannerApp: App {
+    let persistenceController = PersistenceController.shared
+    
+    @Environment(\.scenePhase) var scenePhase
+    
     var body: some Scene {
         WindowGroup {
             MainView()
-                .environmentObject(MealPlanViewModel())
-                .environmentObject(RecipeListViewModel())
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+        }
+        .onChange(of: scenePhase) { _ in
+            persistenceController.save()
         }
     }
 }
