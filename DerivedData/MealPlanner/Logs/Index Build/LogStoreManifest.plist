@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>243245CF-8C93-4AC5-BE5F-0932B3707357</key>
+		<key>95E4E55E-18D9-47A7-ADC3-A395D6DE237A</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.IndexBuildLog</string>
 			<key>fileName</key>
-			<string>243245CF-8C93-4AC5-BE5F-0932B3707357.xcactivitylog</string>
+			<string>95E4E55E-18D9-47A7-ADC3-A395D6DE237A.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -32,15 +32,15 @@
 			<key>signature</key>
 			<string>Workspace Build Description</string>
 			<key>timeStartedRecording</key>
-			<real>669151571.71316302</real>
+			<real>669151697.71886396</real>
 			<key>timeStoppedRecording</key>
-			<real>669151571.83212805</real>
+			<real>669151697.80343604</real>
 			<key>title</key>
 			<string>Workspace Build Description</string>
 			<key>uniqueIdentifier</key>
-			<string>243245CF-8C93-4AC5-BE5F-0932B3707357</string>
+			<string>95E4E55E-18D9-47A7-ADC3-A395D6DE237A</string>
 		</dict>
-		<key>74D9337F-45EE-4CAE-A74C-9C71E03BD095</key>
+		<key>B42C70C9-B614-443D-A72F-63EF59BD8627</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -49,7 +49,41 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.IndexBuildLog</string>
 			<key>fileName</key>
-			<string>74D9337F-45EE-4CAE-A74C-9C71E03BD095.xcactivitylog</string>
+			<string>B42C70C9-B614-443D-A72F-63EF59BD8627.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Workspace Build Description</string>
+			<key>timeStartedRecording</key>
+			<real>669151697.827721</real>
+			<key>timeStoppedRecording</key>
+			<real>669151697.87020397</real>
+			<key>title</key>
+			<string>Workspace Build Description</string>
+			<key>uniqueIdentifier</key>
+			<string>B42C70C9-B614-443D-A72F-63EF59BD8627</string>
+		</dict>
+		<key>DFB57166-AE29-4F2F-8AA2-0543ADFB92DB</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.IndexBuildLog</string>
+			<key>fileName</key>
+			<string>DFB57166-AE29-4F2F-8AA2-0543ADFB92DB.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -66,47 +100,13 @@
 			<key>signature</key>
 			<string>MealPlanner Build Preparation</string>
 			<key>timeStartedRecording</key>
-			<real>669146844.68664706</real>
+			<real>669151659.40760696</real>
 			<key>timeStoppedRecording</key>
-			<real>669146844.722543</real>
+			<real>669151659.44532096</real>
 			<key>title</key>
 			<string>MealPlanner Build Preparation</string>
 			<key>uniqueIdentifier</key>
-			<string>74D9337F-45EE-4CAE-A74C-9C71E03BD095</string>
-		</dict>
-		<key>E0B0DF8B-A456-4D35-8B7F-4BCD59CA0819</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.IndexBuildLog</string>
-			<key>fileName</key>
-			<string>E0B0DF8B-A456-4D35-8B7F-4BCD59CA0819.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>Index Build</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Index Build</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>0</integer>
-			<key>signature</key>
-			<string>Workspace Build Description</string>
-			<key>timeStartedRecording</key>
-			<real>669151572.37891603</real>
-			<key>timeStoppedRecording</key>
-			<real>669151572.50593495</real>
-			<key>title</key>
-			<string>Workspace Build Description</string>
-			<key>uniqueIdentifier</key>
-			<string>E0B0DF8B-A456-4D35-8B7F-4BCD59CA0819</string>
+			<string>DFB57166-AE29-4F2F-8AA2-0543ADFB92DB</string>
 		</dict>
 	</dict>
 </dict>
