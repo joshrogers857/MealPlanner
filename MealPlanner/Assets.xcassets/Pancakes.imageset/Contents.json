@@ -6,10 +6,12 @@
       "scale" : "1x"
     },
     {
+      "filename" : "Pancakes-1.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Pancakes-2.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }
