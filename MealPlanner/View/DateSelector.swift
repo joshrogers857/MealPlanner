@@ -9,7 +9,6 @@ import SwiftUI
 
 struct DateSelector: View {
     @Binding var date: Date
-    @State var calendarId: UUID = UUID()
     
     var body: some View {
         VStack {
@@ -31,10 +30,6 @@ struct DateSelector: View {
                 
                 DatePicker("Selected Date", selection: $date, displayedComponents: [.date])
                     .labelsHidden()
-                    .id(calendarId)
-                    .onChange(of: date, perform: { newValue in
-                        calendarId = UUID()
-                    })
                 
                 Group {
                     Spacer()

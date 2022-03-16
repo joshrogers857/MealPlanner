@@ -19,6 +19,11 @@ struct MainView: View {
                 .tabItem {
                     Label("Recipes", systemImage: "book")
                 }
+            
+            NutritionView()
+                .tabItem {
+                    Label("Nutrition", systemImage: "figure.stand")
+                }
         }
     }
 }
