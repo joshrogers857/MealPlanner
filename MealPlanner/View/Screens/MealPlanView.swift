@@ -15,6 +15,7 @@ struct MealPlanView: View {
     @State private var mealPlanService: MealPlanService!
     @State private var selectedDate: Date = Date.now
     @State private var mealPlan: MealPlan? = nil
+    @State private var refresh: Bool = false
     
     var body: some View {
         NavigationView {
@@ -34,7 +35,10 @@ struct MealPlanView: View {
                         ForEach(mealPlan!.stagesArray) {
                             stage in
                             
-                            Section(header: Text(stage.wrappedName)) {
+                            Section(header: StageHeaderView(
+                                stage: stage,
+                                refresh: $refresh
+                            )) {
                                 
                                 if(stage.recipesArray.isEmpty) {
                                     Text("No recipes")
@@ -62,6 +66,12 @@ struct MealPlanView: View {
         })
         .onChange(of: selectedDate, perform: { newValue in
             mealPlan = mealPlanService.fetchMealPlan(date: newValue)
+        })
+        .onChange(of: refresh, perform: { newValue in
+            if(newValue == true) {
+                mealPlan = mealPlanService.fetchMealPlan(date: selectedDate)
+                refresh = false
+            }
         })
     }
     
