@@ -73,7 +73,6 @@ class HealthStore: ObservableObject {
         ) { (query, statisticsOrNil, errorOrNil) in
             
             guard let statistics = statisticsOrNil else {
-                self.activeCalories = 0.0
                 return
             }
             
@@ -119,7 +118,6 @@ class HealthStore: ObservableObject {
         ) { (query, statisticsOrNil, errorOrNil) in
             
             guard let statistics = statisticsOrNil else {
-                self.basalCalories = 0.0
                 return
             }
             

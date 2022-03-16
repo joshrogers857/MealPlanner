@@ -34,7 +34,7 @@ struct MealPlanView: View {
                         ForEach(mealPlan!.stagesArray) {
                             stage in
                             
-                            Section(header: Text(stage.wrappedName)) {
+                            Section(header: StageHeaderView(stage: stage)) {
                                 
                                 if(stage.recipesArray.isEmpty) {
                                     Text("No recipes")
@@ -63,6 +63,7 @@ struct MealPlanView: View {
         .onChange(of: selectedDate, perform: { newValue in
             mealPlan = mealPlanService.fetchMealPlan(date: newValue)
         })
+        
     }
     
     private func dateToString(_ date: Date) -> (String, String) {
