@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Red Pepper And Tomato Soup.jpg",
+      "filename" : "Red Pepper and Tomato Soup.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Red Pepper and Tomato Soup-1.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Red Pepper and Tomato Soup-2.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }
