@@ -48,6 +48,14 @@ struct MealPlanView: View {
                                         
                                         RecipeListItemView(name: recipe.wrappedName)
                                     }
+                                    .onDelete { offsets in
+                                        for index in offsets {
+                                            stage.removeFromRecipes(stage.recipesArray[index])
+                                            
+                                            PersistenceController.shared.save()
+                                            refresh = true
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -57,6 +65,9 @@ struct MealPlanView: View {
                 Spacer()
             }
             .navigationTitle("MealPlanner")
+            .toolbar {
+                EditButton()
+            }
             
         }
         .onAppear(perform: {

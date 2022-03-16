@@ -14,7 +14,7 @@ struct RecipeListItemView: View {
         HStack {
             ZStack {
                 Color.black
-                    .frame(width: 105, height: 65, alignment: .leading)
+                    .frame(width: 102, height: 62, alignment: .leading)
             
                 Image(decorative: name)
                     .resizable()
