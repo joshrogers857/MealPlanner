@@ -14,11 +14,19 @@ struct CalorieView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Calories burned")
+            Text("Calories Burned Today")
                 .font(.title)
             Text("Active calories: \(activeCalories)")
             Text("Basal calories: \(basalCalories)")
             Text("Total calories: \(totalCalories)")
+            
+            VStack(alignment: .leading) {
+                Text("Recommended (men): 2500/day")
+                    .font(.caption)
+                Text("Recommended (women): 2000/day")
+                    .font(.caption)
+            }
+            .padding(.top, 0.1)
         }
     }
 }
