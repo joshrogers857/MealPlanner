@@ -6,18 +6,26 @@
 //
 
 import SwiftUI
+import HealthKit
 
 struct NutritionView: View {
-    @State var activeCalories = 0.0
-    @State var basalCalories = 0.0
+    @ObservedObject var healthStore = HealthStore.shared
     
     var body: some View {
         NavigationView {
             VStack {
-                CalorieView(
-                    activeCalories: $activeCalories,
-                    basalCalories: $basalCalories
-                )
+                if(healthStore.store == nil) {
+                    Text("HealthStore unavailable")
+                        .foregroundColor(.red)
+                        .fontWeight(.bold)
+                        .padding()
+                } else {
+                    CalorieView(
+                        activeCalories: healthStore.activeCalories,
+                        basalCalories: healthStore.basalCalories,
+                        totalCalories: healthStore.totalCalories
+                    )
+                }
                 
                 Spacer()
             }

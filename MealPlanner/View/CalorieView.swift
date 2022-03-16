@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct CalorieView: View {
-    @Binding var activeCalories: Double
-    @Binding var basalCalories: Double
+    var activeCalories: Double
+    var basalCalories: Double
+    var totalCalories: Double
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -17,6 +18,7 @@ struct CalorieView: View {
                 .font(.title)
             Text("Active calories: \(activeCalories)")
             Text("Basal calories: \(basalCalories)")
+            Text("Total calories: \(totalCalories)")
         }
     }
 }

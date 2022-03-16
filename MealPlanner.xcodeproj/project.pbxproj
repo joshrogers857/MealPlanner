@@ -24,6 +24,8 @@
 		BD2B0F3027C556C900D3CD6A /* MealPlannerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2B0F2F27C556C900D3CD6A /* MealPlannerUITestsLaunchTests.swift */; };
 		BD2C1BE327E1E24200769FD0 /* NutritionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2C1BE227E1E24200769FD0 /* NutritionView.swift */; };
 		BD2C1BE527E1E27500769FD0 /* CalorieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2C1BE427E1E27500769FD0 /* CalorieView.swift */; };
+		BD2C1BE827E1E5EE00769FD0 /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2C1BE727E1E5EE00769FD0 /* HealthStore.swift */; };
+		BD2C1BEC27E1ED9F00769FD0 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD2C1BEB27E1ED9F00769FD0 /* HealthKit.framework */; };
 		BDA7781227E1110900EF1229 /* Instruction+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA7780827E1110900EF1229 /* Instruction+CoreDataClass.swift */; };
 		BDA7781327E1110900EF1229 /* Instruction+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA7780927E1110900EF1229 /* Instruction+CoreDataProperties.swift */; };
 		BDA7781427E1110900EF1229 /* Ingredient+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA7780A27E1110900EF1229 /* Ingredient+CoreDataClass.swift */; };
@@ -76,6 +78,9 @@
 		BD2B0F2F27C556C900D3CD6A /* MealPlannerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlannerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BD2C1BE227E1E24200769FD0 /* NutritionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionView.swift; sourceTree = "<group>"; };
 		BD2C1BE427E1E27500769FD0 /* CalorieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieView.swift; sourceTree = "<group>"; };
+		BD2C1BE727E1E5EE00769FD0 /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
+		BD2C1BE927E1ED9F00769FD0 /* MealPlanner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MealPlanner.entitlements; sourceTree = "<group>"; };
+		BD2C1BEB27E1ED9F00769FD0 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		BDA7780827E1110900EF1229 /* Instruction+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instruction+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		BDA7780927E1110900EF1229 /* Instruction+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instruction+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		BDA7780A27E1110900EF1229 /* Ingredient+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
@@ -95,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD2C1BEC27E1ED9F00769FD0 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +163,7 @@
 				BD2B0F2227C556C900D3CD6A /* MealPlannerTests */,
 				BD2B0F2C27C556C900D3CD6A /* MealPlannerUITests */,
 				BD2B0F0B27C556C800D3CD6A /* Products */,
+				BD2C1BEA27E1ED9F00769FD0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,6 +180,8 @@
 		BD2B0F0C27C556C800D3CD6A /* MealPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				BD2C1BE927E1ED9F00769FD0 /* MealPlanner.entitlements */,
+				BD2C1BE627E1E5CA00769FD0 /* ViewModel */,
 				BD018C6127E0D7F800508661 /* Service */,
 				BD83D47B27D7BEC2003261DE /* View */,
 				BD83D47A27D7BEB7003261DE /* Model */,
@@ -209,6 +218,22 @@
 				BD2B0F2F27C556C900D3CD6A /* MealPlannerUITestsLaunchTests.swift */,
 			);
 			path = MealPlannerUITests;
+			sourceTree = "<group>";
+		};
+		BD2C1BE627E1E5CA00769FD0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BD2C1BE727E1E5EE00769FD0 /* HealthStore.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BD2C1BEA27E1ED9F00769FD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD2C1BEB27E1ED9F00769FD0 /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BD2FD3B927DB6C44004BABB9 /* Model */ = {
@@ -409,6 +434,7 @@
 				BDDA406E27DF9EA4000BAE32 /* PersistenceController.swift in Sources */,
 				BDA7781927E1110900EF1229 /* MealPlanStage+CoreDataProperties.swift in Sources */,
 				BDA7781827E1110900EF1229 /* MealPlanStage+CoreDataClass.swift in Sources */,
+				BD2C1BE827E1E5EE00769FD0 /* HealthStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,12 +594,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MealPlanner/MealPlanner.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MealPlanner/Preview Content\"";
 				DEVELOPMENT_TEAM = 4AS9B963FQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Display calorie information";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -597,12 +625,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MealPlanner/MealPlanner.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MealPlanner/Preview Content\"";
 				DEVELOPMENT_TEAM = 4AS9B963FQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Display calorie information";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

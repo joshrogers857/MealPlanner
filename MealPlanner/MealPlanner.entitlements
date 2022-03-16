@@ -2,9 +2,9 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>LastAccessedDate</key>
-	<date>2022-03-16T10:13:19Z</date>
-	<key>WorkspacePath</key>
-	<string>/Users/joshuarogers/Desktop/MMP/MealPlanner/MealPlanner/MealPlanner.xcodeproj</string>
+	<key>com.apple.developer.healthkit</key>
+	<true/>
+	<key>com.apple.developer.healthkit.access</key>
+	<array/>
 </dict>
 </plist>
