@@ -26,6 +26,7 @@
 		BD2C1BE527E1E27500769FD0 /* CalorieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2C1BE427E1E27500769FD0 /* CalorieView.swift */; };
 		BD2C1BE827E1E5EE00769FD0 /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2C1BE727E1E5EE00769FD0 /* HealthStore.swift */; };
 		BD2C1BEC27E1ED9F00769FD0 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD2C1BEB27E1ED9F00769FD0 /* HealthKit.framework */; };
+		BD32CA6127E340C90011EBF9 /* TimePeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD32CA6027E340C90011EBF9 /* TimePeriod.swift */; };
 		BD67925B27E21B4C006523AC /* StageHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD67925A27E21B4C006523AC /* StageHeaderView.swift */; };
 		BD67925E27E21F4E006523AC /* DeviceRotationViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD67925D27E21F4E006523AC /* DeviceRotationViewModifier.swift */; };
 		BD67926227E239C5006523AC /* AddRecipePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD67926127E239C5006523AC /* AddRecipePickerView.swift */; };
@@ -84,6 +85,7 @@
 		BD2C1BE727E1E5EE00769FD0 /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
 		BD2C1BE927E1ED9F00769FD0 /* MealPlanner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MealPlanner.entitlements; sourceTree = "<group>"; };
 		BD2C1BEB27E1ED9F00769FD0 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		BD32CA6027E340C90011EBF9 /* TimePeriod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePeriod.swift; sourceTree = "<group>"; };
 		BD67925A27E21B4C006523AC /* StageHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageHeaderView.swift; sourceTree = "<group>"; };
 		BD67925D27E21F4E006523AC /* DeviceRotationViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRotationViewModifier.swift; sourceTree = "<group>"; };
 		BD67926127E239C5006523AC /* AddRecipePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipePickerView.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 		BD2B0F0C27C556C800D3CD6A /* MealPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				BD32CA5F27E340B00011EBF9 /* Enums */,
 				BD2C1BE927E1ED9F00769FD0 /* MealPlanner.entitlements */,
 				BD2C1BE627E1E5CA00769FD0 /* ViewModel */,
 				BD018C6127E0D7F800508661 /* Service */,
@@ -247,6 +250,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		BD32CA5F27E340B00011EBF9 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				BD32CA6027E340C90011EBF9 /* TimePeriod.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 		BD67925627E21AE8006523AC /* Screens */ = {
@@ -468,6 +479,7 @@
 				BD023F4327DA473B007638E9 /* RecipeListView.swift in Sources */,
 				BDDA404F27DF774C000BAE32 /* Main.xcdatamodeld in Sources */,
 				BDDA406E27DF9EA4000BAE32 /* PersistenceController.swift in Sources */,
+				BD32CA6127E340C90011EBF9 /* TimePeriod.swift in Sources */,
 				BDA7781927E1110900EF1229 /* MealPlanStage+CoreDataProperties.swift in Sources */,
 				BDA7781827E1110900EF1229 /* MealPlanStage+CoreDataClass.swift in Sources */,
 				BD2C1BE827E1E5EE00769FD0 /* HealthStore.swift in Sources */,

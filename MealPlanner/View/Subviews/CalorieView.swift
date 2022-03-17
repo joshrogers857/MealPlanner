@@ -8,31 +8,34 @@
 import SwiftUI
 
 struct CalorieView: View {
-    var activeCalories: Double
-    var basalCalories: Double
-    var totalCalories: Double
+    @ObservedObject private var healthStore = HealthStore.shared
     
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("Calories Burned Today")
-                .font(.title)
-            Text("Active calories: \(activeCalories)")
-            Text("Basal calories: \(basalCalories)")
-            Text("Total calories: \(totalCalories)")
-            
+        if(healthStore.store == nil) {
+            Text("HealthStore unavailable. Calories could not be retrieved.")
+                .foregroundColor(.red)
+                .fontWeight(.bold)
+                .padding()
+        } else {
             VStack(alignment: .leading) {
-                Text("Recommended (men): 2500/day")
-                    .font(.caption)
-                Text("Recommended (women): 2000/day")
-                    .font(.caption)
+                Text("Active calories: \(healthStore.activeCalories)")
+                Text("Basal calories: \(healthStore.basalCalories)")
+                Text("Total calories: \(healthStore.totalCalories)")
+                
+                VStack(alignment: .leading) {
+                    Text("Recommended (men): 2500/day")
+                        .font(.caption)
+                    Text("Recommended (women): 2000/day")
+                        .font(.caption)
+                }
+                .padding(.top, 0.1)
             }
-            .padding(.top, 0.1)
         }
     }
 }
 
-/* struct SwiftUIView_Previews: PreviewProvider {
+struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
         CalorieView()
     }
-} */
+}
