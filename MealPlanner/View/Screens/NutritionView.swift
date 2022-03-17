@@ -26,7 +26,7 @@ struct NutritionView: View {
                 }
                 
                 Section("Calories") {
-                    CalorieView()
+                    CalorieView(startDate: startDate, endDate: endDate)
                 }
                 
                 Section("Nutrition") {
