@@ -1,5 +1,5 @@
 //
-//  DateSelector.swift
+//  DateSelectorView.swift
 //  MealPlanner
 //
 //  Created by Joshua Rogers on 15/03/2022.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DateSelector: View {
+struct DateSelectorView: View {
     @Binding var date: Date
     
     var body: some View {
@@ -54,6 +54,6 @@ struct DateSelector: View {
 
 /*struct DateSelector_Previews: PreviewProvider {
     static var previews: some View {
-        DateSelector(date: Binding<Date>)
+        DateSelectorView(date: Binding<Date>)
     }
 }*/

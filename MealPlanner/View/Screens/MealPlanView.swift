@@ -20,7 +20,7 @@ struct MealPlanView: View {
     var body: some View {
         NavigationView {
             VStack {
-                DateSelector(date: $selectedDate)
+                DateSelectorView(date: $selectedDate)
                 
                 Spacer()
                 
