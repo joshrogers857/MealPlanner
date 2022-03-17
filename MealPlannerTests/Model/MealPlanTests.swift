@@ -39,4 +39,212 @@ class MealPlanTests: XCTestCase {
         
         XCTAssertTrue(mealPlan.stagesArray.isEmpty)
     }
+    
+    func test_MealPlan_WhenNoStages_CaloriesShouldBeZero() {
+        let mealPlan = MealPlan(context: persistenceController.container.viewContext)
+        
+        let result = mealPlan.calories
+        
+        XCTAssertEqual(result, 0)
+    }
+    
+    func test_MealPlan_WhenNoStages_CarbsShouldBeZero() {
+        let mealPlan = MealPlan(context: persistenceController.container.viewContext)
+        
+        let result = mealPlan.carbs
+        
+        XCTAssertEqual(result, 0)
+    }
+    
+    func test_MealPlan_WhenNoStages_FatShouldBeZero() {
+        let mealPlan = MealPlan(context: persistenceController.container.viewContext)
+        
+        let result = mealPlan.fat
+        
+        XCTAssertEqual(result, 0)
+    }
+    
+    func test_MealPlan_WhenNoStages_FibreShouldBeZero() {
+        let mealPlan = MealPlan(context: persistenceController.container.viewContext)
+        
+        let result = mealPlan.fibre
+        
+        XCTAssertEqual(result, 0)
+    }
+    
+    func test_MealPlan_WhenNoStages_ProteinShouldBeZero() {
+        let mealPlan = MealPlan(context: persistenceController.container.viewContext)
+        
+        let result = mealPlan.protein
+        
+        XCTAssertEqual(result, 0)
+    }
+    
+    func test_MealPlan_WhenNoStages_SaltShouldBeZero() {
+        let mealPlan = MealPlan(context: persistenceController.container.viewContext)
+        
+        let result = mealPlan.salt
+        
+        XCTAssertEqual(result, 0)
+    }
+    
+    func test_MealPlan_WhenNoStages_SaturatesShouldBeZero() {
+        let mealPlan = MealPlan(context: persistenceController.container.viewContext)
+        
+        let result = mealPlan.saturates
+        
+        XCTAssertEqual(result, 0)
+    }
+    
+    func test_MealPlan_WhenNoStages_SugarsShouldBeZero() {
+        let mealPlan = MealPlan(context: persistenceController.container.viewContext)
+        
+        let result = mealPlan.sugars
+        
+        XCTAssertEqual(result, 0)
+    }
+    
+    func test_MealPlan_WhenStages_CaloriesShouldBeTotalOfStages() {
+        let mealPlan = MealPlan(context: persistenceController.container.viewContext)
+        let mealPlanStage = MealPlanStage(context: persistenceController.container.viewContext)
+        let recipe = Recipe(context: persistenceController.container.viewContext)
+        let ingredient1 = Ingredient(context: persistenceController.container.viewContext)
+        let ingredient2 = Ingredient(context: persistenceController.container.viewContext)
+        
+        ingredient1.calories = 5
+        ingredient2.calories = 7
+        recipe.addToIngredients(ingredient1)
+        recipe.addToIngredients(ingredient2)
+        mealPlanStage.addToRecipes(recipe)
+        mealPlan.addToStages(mealPlanStage)
+        let result = mealPlan.calories
+        
+        XCTAssertEqual(result, 12)
+    }
+    
+    func test_MealPlan_WhenStages_CarbsShouldBeTotalOfStages() {
+        let mealPlan = MealPlan(context: persistenceController.container.viewContext)
+        let mealPlanStage = MealPlanStage(context: persistenceController.container.viewContext)
+        let recipe = Recipe(context: persistenceController.container.viewContext)
+        let ingredient1 = Ingredient(context: persistenceController.container.viewContext)
+        let ingredient2 = Ingredient(context: persistenceController.container.viewContext)
+        
+        ingredient1.carbs = 5.0
+        ingredient2.carbs = 7.0
+        recipe.addToIngredients(ingredient1)
+        recipe.addToIngredients(ingredient2)
+        mealPlanStage.addToRecipes(recipe)
+        mealPlan.addToStages(mealPlanStage)
+        let result = mealPlan.carbs
+        
+        XCTAssertEqual(result, 12.0)
+    }
+    
+    func test_MealPlan_WhenStages_FatShouldBeTotalOfStages() {
+        let mealPlan = MealPlan(context: persistenceController.container.viewContext)
+        let mealPlanStage = MealPlanStage(context: persistenceController.container.viewContext)
+        let recipe = Recipe(context: persistenceController.container.viewContext)
+        let ingredient1 = Ingredient(context: persistenceController.container.viewContext)
+        let ingredient2 = Ingredient(context: persistenceController.container.viewContext)
+        
+        ingredient1.fat = 5.0
+        ingredient2.fat = 7.0
+        recipe.addToIngredients(ingredient1)
+        recipe.addToIngredients(ingredient2)
+        mealPlanStage.addToRecipes(recipe)
+        mealPlan.addToStages(mealPlanStage)
+        let result = mealPlan.fat
+        
+        XCTAssertEqual(result, 12.0)
+    }
+    
+    func test_MealPlan_WhenStages_FibreShouldBeTotalOfStages() {
+        let mealPlan = MealPlan(context: persistenceController.container.viewContext)
+        let mealPlanStage = MealPlanStage(context: persistenceController.container.viewContext)
+        let recipe = Recipe(context: persistenceController.container.viewContext)
+        let ingredient1 = Ingredient(context: persistenceController.container.viewContext)
+        let ingredient2 = Ingredient(context: persistenceController.container.viewContext)
+        
+        ingredient1.fibre = 5.0
+        ingredient2.fibre = 7.0
+        recipe.addToIngredients(ingredient1)
+        recipe.addToIngredients(ingredient2)
+        mealPlanStage.addToRecipes(recipe)
+        mealPlan.addToStages(mealPlanStage)
+        let result = mealPlan.fibre
+        
+        XCTAssertEqual(result, 12.0)
+    }
+    
+    func test_MealPlan_WhenStages_ProteinShouldBeTotalOfStages() {
+        let mealPlan = MealPlan(context: persistenceController.container.viewContext)
+        let mealPlanStage = MealPlanStage(context: persistenceController.container.viewContext)
+        let recipe = Recipe(context: persistenceController.container.viewContext)
+        let ingredient1 = Ingredient(context: persistenceController.container.viewContext)
+        let ingredient2 = Ingredient(context: persistenceController.container.viewContext)
+        
+        ingredient1.protein = 5.0
+        ingredient2.protein = 7.0
+        recipe.addToIngredients(ingredient1)
+        recipe.addToIngredients(ingredient2)
+        mealPlanStage.addToRecipes(recipe)
+        mealPlan.addToStages(mealPlanStage)
+        let result = mealPlan.protein
+        
+        XCTAssertEqual(result, 12.0)
+    }
+    
+    func test_MealPlan_WhenStages_SaltShouldBeTotalOfStages() {
+        let mealPlan = MealPlan(context: persistenceController.container.viewContext)
+        let mealPlanStage = MealPlanStage(context: persistenceController.container.viewContext)
+        let recipe = Recipe(context: persistenceController.container.viewContext)
+        let ingredient1 = Ingredient(context: persistenceController.container.viewContext)
+        let ingredient2 = Ingredient(context: persistenceController.container.viewContext)
+        
+        ingredient1.salt = 5.0
+        ingredient2.salt = 7.0
+        recipe.addToIngredients(ingredient1)
+        recipe.addToIngredients(ingredient2)
+        mealPlanStage.addToRecipes(recipe)
+        mealPlan.addToStages(mealPlanStage)
+        let result = mealPlan.salt
+        
+        XCTAssertEqual(result, 12.0)
+    }
+    
+    func test_MealPlan_WhenStages_SaturatesShouldBeTotalOfStages() {
+        let mealPlan = MealPlan(context: persistenceController.container.viewContext)
+        let mealPlanStage = MealPlanStage(context: persistenceController.container.viewContext)
+        let recipe = Recipe(context: persistenceController.container.viewContext)
+        let ingredient1 = Ingredient(context: persistenceController.container.viewContext)
+        let ingredient2 = Ingredient(context: persistenceController.container.viewContext)
+        
+        ingredient1.saturates = 5.0
+        ingredient2.saturates = 7.0
+        recipe.addToIngredients(ingredient1)
+        recipe.addToIngredients(ingredient2)
+        mealPlanStage.addToRecipes(recipe)
+        mealPlan.addToStages(mealPlanStage)
+        let result = mealPlan.saturates
+        
+        XCTAssertEqual(result, 12.0)
+    }
+    
+    func test_MealPlan_WhenStages_SugarsShouldBeTotalOfStages() {
+        let mealPlan = MealPlan(context: persistenceController.container.viewContext)
+        let mealPlanStage = MealPlanStage(context: persistenceController.container.viewContext)
+        let recipe = Recipe(context: persistenceController.container.viewContext)
+        let ingredient1 = Ingredient(context: persistenceController.container.viewContext)
+        let ingredient2 = Ingredient(context: persistenceController.container.viewContext)
+        
+        ingredient1.sugars = 5.0
+        ingredient2.sugars = 7.0
+        recipe.addToIngredients(ingredient1)
+        recipe.addToIngredients(ingredient2)
+        mealPlanStage.addToRecipes(recipe)
+        mealPlan.addToStages(mealPlanStage)
+        let result = mealPlan.sugars
+        
+        XCTAssertEqual(result, 12.0)
+    }
 }

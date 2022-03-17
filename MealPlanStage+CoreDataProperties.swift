@@ -32,6 +32,102 @@ extension MealPlanStage {
             $0.wrappedName < $1.wrappedName
         }
     }
+    
+    public var calories: Int {
+        var total = 0
+        
+        recipesArray.forEach {
+            recipe in
+            
+            total += Int(recipe.calories)
+        }
+        
+        return total
+    }
+    
+    public var carbs: Double {
+        var total = 0.0
+        
+        recipesArray.forEach {
+            recipe in
+            
+            total += recipe.carbs
+        }
+        
+        return total
+    }
+    
+    public var fat: Double {
+        var total = 0.0
+        
+        recipesArray.forEach {
+            recipe in
+            
+            total += recipe.fat
+        }
+        
+        return total
+    }
+    
+    public var fibre: Double {
+        var total = 0.0
+        
+        recipesArray.forEach {
+            recipe in
+            
+            total += recipe.fibre
+        }
+        
+        return total
+    }
+    
+    public var protein: Double {
+        var total = 0.0
+        
+        recipesArray.forEach {
+            recipe in
+            
+            total += recipe.protein
+        }
+        
+        return total
+    }
+    
+    public var salt: Double {
+        var total = 0.0
+        
+        recipesArray.forEach {
+            recipe in
+            
+            total += recipe.salt
+        }
+        
+        return total
+    }
+    
+    public var saturates: Double {
+        var total = 0.0
+        
+        recipesArray.forEach {
+            recipe in
+            
+            total += recipe.saturates
+        }
+        
+        return total
+    }
+    
+    public var sugars: Double {
+        var total = 0.0
+        
+        recipesArray.forEach {
+            recipe in
+            
+            total += recipe.sugars
+        }
+        
+        return total
+    }
 }
 
 // MARK: Generated accessors for recipes
