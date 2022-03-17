@@ -9,6 +9,7 @@ import SwiftUI
 
 struct NutritionView: View {
     @State private var selectedTimePeriod = TimePeriod.today
+    private let nutritionService = NutritionService()
     
     var body: some View {
         NavigationView {
@@ -25,6 +26,10 @@ struct NutritionView: View {
                 
                 Section("Calories") {
                     CalorieView()
+                }
+                
+                Section("Nutrition") {
+                    
                 }
             }
             .navigationTitle("Nutrition")

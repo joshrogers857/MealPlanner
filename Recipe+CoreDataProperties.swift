@@ -56,6 +56,102 @@ extension Recipe {
             $0.listPosition < $1.listPosition
         }
     }
+    
+    public var calories: Int {
+        var total = 0
+        
+        ingredientsArray.forEach {
+            ingredient in
+            
+            total += Int(ingredient.calories)
+        }
+        
+        return total
+    }
+    
+    public var carbs: Double {
+        var total = 0.0
+        
+        ingredientsArray.forEach {
+            ingredient in
+            
+            total += ingredient.carbs
+        }
+        
+        return total
+    }
+    
+    public var fat: Double {
+        var total = 0.0
+        
+        ingredientsArray.forEach {
+            ingredient in
+            
+            total += ingredient.fat
+        }
+        
+        return total
+    }
+    
+    public var fibre: Double {
+        var total = 0.0
+        
+        ingredientsArray.forEach {
+            ingredient in
+            
+            total += ingredient.fibre
+        }
+        
+        return total
+    }
+    
+    public var protein: Double {
+        var total = 0.0
+        
+        ingredientsArray.forEach {
+            ingredient in
+            
+            total += ingredient.protein
+        }
+        
+        return total
+    }
+    
+    public var salt: Double {
+        var total = 0.0
+        
+        ingredientsArray.forEach {
+            ingredient in
+            
+            total += ingredient.salt
+        }
+        
+        return total
+    }
+    
+    public var saturates: Double {
+        var total = 0.0
+        
+        ingredientsArray.forEach {
+            ingredient in
+            
+            total += ingredient.saturates
+        }
+        
+        return total
+    }
+    
+    public var sugars: Double {
+        var total = 0.0
+        
+        ingredientsArray.forEach {
+            ingredient in
+            
+            total += ingredient.sugars
+        }
+        
+        return total
+    }
 }
 
 // MARK: Generated accessors for ingredients

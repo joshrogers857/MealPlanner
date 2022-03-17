@@ -30,6 +30,102 @@ extension MealPlan {
             $0.listPosition < $1.listPosition
         }
     }
+    
+    public var calories: Int {
+        var total = 0
+        
+        stagesArray.forEach {
+            stage in
+            
+            total += Int(stage.calories)
+        }
+        
+        return total
+    }
+    
+    public var carbs: Double {
+        var total = 0.0
+        
+        stagesArray.forEach {
+            stage in
+            
+            total += stage.carbs
+        }
+        
+        return total
+    }
+    
+    public var fat: Double {
+        var total = 0.0
+        
+        stagesArray.forEach {
+            stage in
+            
+            total += stage.fat
+        }
+        
+        return total
+    }
+    
+    public var fibre: Double {
+        var total = 0.0
+        
+        stagesArray.forEach {
+            stage in
+            
+            total += stage.fibre
+        }
+        
+        return total
+    }
+    
+    public var protein: Double {
+        var total = 0.0
+        
+        stagesArray.forEach {
+            stage in
+            
+            total += stage.protein
+        }
+        
+        return total
+    }
+    
+    public var salt: Double {
+        var total = 0.0
+        
+        stagesArray.forEach {
+            stage in
+            
+            total += stage.salt
+        }
+        
+        return total
+    }
+    
+    public var saturates: Double {
+        var total = 0.0
+        
+        stagesArray.forEach {
+            stage in
+            
+            total += stage.saturates
+        }
+        
+        return total
+    }
+    
+    public var sugars: Double {
+        var total = 0.0
+        
+        stagesArray.forEach {
+            stage in
+            
+            total += stage.sugars
+        }
+        
+        return total
+    }
 }
 
 // MARK: Generated accessors for stages

@@ -17,19 +17,17 @@ struct CalorieView: View {
                 .fontWeight(.bold)
                 .padding()
         } else {
+            Text("Active calories: \(healthStore.activeCalories)")
+            Text("Basal calories: \(healthStore.basalCalories)")
+            Text("Total calories: \(healthStore.totalCalories)")
+            
             VStack(alignment: .leading) {
-                Text("Active calories: \(healthStore.activeCalories)")
-                Text("Basal calories: \(healthStore.basalCalories)")
-                Text("Total calories: \(healthStore.totalCalories)")
-                
-                VStack(alignment: .leading) {
-                    Text("Recommended (men): 2500/day")
-                        .font(.caption)
-                    Text("Recommended (women): 2000/day")
-                        .font(.caption)
-                }
-                .padding(.top, 0.1)
+                Text("Recommended (men): 2500/day")
+                    .font(.caption)
+                Text("Recommended (women): 2000/day")
+                    .font(.caption)
             }
+            .padding(.top, 0.1)
         }
     }
 }

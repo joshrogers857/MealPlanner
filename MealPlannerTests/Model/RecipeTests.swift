@@ -66,4 +66,180 @@ class RecipeTests: XCTestCase {
         
         XCTAssertTrue(recipe.mealPlanStagesArray.isEmpty)
     }
+    
+    func test_Recipe_WhenNoIngredients_CaloriesShouldBeZero() {
+        let recipe = Recipe(context: persistenceController.container.viewContext)
+        
+        let result = recipe.calories
+        
+        XCTAssertEqual(result, 0)
+    }
+    
+    func test_Recipe_WhenNoIngredients_CarbsShouldBeZero() {
+        let recipe = Recipe(context: persistenceController.container.viewContext)
+        
+        let result = recipe.carbs
+        
+        XCTAssertEqual(result, 0.0)
+    }
+    
+    func test_Recipe_WhenNoIngredients_FatShouldBeZero() {
+        let recipe = Recipe(context: persistenceController.container.viewContext)
+        
+        let result = recipe.fat
+        
+        XCTAssertEqual(result, 0.0)
+    }
+    
+    func test_Recipe_WhenNoIngredients_FibreShouldBeZero() {
+        let recipe = Recipe(context: persistenceController.container.viewContext)
+        
+        let result = recipe.fibre
+        
+        XCTAssertEqual(result, 0.0)
+    }
+    
+    func test_Recipe_WhenNoIngredients_ProteinShouldBeZero() {
+        let recipe = Recipe(context: persistenceController.container.viewContext)
+        
+        let result = recipe.protein
+        
+        XCTAssertEqual(result, 0.0)
+    }
+    
+    func test_Recipe_WhenNoIngredients_SaltShouldBeZero() {
+        let recipe = Recipe(context: persistenceController.container.viewContext)
+        
+        let result = recipe.salt
+        
+        XCTAssertEqual(result, 0.0)
+    }
+    
+    func test_Recipe_WhenNoIngredients_SaturatesShouldBeZero() {
+        let recipe = Recipe(context: persistenceController.container.viewContext)
+        
+        let result = recipe.saturates
+        
+        XCTAssertEqual(result, 0.0)
+    }
+    
+    func test_Recipe_WhenNoIngredients_SugarsShouldBeZero() {
+        let recipe = Recipe(context: persistenceController.container.viewContext)
+        
+        let result = recipe.sugars
+        
+        XCTAssertEqual(result, 0.0)
+    }
+    
+    func test_Recipe_WhenIngredients_CaloriesShouldBeTotalOfIngredients() {
+        let recipe = Recipe(context: persistenceController.container.viewContext)
+        let ingredient1 = Ingredient(context: persistenceController.container.viewContext)
+        let ingredient2 = Ingredient(context: persistenceController.container.viewContext)
+        
+        ingredient1.calories = 5
+        ingredient2.calories = 7
+        recipe.addToIngredients(ingredient1)
+        recipe.addToIngredients(ingredient2)
+        let result = recipe.calories
+        
+        XCTAssertEqual(result, 12)
+    }
+    
+    func test_Recipe_WhenIngredients_CarbsShouldBeTotalOfIngredients() {
+        let recipe = Recipe(context: persistenceController.container.viewContext)
+        let ingredient1 = Ingredient(context: persistenceController.container.viewContext)
+        let ingredient2 = Ingredient(context: persistenceController.container.viewContext)
+        
+        ingredient1.carbs = 5.0
+        ingredient2.carbs = 7.0
+        recipe.addToIngredients(ingredient1)
+        recipe.addToIngredients(ingredient2)
+        let result = recipe.carbs
+        
+        XCTAssertEqual(result, 12.0)
+    }
+    
+    func test_Recipe_WhenIngredients_FatShouldBeTotalOfIngredients() {
+        let recipe = Recipe(context: persistenceController.container.viewContext)
+        let ingredient1 = Ingredient(context: persistenceController.container.viewContext)
+        let ingredient2 = Ingredient(context: persistenceController.container.viewContext)
+        
+        ingredient1.fat = 5.0
+        ingredient2.fat = 7.0
+        recipe.addToIngredients(ingredient1)
+        recipe.addToIngredients(ingredient2)
+        let result = recipe.fat
+        
+        XCTAssertEqual(result, 12.0)
+    }
+    
+    func test_Recipe_WhenIngredients_FibreShouldBeTotalOfIngredients() {
+        let recipe = Recipe(context: persistenceController.container.viewContext)
+        let ingredient1 = Ingredient(context: persistenceController.container.viewContext)
+        let ingredient2 = Ingredient(context: persistenceController.container.viewContext)
+        
+        ingredient1.fibre = 5.0
+        ingredient2.fibre = 7.0
+        recipe.addToIngredients(ingredient1)
+        recipe.addToIngredients(ingredient2)
+        let result = recipe.fibre
+        
+        XCTAssertEqual(result, 12.0)
+    }
+    
+    func test_Recipe_WhenIngredients_ProteinShouldBeTotalOfIngredients() {
+        let recipe = Recipe(context: persistenceController.container.viewContext)
+        let ingredient1 = Ingredient(context: persistenceController.container.viewContext)
+        let ingredient2 = Ingredient(context: persistenceController.container.viewContext)
+        
+        ingredient1.protein = 5.0
+        ingredient2.protein = 7.0
+        recipe.addToIngredients(ingredient1)
+        recipe.addToIngredients(ingredient2)
+        let result = recipe.protein
+        
+        XCTAssertEqual(result, 12.0)
+    }
+    
+    func test_Recipe_WhenIngredients_SaltShouldBeTotalOfIngredients() {
+        let recipe = Recipe(context: persistenceController.container.viewContext)
+        let ingredient1 = Ingredient(context: persistenceController.container.viewContext)
+        let ingredient2 = Ingredient(context: persistenceController.container.viewContext)
+        
+        ingredient1.salt = 5.0
+        ingredient2.salt = 7.0
+        recipe.addToIngredients(ingredient1)
+        recipe.addToIngredients(ingredient2)
+        let result = recipe.salt
+        
+        XCTAssertEqual(result, 12.0)
+    }
+    
+    func test_Recipe_WhenIngredients_SaturatesShouldBeTotalOfIngredients() {
+        let recipe = Recipe(context: persistenceController.container.viewContext)
+        let ingredient1 = Ingredient(context: persistenceController.container.viewContext)
+        let ingredient2 = Ingredient(context: persistenceController.container.viewContext)
+        
+        ingredient1.saturates = 5.0
+        ingredient2.saturates = 7.0
+        recipe.addToIngredients(ingredient1)
+        recipe.addToIngredients(ingredient2)
+        let result = recipe.saturates
+        
+        XCTAssertEqual(result, 12.0)
+    }
+    
+    func test_Recipe_WhenIngredients_SugarsShouldBeTotalOfIngredients() {
+        let recipe = Recipe(context: persistenceController.container.viewContext)
+        let ingredient1 = Ingredient(context: persistenceController.container.viewContext)
+        let ingredient2 = Ingredient(context: persistenceController.container.viewContext)
+        
+        ingredient1.sugars = 5.0
+        ingredient2.sugars = 7.0
+        recipe.addToIngredients(ingredient1)
+        recipe.addToIngredients(ingredient2)
+        let result = recipe.sugars
+        
+        XCTAssertEqual(result, 12.0)
+    }
 }
