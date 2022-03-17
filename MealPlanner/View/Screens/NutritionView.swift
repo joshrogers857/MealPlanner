@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import HealthKit
 
 struct NutritionView: View {
     @State private var selectedTimePeriod = TimePeriod.today
