@@ -47,7 +47,6 @@
 		BDD9EA3927E358580025CDAE /* RecipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9EA3827E358580025CDAE /* RecipeTests.swift */; };
 		BDD9EA3B27E361D00025CDAE /* NutritionalInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9EA3A27E361D00025CDAE /* NutritionalInformationView.swift */; };
 		BDD9EA3D27E36A330025CDAE /* NutritionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9EA3C27E36A330025CDAE /* NutritionService.swift */; };
-		BDD9EA3F27E36BCC0025CDAE /* Nutrition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9EA3E27E36BCC0025CDAE /* Nutrition.swift */; };
 		BDDA404F27DF774C000BAE32 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDDA404D27DF774C000BAE32 /* Main.xcdatamodeld */; };
 		BDDA406E27DF9EA4000BAE32 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDA406D27DF9EA4000BAE32 /* PersistenceController.swift */; };
 /* End PBXBuildFile section */
@@ -114,7 +113,6 @@
 		BDD9EA3827E358580025CDAE /* RecipeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTests.swift; sourceTree = "<group>"; };
 		BDD9EA3A27E361D00025CDAE /* NutritionalInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionalInformationView.swift; sourceTree = "<group>"; };
 		BDD9EA3C27E36A330025CDAE /* NutritionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionService.swift; sourceTree = "<group>"; };
-		BDD9EA3E27E36BCC0025CDAE /* Nutrition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nutrition.swift; sourceTree = "<group>"; };
 		BDDA404E27DF774C000BAE32 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 		BDDA406D27DF9EA4000BAE32 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -318,7 +316,6 @@
 			isa = PBXGroup;
 			children = (
 				BDDA405827DF7C68000BAE32 /* CoreData */,
-				BDD9EA3E27E36BCC0025CDAE /* Nutrition.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -505,7 +502,6 @@
 				BD023F4327DA473B007638E9 /* RecipeListView.swift in Sources */,
 				BDDA404F27DF774C000BAE32 /* Main.xcdatamodeld in Sources */,
 				BDDA406E27DF9EA4000BAE32 /* PersistenceController.swift in Sources */,
-				BDD9EA3F27E36BCC0025CDAE /* Nutrition.swift in Sources */,
 				BD32CA6127E340C90011EBF9 /* TimePeriod.swift in Sources */,
 				BDA7781927E1110900EF1229 /* MealPlanStage+CoreDataProperties.swift in Sources */,
 				BDA7781827E1110900EF1229 /* MealPlanStage+CoreDataClass.swift in Sources */,
