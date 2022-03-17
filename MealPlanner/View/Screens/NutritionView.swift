@@ -9,27 +9,27 @@ import SwiftUI
 import HealthKit
 
 struct NutritionView: View {
-    @ObservedObject var healthStore = HealthStore.shared
+    @State private var selectedTimePeriod = TimePeriod.today
     
     var body: some View {
         NavigationView {
-            VStack {
-                if(healthStore.store == nil) {
-                    Text("HealthStore unavailable")
-                        .foregroundColor(.red)
-                        .fontWeight(.bold)
-                        .padding()
-                } else {
-                    CalorieView(
-                        activeCalories: healthStore.activeCalories,
-                        basalCalories: healthStore.basalCalories,
-                        totalCalories: healthStore.totalCalories
-                    )
+            Form {
+                Section {
+                    Picker("Time Period", selection: $selectedTimePeriod) {
+                        ForEach(TimePeriod.allCases, id: \.self) {
+                            value in
+                            
+                            Text(value.localizedName).tag(value)
+                        }
+                    }
                 }
                 
-                Spacer()
+                Section("Calories") {
+                    CalorieView()
+                }
             }
             .navigationTitle("Nutrition")
+            Spacer()
         }
     }
 }
