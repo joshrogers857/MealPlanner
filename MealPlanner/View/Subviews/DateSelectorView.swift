@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DateSelectorView: View {
-    @Binding var date: Date
+    @EnvironmentObject private var selectedDate: SelectedDate
     
     var body: some View {
         VStack {
@@ -17,7 +17,7 @@ struct DateSelectorView: View {
                 
                 Button {
                     let calendar = Calendar.current
-                    date = calendar.date(byAdding: .day, value: -1, to: date)!
+                    selectedDate.date = calendar.date(byAdding: .day, value: -1, to: selectedDate.date)!
                 } label: {
                     Image(systemName: "arrowtriangle.backward.fill")
                 }
@@ -28,7 +28,7 @@ struct DateSelectorView: View {
                     Spacer()
                 }
                 
-                DatePicker("Selected Date", selection: $date, displayedComponents: [.date])
+                DatePicker("Selected Date", selection: $selectedDate.date, displayedComponents: [.date])
                     .labelsHidden()
                 
                 Group {
@@ -39,7 +39,7 @@ struct DateSelectorView: View {
                 
                 Button {
                     let calendar = Calendar.current
-                    date = calendar.date(byAdding: .day, value: 1, to: date)!
+                    selectedDate.date = calendar.date(byAdding: .day, value: 1, to: selectedDate.date)!
                 } label: {
                     Image(systemName: "arrowtriangle.forward.fill")
                 }

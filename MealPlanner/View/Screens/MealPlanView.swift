@@ -6,61 +6,18 @@
 //
 
 import SwiftUI
-import CoreData
 
 struct MealPlanView: View {
-    
-    @Environment(\.managedObjectContext) private var moc
-    
-    @State private var mealPlanService: MealPlanService!
-    @State private var selectedDate: Date = Date.now
-    @State private var mealPlan: MealPlan? = nil
-    @State private var refresh: Bool = false
+    @EnvironmentObject private var selectedDate: SelectedDate
     
     var body: some View {
         NavigationView {
             VStack {
-                DateSelectorView(date: $selectedDate)
+                DateSelectorView()
                 
                 Spacer()
                 
-                if(mealPlan == nil) {
-                    Button {
-                        mealPlan = try? mealPlanService.createMealPlan(date: selectedDate)
-                    } label: {
-                        Label("Create Meal Plan", systemImage: "plus")
-                    }
-                } else {
-                    List {
-                        ForEach(mealPlan!.stagesArray) {
-                            stage in
-                            
-                            Section(header: StageHeaderView(
-                                stage: stage,
-                                refresh: $refresh
-                            )) {
-                                
-                                if(stage.recipesArray.isEmpty) {
-                                    Text("No recipes")
-                                } else {
-                                    ForEach(stage.recipesArray) {
-                                        recipe in
-                                        
-                                        RecipeListItemView(name: recipe.wrappedName)
-                                    }
-                                    .onDelete { offsets in
-                                        for index in offsets {
-                                            stage.removeFromRecipes(stage.recipesArray[index])
-                                            
-                                            PersistenceController.shared.save()
-                                            refresh = true
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+                MealPlanList(selectedDate: selectedDate.date)
                 
                 Spacer()
             }
@@ -68,22 +25,7 @@ struct MealPlanView: View {
             .toolbar {
                 EditButton()
             }
-            
         }
-        .onAppear(perform: {
-            mealPlanService = MealPlanService(moc: moc)
-            
-            mealPlan = mealPlanService.fetchMealPlan(date: selectedDate)
-        })
-        .onChange(of: selectedDate, perform: { newValue in
-            mealPlan = mealPlanService.fetchMealPlan(date: newValue)
-        })
-        .onChange(of: refresh, perform: { newValue in
-            if(newValue == true) {
-                mealPlan = mealPlanService.fetchMealPlan(date: selectedDate)
-                refresh = false
-            }
-        })
     }
     
     private func dateToString(_ date: Date) -> (String, String) {
@@ -101,6 +43,8 @@ struct MealPlanView: View {
 
 struct MealPlanView_Previews: PreviewProvider {
     static var previews: some View {
-        MealPlanView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        MealPlanView()
+            .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+            .environmentObject(SelectedDate())
     }
 }

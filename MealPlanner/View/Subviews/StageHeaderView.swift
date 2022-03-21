@@ -11,7 +11,6 @@ struct StageHeaderView: View {
     var stage: MealPlanStage
     @State private var orientation = UIDeviceOrientation.unknown
     @State private var showing: Bool = false
-    @Binding var refresh: Bool
     
     var body: some View {
             HStack {
@@ -50,8 +49,6 @@ struct StageHeaderView: View {
             orientation = newOrientation
         }
         .sheet(isPresented: $showing) {
-            refresh = true
-        } content: {
             AddRecipePickerView(
                 isDone: $showing,
                 stage: stage

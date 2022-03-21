@@ -6,35 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>5ABE5387-2331-4FB0-A9A9-33628F82EA0B</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.bundle</string>
-			<key>fileName</key>
-			<string>5ABE5387-2331-4FB0-A9A9-33628F82EA0B.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>signature</key>
-			<string>MealPlannerUITests-cnavxnuytvfcyngzxneikxxwqyxs</string>
-			<key>timeStartedRecording</key>
-			<real>669552768.91175103</real>
-			<key>timeStoppedRecording</key>
-			<real>669552774.49331295</real>
-			<key>title</key>
-			<string>Build target MealPlannerUITests</string>
-			<key>uniqueIdentifier</key>
-			<string>5ABE5387-2331-4FB0-A9A9-33628F82EA0B</string>
-		</dict>
-		<key>6D1A5BF7-181B-43D3-9FE2-6D63B6A7DEF8</key>
+		<key>1ECF60E2-0474-43EC-A2AF-E4C1CC3B80CC</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -43,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>6D1A5BF7-181B-43D3-9FE2-6D63B6A7DEF8.xcactivitylog</string>
+			<string>1ECF60E2-0474-43EC-A2AF-E4C1CC3B80CC.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -54,15 +26,15 @@
 			<key>signature</key>
 			<string>MealPlanner-cnavxnuytvfcyngzxneikxxwqyxs</string>
 			<key>timeStartedRecording</key>
-			<real>669552938.44434202</real>
+			<real>669567761.36882401</real>
 			<key>timeStoppedRecording</key>
-			<real>669552938.61634302</real>
+			<real>669567762.014498</real>
 			<key>title</key>
 			<string>Build target MealPlanner</string>
 			<key>uniqueIdentifier</key>
-			<string>6D1A5BF7-181B-43D3-9FE2-6D63B6A7DEF8</string>
+			<string>1ECF60E2-0474-43EC-A2AF-E4C1CC3B80CC</string>
 		</dict>
-		<key>920B04A3-FE78-4BF2-8D6A-81C014BC49DD</key>
+		<key>4689126E-53E8-4E9A-B8C8-1979AA8CC78D</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -71,7 +43,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.bundle</string>
 			<key>fileName</key>
-			<string>920B04A3-FE78-4BF2-8D6A-81C014BC49DD.xcactivitylog</string>
+			<string>4689126E-53E8-4E9A-B8C8-1979AA8CC78D.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -80,15 +52,43 @@
 				<string>S</string>
 			</dict>
 			<key>signature</key>
+			<string>MealPlannerUITests-cnavxnuytvfcyngzxneikxxwqyxs</string>
+			<key>timeStartedRecording</key>
+			<real>669557139.57170105</real>
+			<key>timeStoppedRecording</key>
+			<real>669557140.01248705</real>
+			<key>title</key>
+			<string>Build target MealPlannerUITests</string>
+			<key>uniqueIdentifier</key>
+			<string>4689126E-53E8-4E9A-B8C8-1979AA8CC78D</string>
+		</dict>
+		<key>4C877B71-AE60-4EA0-B112-2AD8E2237670</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.bundle</string>
+			<key>fileName</key>
+			<string>4C877B71-AE60-4EA0-B112-2AD8E2237670.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>signature</key>
 			<string>MealPlannerTests-cnavxnuytvfcyngzxneikxxwqyxs</string>
 			<key>timeStartedRecording</key>
-			<real>669552937.68141103</real>
+			<real>669557139.71052504</real>
 			<key>timeStoppedRecording</key>
-			<real>669552938.44367599</real>
+			<real>669557140.01249695</real>
 			<key>title</key>
 			<string>Build target MealPlannerTests</string>
 			<key>uniqueIdentifier</key>
-			<string>920B04A3-FE78-4BF2-8D6A-81C014BC49DD</string>
+			<string>4C877B71-AE60-4EA0-B112-2AD8E2237670</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

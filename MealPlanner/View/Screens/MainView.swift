@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MainView: View {
+    @StateObject var selectedDate = SelectedDate()
+    
     var body: some View {
         TabView {
             MealPlanView()
@@ -25,6 +27,7 @@ struct MainView: View {
                     Label("Nutrition", systemImage: "figure.stand")
                 }
         }
+        .environmentObject(selectedDate)
     }
 }
 

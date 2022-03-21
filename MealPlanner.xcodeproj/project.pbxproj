@@ -39,6 +39,10 @@
 		BDA7781A27E1110900EF1229 /* Recipe+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA7781027E1110900EF1229 /* Recipe+CoreDataClass.swift */; };
 		BDA7781B27E1110900EF1229 /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA7781127E1110900EF1229 /* Recipe+CoreDataProperties.swift */; };
 		BDC6303327E88EFF00CCCFEE /* NutritionServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC6303227E88EFF00CCCFEE /* NutritionServiceTests.swift */; };
+		BDC6303527E8963700CCCFEE /* MealPlanList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC6303427E8963700CCCFEE /* MealPlanList.swift */; };
+		BDC6303B27E89A8E00CCCFEE /* SelectedDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC6303A27E89A8E00CCCFEE /* SelectedDate.swift */; };
+		BDC6303E27E8C35900CCCFEE /* MealPlanStageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC6303D27E8C35900CCCFEE /* MealPlanStageList.swift */; };
+		BDC6304027E8C36600CCCFEE /* MealPlanStageRecipeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC6303F27E8C36600CCCFEE /* MealPlanStageRecipeList.swift */; };
 		BDD9EA3127E351A70025CDAE /* InstructionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9EA3027E351A60025CDAE /* InstructionTests.swift */; };
 		BDD9EA3327E352B60025CDAE /* IngredientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9EA3227E352B60025CDAE /* IngredientTests.swift */; };
 		BDD9EA3527E355430025CDAE /* MealPlanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9EA3427E355430025CDAE /* MealPlanTests.swift */; };
@@ -104,6 +108,10 @@
 		BDA7781027E1110900EF1229 /* Recipe+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		BDA7781127E1110900EF1229 /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		BDC6303227E88EFF00CCCFEE /* NutritionServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionServiceTests.swift; sourceTree = "<group>"; };
+		BDC6303427E8963700CCCFEE /* MealPlanList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanList.swift; sourceTree = "<group>"; };
+		BDC6303A27E89A8E00CCCFEE /* SelectedDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedDate.swift; sourceTree = "<group>"; };
+		BDC6303D27E8C35900CCCFEE /* MealPlanStageList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanStageList.swift; sourceTree = "<group>"; };
+		BDC6303F27E8C36600CCCFEE /* MealPlanStageRecipeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanStageRecipeList.swift; sourceTree = "<group>"; };
 		BDD9EA3027E351A60025CDAE /* InstructionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionTests.swift; sourceTree = "<group>"; };
 		BDD9EA3227E352B60025CDAE /* IngredientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientTests.swift; sourceTree = "<group>"; };
 		BDD9EA3427E355430025CDAE /* MealPlanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanTests.swift; sourceTree = "<group>"; };
@@ -291,6 +299,7 @@
 		BD67925727E21AF2006523AC /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
+				BDC6303C27E8C31400CCCFEE /* MealPlan */,
 				BD0B40DA27DA6C0B001F07C4 /* RecipeListItemView.swift */,
 				BD018C6B27E0EDA200508661 /* DateSelectorView.swift */,
 				BD2C1BE427E1E27500769FD0 /* CalorieView.swift */,
@@ -320,6 +329,7 @@
 		BD83D47B27D7BEC2003261DE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BDC6303927E89A8200CCCFEE /* Classes */,
 				BD67925C27E21F32006523AC /* ViewModifiers */,
 				BD67925727E21AF2006523AC /* Subviews */,
 				BD67925627E21AE8006523AC /* Screens */,
@@ -332,6 +342,24 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		BDC6303927E89A8200CCCFEE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BDC6303A27E89A8E00CCCFEE /* SelectedDate.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BDC6303C27E8C31400CCCFEE /* MealPlan */ = {
+			isa = PBXGroup;
+			children = (
+				BDC6303427E8963700CCCFEE /* MealPlanList.swift */,
+				BDC6303D27E8C35900CCCFEE /* MealPlanStageList.swift */,
+				BDC6303F27E8C36600CCCFEE /* MealPlanStageRecipeList.swift */,
+			);
+			path = MealPlan;
 			sourceTree = "<group>";
 		};
 		BDDA405827DF7C68000BAE32 /* CoreData */ = {
@@ -479,9 +507,12 @@
 				BD2C1BE527E1E27500769FD0 /* CalorieView.swift in Sources */,
 				BDA7781A27E1110900EF1229 /* Recipe+CoreDataClass.swift in Sources */,
 				BDA7781227E1110900EF1229 /* Instruction+CoreDataClass.swift in Sources */,
+				BDC6303E27E8C35900CCCFEE /* MealPlanStageList.swift in Sources */,
 				BDA7781727E1110900EF1229 /* MealPlan+CoreDataProperties.swift in Sources */,
 				BDA7781B27E1110900EF1229 /* Recipe+CoreDataProperties.swift in Sources */,
 				BD2C1BE327E1E24200769FD0 /* NutritionView.swift in Sources */,
+				BDC6303B27E89A8E00CCCFEE /* SelectedDate.swift in Sources */,
+				BDC6304027E8C36600CCCFEE /* MealPlanStageRecipeList.swift in Sources */,
 				BD018C6327E0D80B00508661 /* MealPlanService.swift in Sources */,
 				BD0B40DB27DA6C0B001F07C4 /* RecipeListItemView.swift in Sources */,
 				BD67926227E239C5006523AC /* AddRecipePickerView.swift in Sources */,
@@ -490,6 +521,7 @@
 				BD2B0F1027C556C800D3CD6A /* MainView.swift in Sources */,
 				BDA7781427E1110900EF1229 /* Ingredient+CoreDataClass.swift in Sources */,
 				BDD9EA3B27E361D00025CDAE /* NutritionalInformationView.swift in Sources */,
+				BDC6303527E8963700CCCFEE /* MealPlanList.swift in Sources */,
 				BDA7781527E1110900EF1229 /* Ingredient+CoreDataProperties.swift in Sources */,
 				BD2B0F0E27C556C800D3CD6A /* MealPlannerApp.swift in Sources */,
 				BD67925B27E21B4C006523AC /* StageHeaderView.swift in Sources */,
