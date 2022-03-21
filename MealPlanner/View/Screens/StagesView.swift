@@ -8,12 +8,51 @@
 import SwiftUI
 
 struct StagesView: View {
+    @FetchRequest private var stages: FetchedResults<MealPlanStage>
+    private var mealPlan: MealPlan
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Group {
+            if(stages.isEmpty) {
+                Spacer()
+                
+                Text("No stages")
+                
+                Spacer()
+            } else {
+                List {
+                    ForEach(stages) {
+                        stage in
+                        
+                        Text(stage.wrappedName)
+                    }
+                    .onDelete { offsets in
+                        for index in offsets {
+                            mealPlan.removeFromStages(stages[index])
+                            
+                            PersistenceController.shared.save()
+                        }
+                    }
+                }
+            }
+        }
+        .navigationTitle("Edit Stages")
+        .toolbar {
+            ToolbarItem {
+                EditButton()
+            }
+        }
     }
     
     init(mealPlan: MealPlan) {
+        _stages = FetchRequest<MealPlanStage>(
+            sortDescriptors: [
+                NSSortDescriptor(keyPath: \MealPlanStage.listPosition, ascending: true)
+            ],
+            predicate: NSPredicate(format: "origin == %@", mealPlan)
+        )
         
+        self.mealPlan = mealPlan
     }
 }
 
