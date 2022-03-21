@@ -11,6 +11,8 @@ struct StagesView: View {
     @FetchRequest private var stages: FetchedResults<MealPlanStage>
     private var mealPlan: MealPlan
     
+    @State private var isShowing = false
+    
     var body: some View {
         Group {
             if(stages.isEmpty) {
@@ -24,7 +26,7 @@ struct StagesView: View {
                     ForEach(stages) {
                         stage in
                         
-                        Text(stage.wrappedName)
+                        Text("\(stage.listPosition): \(stage.wrappedName)")
                     }
                     .onDelete { offsets in
                         for index in offsets {
@@ -41,6 +43,17 @@ struct StagesView: View {
             ToolbarItem {
                 EditButton()
             }
+            
+            ToolbarItem(placement: .primaryAction) {
+                Button {
+                    isShowing = true
+                } label: {
+                    Label("Add stage", systemImage: "plus")
+                }
+            }
+        }
+        .sheet(isPresented: $isShowing) {
+            AddNewStageView(isShowing: $isShowing, mealPlan: mealPlan, stages: stages)
         }
     }
     
