@@ -13,7 +13,11 @@ struct MealPlanStageList: View {
     
     var body: some View {
         if(stages.isEmpty) {
+            Spacer()
+            
             Text("No stages")
+            
+            Spacer()
         } else {
             List {
                 ForEach(stages) {
