@@ -38,6 +38,7 @@
 		BDA7781927E1110900EF1229 /* MealPlanStage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA7780F27E1110900EF1229 /* MealPlanStage+CoreDataProperties.swift */; };
 		BDA7781A27E1110900EF1229 /* Recipe+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA7781027E1110900EF1229 /* Recipe+CoreDataClass.swift */; };
 		BDA7781B27E1110900EF1229 /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA7781127E1110900EF1229 /* Recipe+CoreDataProperties.swift */; };
+		BDC6303327E88EFF00CCCFEE /* NutritionServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC6303227E88EFF00CCCFEE /* NutritionServiceTests.swift */; };
 		BDD9EA3127E351A70025CDAE /* InstructionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9EA3027E351A60025CDAE /* InstructionTests.swift */; };
 		BDD9EA3327E352B60025CDAE /* IngredientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9EA3227E352B60025CDAE /* IngredientTests.swift */; };
 		BDD9EA3527E355430025CDAE /* MealPlanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9EA3427E355430025CDAE /* MealPlanTests.swift */; };
@@ -102,6 +103,7 @@
 		BDA7780F27E1110900EF1229 /* MealPlanStage+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealPlanStage+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		BDA7781027E1110900EF1229 /* Recipe+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		BDA7781127E1110900EF1229 /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		BDC6303227E88EFF00CCCFEE /* NutritionServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionServiceTests.swift; sourceTree = "<group>"; };
 		BDD9EA3027E351A60025CDAE /* InstructionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionTests.swift; sourceTree = "<group>"; };
 		BDD9EA3227E352B60025CDAE /* IngredientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientTests.swift; sourceTree = "<group>"; };
 		BDD9EA3427E355430025CDAE /* MealPlanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanTests.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				BD018C6927E0D87200508661 /* MealPlanServiceTests.swift */,
+				BDC6303227E88EFF00CCCFEE /* NutritionServiceTests.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -512,6 +515,7 @@
 				BDD9EA3527E355430025CDAE /* MealPlanTests.swift in Sources */,
 				BDD9EA3127E351A70025CDAE /* InstructionTests.swift in Sources */,
 				BDD9EA3727E357BA0025CDAE /* MealPlanStageTests.swift in Sources */,
+				BDC6303327E88EFF00CCCFEE /* NutritionServiceTests.swift in Sources */,
 				BDD9EA3927E358580025CDAE /* RecipeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
