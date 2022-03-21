@@ -34,34 +34,6 @@
 			<key>uniqueIdentifier</key>
 			<string>02E064B8-4208-4AD3-AD8D-DBEB681CF008</string>
 		</dict>
-		<key>1BCE171B-E849-4865-B900-0DA864D4B7F7</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
-			<key>fileName</key>
-			<string>1BCE171B-E849-4865-B900-0DA864D4B7F7.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>signature</key>
-			<string>MealPlanner-cnavxnuytvfcyngzxneikxxwqyxs</string>
-			<key>timeStartedRecording</key>
-			<real>669570418.801404</real>
-			<key>timeStoppedRecording</key>
-			<real>669570419.14170003</real>
-			<key>title</key>
-			<string>Build target MealPlanner</string>
-			<key>uniqueIdentifier</key>
-			<string>1BCE171B-E849-4865-B900-0DA864D4B7F7</string>
-		</dict>
 		<key>1F87E53E-3762-434A-836E-774B2E1AAD11</key>
 		<dict>
 			<key>className</key>
@@ -89,6 +61,34 @@
 			<string>Build target MealPlannerTests</string>
 			<key>uniqueIdentifier</key>
 			<string>1F87E53E-3762-434A-836E-774B2E1AAD11</string>
+		</dict>
+		<key>CBB74701-BA1D-4D73-8E90-6AE83B3A6A28</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>CBB74701-BA1D-4D73-8E90-6AE83B3A6A28.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>MealPlanner-cnavxnuytvfcyngzxneikxxwqyxs</string>
+			<key>timeStartedRecording</key>
+			<real>669574132.61142194</real>
+			<key>timeStoppedRecording</key>
+			<real>669574133.27346396</real>
+			<key>title</key>
+			<string>Build target MealPlanner</string>
+			<key>uniqueIdentifier</key>
+			<string>CBB74701-BA1D-4D73-8E90-6AE83B3A6A28</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>
