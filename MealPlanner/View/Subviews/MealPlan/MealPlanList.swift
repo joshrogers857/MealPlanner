@@ -23,6 +23,17 @@ struct MealPlanList: View {
             }
         } else {
             MealPlanStageList(mealPlan: mealPlan[0])
+            
+            HStack {
+                NavigationLink(destination: StagesView(mealPlan: mealPlan[0])) {
+                    Label("Edit Stages", systemImage: "checklist")
+                        .labelStyle(.titleAndIcon)
+                        .padding(.leading, 16)
+                        .padding(.bottom, 24)
+                }
+                
+                Spacer()
+            }
         }
     }
     

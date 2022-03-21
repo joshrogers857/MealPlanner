@@ -15,15 +15,13 @@ struct MealPlanView: View {
             VStack {
                 DateSelectorView()
                 
-                Spacer()
-                
                 MealPlanList(selectedDate: selectedDate.date)
-                
-                Spacer()
             }
-            .navigationTitle("MealPlanner")
+            .navigationTitle("Meal Plan")
             .toolbar {
-                EditButton()
+                ToolbarItem {
+                    EditButton()
+                }
             }
         }
     }

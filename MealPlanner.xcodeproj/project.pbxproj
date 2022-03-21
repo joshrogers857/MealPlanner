@@ -38,6 +38,7 @@
 		BDA7781927E1110900EF1229 /* MealPlanStage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA7780F27E1110900EF1229 /* MealPlanStage+CoreDataProperties.swift */; };
 		BDA7781A27E1110900EF1229 /* Recipe+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA7781027E1110900EF1229 /* Recipe+CoreDataClass.swift */; };
 		BDA7781B27E1110900EF1229 /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA7781127E1110900EF1229 /* Recipe+CoreDataProperties.swift */; };
+		BDC43BB527E8DC70007F9207 /* StagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC43BB427E8DC70007F9207 /* StagesView.swift */; };
 		BDC6303327E88EFF00CCCFEE /* NutritionServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC6303227E88EFF00CCCFEE /* NutritionServiceTests.swift */; };
 		BDC6303527E8963700CCCFEE /* MealPlanList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC6303427E8963700CCCFEE /* MealPlanList.swift */; };
 		BDC6303B27E89A8E00CCCFEE /* SelectedDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC6303A27E89A8E00CCCFEE /* SelectedDate.swift */; };
@@ -107,6 +108,7 @@
 		BDA7780F27E1110900EF1229 /* MealPlanStage+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealPlanStage+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		BDA7781027E1110900EF1229 /* Recipe+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		BDA7781127E1110900EF1229 /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		BDC43BB427E8DC70007F9207 /* StagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StagesView.swift; sourceTree = "<group>"; };
 		BDC6303227E88EFF00CCCFEE /* NutritionServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionServiceTests.swift; sourceTree = "<group>"; };
 		BDC6303427E8963700CCCFEE /* MealPlanList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanList.swift; sourceTree = "<group>"; };
 		BDC6303A27E89A8E00CCCFEE /* SelectedDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedDate.swift; sourceTree = "<group>"; };
@@ -292,6 +294,7 @@
 				BD023F4227DA473B007638E9 /* RecipeListView.swift */,
 				BD0B40D827DA656F001F07C4 /* MealPlanView.swift */,
 				BD2B0F0F27C556C800D3CD6A /* MainView.swift */,
+				BDC43BB427E8DC70007F9207 /* StagesView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -529,6 +532,7 @@
 				BD67925E27E21F4E006523AC /* DeviceRotationViewModifier.swift in Sources */,
 				BD023F4327DA473B007638E9 /* RecipeListView.swift in Sources */,
 				BDDA404F27DF774C000BAE32 /* Main.xcdatamodeld in Sources */,
+				BDC43BB527E8DC70007F9207 /* StagesView.swift in Sources */,
 				BDDA406E27DF9EA4000BAE32 /* PersistenceController.swift in Sources */,
 				BD32CA6127E340C90011EBF9 /* TimePeriod.swift in Sources */,
 				BDA7781927E1110900EF1229 /* MealPlanStage+CoreDataProperties.swift in Sources */,
