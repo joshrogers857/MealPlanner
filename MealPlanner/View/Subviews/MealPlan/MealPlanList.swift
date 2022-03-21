@@ -12,10 +12,12 @@ struct MealPlanList: View {
     @Environment(\.managedObjectContext) private var moc
     @FetchRequest var mealPlan: FetchedResults<MealPlan>
     
+    private var mealPlanService = MealPlanService()
+    
     var body: some View {
         if(mealPlan.isEmpty) {
             Button {
-                try? MealPlanService.createMealPlan(date: selectedDate.date, moc: moc)
+                try? mealPlanService.createMealPlan(date: selectedDate.date, moc: moc)
             } label: {
                 Label("Create Meal Plan", systemImage: "plus")
             }

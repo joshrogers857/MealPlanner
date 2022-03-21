@@ -9,32 +9,34 @@ import XCTest
 import CoreData
 @testable import MealPlanner
 
-/* class MealPlanServiceTests: XCTestCase {
+class MealPlanServiceTests: XCTestCase {
+    var mealPlanService = MealPlanService()
     var persistenceController: PersistenceController!
+    var fetchRequest: NSFetchRequest<MealPlan>!
     
     override func setUpWithError() throws {
         persistenceController = PersistenceController(inMemory: true)
+        fetchRequest = MealPlan.fetchRequest()
     }
 
     override func tearDownWithError() throws {
         persistenceController = nil
+        fetchRequest = nil
     }
     
-    func test_MealPlanService_CreatingAMealPlanForADateWithNoMealPlan_ResultShouldBeNotNil() {
-        _ = try? MealPlanService.createMealPlan(date: Date.now)
+    func test_MealPlanService_CreatingAMealPlanForADateWithNoMealPlan_ResultShouldNotBeEmpty() {
+        _ = try? mealPlanService.createMealPlan(date: Date.now, moc: persistenceController.container.viewContext)
         
-        let result = FetchRequest<MealPlan>(
-            sortDescriptors: [],
-            predicate: predicate
-        )
+        let result = try? persistenceController.container.viewContext.fetch(fetchRequest)
         
-        XCTAssertNotNil(result)
-        XCTAssertEqual(result?.stagesArray[0].wrappedName, "Stage1")
+        XCTAssertFalse(result?.isEmpty ?? true)
     }
     
     func test_MealPlanService_CreatingAMealPlanForADateWithAMealPlan_ErrorShouldBeThrown() {
-        _ = try? MealPlanService.createMealPlan(date: Date.now)
+        let date = Date.now
         
-        XCTAssertThrowsError(try MealPlanService.createMealPlan(date: Date.now))
+        try? mealPlanService.createMealPlan(date: date, moc: persistenceController.container.viewContext)
+        
+        XCTAssertThrowsError(try mealPlanService.createMealPlan(date: date, moc: persistenceController.container.viewContext))
     }
-}*/
+}

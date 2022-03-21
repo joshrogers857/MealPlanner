@@ -9,7 +9,7 @@ import Foundation
 import CoreData
 
 struct MealPlanService {
-    static func createMealPlan(date: Date, moc: NSManagedObjectContext) throws {
+    func createMealPlan(date: Date, moc: NSManagedObjectContext) throws {
         let mealPlan = MealPlan(context: moc)
         mealPlan.date = date
         
