@@ -10,7 +10,7 @@ import SwiftUI
 struct MealPlanList: View {
     @EnvironmentObject private var selectedDate: SelectedDate
     @Environment(\.managedObjectContext) private var moc
-    @FetchRequest var mealPlan: FetchedResults<MealPlan>
+    @FetchRequest private var mealPlan: FetchedResults<MealPlan>
     
     private var mealPlanService = MealPlanService()
     

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct StagesView: View {
+    @Environment(\.managedObjectContext) private var moc
     @FetchRequest private var stages: FetchedResults<MealPlanStage>
     private var mealPlan: MealPlan
     
@@ -30,7 +31,7 @@ struct StagesView: View {
                     }
                     .onDelete { offsets in
                         for index in offsets {
-                            mealPlan.removeFromStages(stages[index])
+                            moc.delete(stages[index])
                             
                             PersistenceController.shared.save()
                         }

@@ -2,7 +2,7 @@
 //  Recipe+CoreDataProperties.swift
 //  MealPlanner
 //
-//  Created by Joshua Rogers on 15/03/2022.
+//  Created by Joshua Rogers on 22/03/2022.
 //
 //
 
@@ -21,9 +21,9 @@ extension Recipe {
     @NSManaged public var preparationTime: Double
     @NSManaged public var serves: Int16
     @NSManaged public var tag: String?
-    @NSManaged public var ingredients: NSSet?
     @NSManaged public var instructions: NSSet?
     @NSManaged public var mealPlanStages: NSSet?
+    @NSManaged public var recipeIngredients: NSSet?
 
     public var wrappedName: String {
         name ?? "Unknown name"
@@ -33,11 +33,11 @@ extension Recipe {
         tag ?? "Unknown tag"
     }
     
-    public var ingredientsArray: [Ingredient] {
-        let set = ingredients as? Set<Ingredient> ?? []
+    public var recipeIngredientsArray: [RecipeIngredient] {
+        let set = recipeIngredients as? Set<RecipeIngredient> ?? []
         
         return set.sorted {
-            $0.wrappedName < $1.wrappedName
+            $0.ingredient?.wrappedName ?? "" < $1.ingredient?.wrappedName ?? ""
         }
     }
     
@@ -60,10 +60,10 @@ extension Recipe {
     public var calories: Int {
         var total = 0
         
-        ingredientsArray.forEach {
-            ingredient in
+        recipeIngredientsArray.forEach {
+            recipeIngredient in
             
-            total += Int(ingredient.calories)
+            total += Int(recipeIngredient.ingredient?.calories ?? 0)
         }
         
         return total
@@ -72,10 +72,10 @@ extension Recipe {
     public var carbs: Double {
         var total = 0.0
         
-        ingredientsArray.forEach {
-            ingredient in
+        recipeIngredientsArray.forEach {
+            recipeIngredient in
             
-            total += ingredient.carbs
+            total += recipeIngredient.ingredient?.carbs ?? 0.0
         }
         
         return total
@@ -84,10 +84,10 @@ extension Recipe {
     public var fat: Double {
         var total = 0.0
         
-        ingredientsArray.forEach {
-            ingredient in
+        recipeIngredientsArray.forEach {
+            recipeIngredient in
             
-            total += ingredient.fat
+            total += recipeIngredient.ingredient?.fat ?? 0.0
         }
         
         return total
@@ -96,10 +96,10 @@ extension Recipe {
     public var fibre: Double {
         var total = 0.0
         
-        ingredientsArray.forEach {
-            ingredient in
+        recipeIngredientsArray.forEach {
+            recipeIngredient in
             
-            total += ingredient.fibre
+            total += recipeIngredient.ingredient?.fibre ?? 0.0
         }
         
         return total
@@ -108,10 +108,10 @@ extension Recipe {
     public var protein: Double {
         var total = 0.0
         
-        ingredientsArray.forEach {
-            ingredient in
+        recipeIngredientsArray.forEach {
+            recipeIngredient in
             
-            total += ingredient.protein
+            total += recipeIngredient.ingredient?.protein ?? 0.0
         }
         
         return total
@@ -120,10 +120,10 @@ extension Recipe {
     public var salt: Double {
         var total = 0.0
         
-        ingredientsArray.forEach {
-            ingredient in
+        recipeIngredientsArray.forEach {
+            recipeIngredient in
             
-            total += ingredient.salt
+            total += recipeIngredient.ingredient?.salt ?? 0.0
         }
         
         return total
@@ -132,10 +132,10 @@ extension Recipe {
     public var saturates: Double {
         var total = 0.0
         
-        ingredientsArray.forEach {
-            ingredient in
+        recipeIngredientsArray.forEach {
+            recipeIngredient in
             
-            total += ingredient.saturates
+            total += recipeIngredient.ingredient?.saturates ?? 0.0
         }
         
         return total
@@ -144,31 +144,14 @@ extension Recipe {
     public var sugars: Double {
         var total = 0.0
         
-        ingredientsArray.forEach {
-            ingredient in
+        recipeIngredientsArray.forEach {
+            recipeIngredient in
             
-            total += ingredient.sugars
+            total += recipeIngredient.ingredient?.sugars ?? 0.0
         }
         
         return total
     }
-}
-
-// MARK: Generated accessors for ingredients
-extension Recipe {
-
-    @objc(addIngredientsObject:)
-    @NSManaged public func addToIngredients(_ value: Ingredient)
-
-    @objc(removeIngredientsObject:)
-    @NSManaged public func removeFromIngredients(_ value: Ingredient)
-
-    @objc(addIngredients:)
-    @NSManaged public func addToIngredients(_ values: NSSet)
-
-    @objc(removeIngredients:)
-    @NSManaged public func removeFromIngredients(_ values: NSSet)
-
 }
 
 // MARK: Generated accessors for instructions
@@ -202,6 +185,23 @@ extension Recipe {
 
     @objc(removeMealPlanStages:)
     @NSManaged public func removeFromMealPlanStages(_ values: NSSet)
+
+}
+
+// MARK: Generated accessors for recipeIngredients
+extension Recipe {
+
+    @objc(addRecipeIngredientsObject:)
+    @NSManaged public func addToRecipeIngredients(_ value: RecipeIngredient)
+
+    @objc(removeRecipeIngredientsObject:)
+    @NSManaged public func removeFromRecipeIngredients(_ value: RecipeIngredient)
+
+    @objc(addRecipeIngredients:)
+    @NSManaged public func addToRecipeIngredients(_ values: NSSet)
+
+    @objc(removeRecipeIngredients:)
+    @NSManaged public func removeFromRecipeIngredients(_ values: NSSet)
 
 }
 

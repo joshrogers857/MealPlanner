@@ -39,4 +39,15 @@ class MealPlanServiceTests: XCTestCase {
         
         XCTAssertThrowsError(try mealPlanService.createMealPlan(date: date, moc: persistenceController.container.viewContext))
     }
+    
+    func test_MealPlanService_CreatingAMealPlanForADateWithNoMealPlan_ShouldHaveBreakfastLunchAndDinnerStages() {
+        let date = Date.now
+        try? mealPlanService.createMealPlan(date: date, moc: persistenceController.container.viewContext)
+        
+        let result = try? persistenceController.container.viewContext.fetch(fetchRequest)
+        
+        XCTAssertEqual(result?[0].stagesArray[0].wrappedName, "Breakfast")
+        XCTAssertEqual(result?[0].stagesArray[1].wrappedName, "Lunch")
+        XCTAssertEqual(result?[0].stagesArray[2].wrappedName, "Dinner")
+    }
 }

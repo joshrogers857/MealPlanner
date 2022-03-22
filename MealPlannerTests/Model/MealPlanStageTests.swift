@@ -109,11 +109,16 @@ class MealPlanStageTests: XCTestCase {
         let recipe = Recipe(context: persistenceController.container.viewContext)
         let ingredient1 = Ingredient(context: persistenceController.container.viewContext)
         let ingredient2 = Ingredient(context: persistenceController.container.viewContext)
+        let recipeIngredient1 = RecipeIngredient(context: persistenceController.container.viewContext)
+        let recipeIngredient2 = RecipeIngredient(context: persistenceController.container.viewContext)
         
         ingredient1.calories = 5
         ingredient2.calories = 7
-        recipe.addToIngredients(ingredient1)
-        recipe.addToIngredients(ingredient2)
+        recipeIngredient1.ingredient = ingredient1
+        recipeIngredient2.ingredient = ingredient2
+        
+        recipe.addToRecipeIngredients(recipeIngredient1)
+        recipe.addToRecipeIngredients(recipeIngredient2)
         mealPlanStage.addToRecipes(recipe)
         let result = mealPlanStage.calories
         
@@ -125,11 +130,16 @@ class MealPlanStageTests: XCTestCase {
         let recipe = Recipe(context: persistenceController.container.viewContext)
         let ingredient1 = Ingredient(context: persistenceController.container.viewContext)
         let ingredient2 = Ingredient(context: persistenceController.container.viewContext)
+        let recipeIngredient1 = RecipeIngredient(context: persistenceController.container.viewContext)
+        let recipeIngredient2 = RecipeIngredient(context: persistenceController.container.viewContext)
         
         ingredient1.carbs = 5.0
         ingredient2.carbs = 7.0
-        recipe.addToIngredients(ingredient1)
-        recipe.addToIngredients(ingredient2)
+        recipeIngredient1.ingredient = ingredient1
+        recipeIngredient2.ingredient = ingredient2
+        
+        recipe.addToRecipeIngredients(recipeIngredient1)
+        recipe.addToRecipeIngredients(recipeIngredient2)
         mealPlanStage.addToRecipes(recipe)
         let result = mealPlanStage.carbs
         
@@ -141,11 +151,16 @@ class MealPlanStageTests: XCTestCase {
         let recipe = Recipe(context: persistenceController.container.viewContext)
         let ingredient1 = Ingredient(context: persistenceController.container.viewContext)
         let ingredient2 = Ingredient(context: persistenceController.container.viewContext)
+        let recipeIngredient1 = RecipeIngredient(context: persistenceController.container.viewContext)
+        let recipeIngredient2 = RecipeIngredient(context: persistenceController.container.viewContext)
         
         ingredient1.fat = 5.0
         ingredient2.fat = 7.0
-        recipe.addToIngredients(ingredient1)
-        recipe.addToIngredients(ingredient2)
+        recipeIngredient1.ingredient = ingredient1
+        recipeIngredient2.ingredient = ingredient2
+        
+        recipe.addToRecipeIngredients(recipeIngredient1)
+        recipe.addToRecipeIngredients(recipeIngredient2)
         mealPlanStage.addToRecipes(recipe)
         let result = mealPlanStage.fat
         
@@ -157,11 +172,16 @@ class MealPlanStageTests: XCTestCase {
         let recipe = Recipe(context: persistenceController.container.viewContext)
         let ingredient1 = Ingredient(context: persistenceController.container.viewContext)
         let ingredient2 = Ingredient(context: persistenceController.container.viewContext)
+        let recipeIngredient1 = RecipeIngredient(context: persistenceController.container.viewContext)
+        let recipeIngredient2 = RecipeIngredient(context: persistenceController.container.viewContext)
         
         ingredient1.fibre = 5.0
         ingredient2.fibre = 7.0
-        recipe.addToIngredients(ingredient1)
-        recipe.addToIngredients(ingredient2)
+        recipeIngredient1.ingredient = ingredient1
+        recipeIngredient2.ingredient = ingredient2
+        
+        recipe.addToRecipeIngredients(recipeIngredient1)
+        recipe.addToRecipeIngredients(recipeIngredient2)
         mealPlanStage.addToRecipes(recipe)
         let result = mealPlanStage.fibre
         
@@ -173,11 +193,16 @@ class MealPlanStageTests: XCTestCase {
         let recipe = Recipe(context: persistenceController.container.viewContext)
         let ingredient1 = Ingredient(context: persistenceController.container.viewContext)
         let ingredient2 = Ingredient(context: persistenceController.container.viewContext)
+        let recipeIngredient1 = RecipeIngredient(context: persistenceController.container.viewContext)
+        let recipeIngredient2 = RecipeIngredient(context: persistenceController.container.viewContext)
         
         ingredient1.protein = 5.0
         ingredient2.protein = 7.0
-        recipe.addToIngredients(ingredient1)
-        recipe.addToIngredients(ingredient2)
+        recipeIngredient1.ingredient = ingredient1
+        recipeIngredient2.ingredient = ingredient2
+        
+        recipe.addToRecipeIngredients(recipeIngredient1)
+        recipe.addToRecipeIngredients(recipeIngredient2)
         mealPlanStage.addToRecipes(recipe)
         let result = mealPlanStage.protein
         
@@ -189,11 +214,16 @@ class MealPlanStageTests: XCTestCase {
         let recipe = Recipe(context: persistenceController.container.viewContext)
         let ingredient1 = Ingredient(context: persistenceController.container.viewContext)
         let ingredient2 = Ingredient(context: persistenceController.container.viewContext)
+        let recipeIngredient1 = RecipeIngredient(context: persistenceController.container.viewContext)
+        let recipeIngredient2 = RecipeIngredient(context: persistenceController.container.viewContext)
         
         ingredient1.salt = 5.0
         ingredient2.salt = 7.0
-        recipe.addToIngredients(ingredient1)
-        recipe.addToIngredients(ingredient2)
+        recipeIngredient1.ingredient = ingredient1
+        recipeIngredient2.ingredient = ingredient2
+        
+        recipe.addToRecipeIngredients(recipeIngredient1)
+        recipe.addToRecipeIngredients(recipeIngredient2)
         mealPlanStage.addToRecipes(recipe)
         let result = mealPlanStage.salt
         
@@ -205,11 +235,16 @@ class MealPlanStageTests: XCTestCase {
         let recipe = Recipe(context: persistenceController.container.viewContext)
         let ingredient1 = Ingredient(context: persistenceController.container.viewContext)
         let ingredient2 = Ingredient(context: persistenceController.container.viewContext)
+        let recipeIngredient1 = RecipeIngredient(context: persistenceController.container.viewContext)
+        let recipeIngredient2 = RecipeIngredient(context: persistenceController.container.viewContext)
         
         ingredient1.saturates = 5.0
         ingredient2.saturates = 7.0
-        recipe.addToIngredients(ingredient1)
-        recipe.addToIngredients(ingredient2)
+        recipeIngredient1.ingredient = ingredient1
+        recipeIngredient2.ingredient = ingredient2
+        
+        recipe.addToRecipeIngredients(recipeIngredient1)
+        recipe.addToRecipeIngredients(recipeIngredient2)
         mealPlanStage.addToRecipes(recipe)
         let result = mealPlanStage.saturates
         
@@ -221,11 +256,16 @@ class MealPlanStageTests: XCTestCase {
         let recipe = Recipe(context: persistenceController.container.viewContext)
         let ingredient1 = Ingredient(context: persistenceController.container.viewContext)
         let ingredient2 = Ingredient(context: persistenceController.container.viewContext)
+        let recipeIngredient1 = RecipeIngredient(context: persistenceController.container.viewContext)
+        let recipeIngredient2 = RecipeIngredient(context: persistenceController.container.viewContext)
         
         ingredient1.sugars = 5.0
         ingredient2.sugars = 7.0
-        recipe.addToIngredients(ingredient1)
-        recipe.addToIngredients(ingredient2)
+        recipeIngredient1.ingredient = ingredient1
+        recipeIngredient2.ingredient = ingredient2
+        
+        recipe.addToRecipeIngredients(recipeIngredient1)
+        recipe.addToRecipeIngredients(recipeIngredient2)
         mealPlanStage.addToRecipes(recipe)
         let result = mealPlanStage.sugars
         

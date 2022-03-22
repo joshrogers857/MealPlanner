@@ -49,9 +49,9 @@ class IngredientTests: XCTestCase {
         XCTAssertEqual(ingredient.wrappedUnit, "Unknown unit")
     }
     
-    func test_Ingredient_WhenCreated_RecipeArrayShouldReturnEmptyArray() {
+    func test_Ingredient_WhenCreated_RecipeIngredientsArrayShouldReturnEmptyArray() {
         let ingredient = Ingredient(context: persistenceController.container.viewContext)
         
-        XCTAssertTrue(ingredient.recipesArray.isEmpty)
+        XCTAssertTrue(ingredient.recipeIngredients?.count == 0)
     }
 }

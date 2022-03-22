@@ -2,7 +2,7 @@
 //  Ingredient+CoreDataProperties.swift
 //  MealPlanner
 //
-//  Created by Joshua Rogers on 15/03/2022.
+//  Created by Joshua Rogers on 22/03/2022.
 //
 //
 
@@ -27,7 +27,7 @@ extension Ingredient {
     @NSManaged public var saturates: Double
     @NSManaged public var sugars: Double
     @NSManaged public var unit: String?
-    @NSManaged public var recipes: NSSet?
+    @NSManaged public var recipeIngredients: NSSet?
 
     public var wrappedName: String {
         name ?? "Unknown name"
@@ -36,30 +36,22 @@ extension Ingredient {
     public var wrappedUnit: String {
         unit ?? "Unknown unit"
     }
-    
-    public var recipesArray: [Recipe] {
-        let set = recipes as? Set<Recipe> ?? []
-        
-        return set.sorted {
-            $0.wrappedName < $1.wrappedName
-        }
-    }
 }
 
-// MARK: Generated accessors for recipes
+// MARK: Generated accessors for recipeIngredients
 extension Ingredient {
 
-    @objc(addRecipesObject:)
-    @NSManaged public func addToRecipes(_ value: Recipe)
+    @objc(addRecipeIngredientsObject:)
+    @NSManaged public func addToRecipeIngredients(_ value: RecipeIngredient)
 
-    @objc(removeRecipesObject:)
-    @NSManaged public func removeFromRecipes(_ value: Recipe)
+    @objc(removeRecipeIngredientsObject:)
+    @NSManaged public func removeFromRecipeIngredients(_ value: RecipeIngredient)
 
-    @objc(addRecipes:)
-    @NSManaged public func addToRecipes(_ values: NSSet)
+    @objc(addRecipeIngredients:)
+    @NSManaged public func addToRecipeIngredients(_ values: NSSet)
 
-    @objc(removeRecipes:)
-    @NSManaged public func removeFromRecipes(_ values: NSSet)
+    @objc(removeRecipeIngredients:)
+    @NSManaged public func removeFromRecipeIngredients(_ values: NSSet)
 
 }
 

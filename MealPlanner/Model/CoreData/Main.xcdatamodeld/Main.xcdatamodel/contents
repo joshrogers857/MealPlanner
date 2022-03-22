@@ -12,7 +12,7 @@
         <attribute name="saturates" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="sugars" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="unit" optional="YES" attributeType="String"/>
-        <relationship name="recipes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Recipe" inverseName="ingredients" inverseEntity="Recipe"/>
+        <relationship name="recipeIngredients" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RecipeIngredient" inverseName="ingredient" inverseEntity="RecipeIngredient"/>
         <uniquenessConstraints>
             <uniquenessConstraint>
                 <constraint value="name"/>
@@ -63,12 +63,24 @@
         <attribute name="preparationTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="serves" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="tag" optional="YES" attributeType="String"/>
-        <relationship name="ingredients" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Ingredient" inverseName="recipes" inverseEntity="Ingredient"/>
         <relationship name="instructions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Instruction" inverseName="origin" inverseEntity="Instruction"/>
         <relationship name="mealPlanStages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MealPlanStage" inverseName="recipes" inverseEntity="MealPlanStage"/>
+        <relationship name="recipeIngredients" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RecipeIngredient" inverseName="recipe" inverseEntity="RecipeIngredient"/>
         <uniquenessConstraints>
             <uniquenessConstraint>
                 <constraint value="name"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="RecipeIngredient" representedClassName="RecipeIngredient" syncable="YES">
+        <attribute name="quantity" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="ingredient" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Ingredient" inverseName="recipeIngredients" inverseEntity="Ingredient"/>
+        <relationship name="recipe" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Recipe" inverseName="recipeIngredients" inverseEntity="Recipe"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="quantity"/>
+                <constraint value="ingredient"/>
+                <constraint value="recipe"/>
             </uniquenessConstraint>
         </uniquenessConstraints>
     </entity>
@@ -78,5 +90,6 @@
         <element name="MealPlan" positionX="-54" positionY="-9" width="128" height="59"/>
         <element name="MealPlanStage" positionX="-36" positionY="27" width="128" height="89"/>
         <element name="Recipe" positionX="-63" positionY="-18" width="128" height="149"/>
+        <element name="RecipeIngredient" positionX="-27" positionY="135" width="128" height="74"/>
     </elements>
 </model>

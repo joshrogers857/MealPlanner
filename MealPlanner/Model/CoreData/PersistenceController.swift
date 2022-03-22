@@ -56,7 +56,7 @@ struct PersistenceController {
         }
     }
     
-    static func prePopulate(using container: NSPersistentContainer) {
+    /*static func prePopulate(using container: NSPersistentContainer) {
         
         let ingredient = Ingredient(context: container.viewContext)
         ingredient.calories = 10
@@ -172,7 +172,7 @@ struct PersistenceController {
         recipe15.cookingTime = 2700.0
         recipe15.serves = 4
         recipe15.addToIngredients(ingredient)
-    }
+    }*/
     
     static func prePopulatePreview(using container: NSPersistentContainer) {
         
