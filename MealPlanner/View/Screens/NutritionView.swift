@@ -11,6 +11,7 @@ struct NutritionView: View {
     @State private var selectedTimePeriod = TimePeriod.today
     @State private var startDate = NutritionService.getStartAndEndDates(timePeriod: .today).0
     @State private var endDate = NutritionService.getStartAndEndDates(timePeriod: .today).1
+    @State private var refresh = false
     
     var body: some View {
         NavigationView {
@@ -31,12 +32,16 @@ struct NutritionView: View {
                 
                 Section("Nutrition") {
                     NutritionalInformationView(
-                        startDate: startDate, endDate: endDate
+                        startDate: startDate, endDate: endDate, refresh: $refresh
                     )
                 }
             }
             .navigationTitle("Nutrition")
+            
             Spacer()
+        }
+        .onAppear {
+            refresh = true
         }
         .onChange(of: selectedTimePeriod) {
             newValue in
