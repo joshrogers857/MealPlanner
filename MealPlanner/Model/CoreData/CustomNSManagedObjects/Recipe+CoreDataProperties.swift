@@ -63,7 +63,7 @@ extension Recipe {
         recipeIngredientsArray.forEach {
             recipeIngredient in
             
-            total += Int(recipeIngredient.ingredient?.calories ?? 0)
+            total += Int(recipeIngredient.calories)
         }
         
         return total
@@ -75,7 +75,7 @@ extension Recipe {
         recipeIngredientsArray.forEach {
             recipeIngredient in
             
-            total += recipeIngredient.ingredient?.carbs ?? 0.0
+            total += recipeIngredient.carbs
         }
         
         return total
@@ -87,7 +87,7 @@ extension Recipe {
         recipeIngredientsArray.forEach {
             recipeIngredient in
             
-            total += recipeIngredient.ingredient?.fat ?? 0.0
+            total += recipeIngredient.fat
         }
         
         return total
@@ -99,7 +99,7 @@ extension Recipe {
         recipeIngredientsArray.forEach {
             recipeIngredient in
             
-            total += recipeIngredient.ingredient?.fibre ?? 0.0
+            total += recipeIngredient.fibre
         }
         
         return total
@@ -111,7 +111,7 @@ extension Recipe {
         recipeIngredientsArray.forEach {
             recipeIngredient in
             
-            total += recipeIngredient.ingredient?.protein ?? 0.0
+            total += recipeIngredient.protein
         }
         
         return total
@@ -123,7 +123,7 @@ extension Recipe {
         recipeIngredientsArray.forEach {
             recipeIngredient in
             
-            total += recipeIngredient.ingredient?.salt ?? 0.0
+            total += recipeIngredient.salt
         }
         
         return total
@@ -135,7 +135,7 @@ extension Recipe {
         recipeIngredientsArray.forEach {
             recipeIngredient in
             
-            total += recipeIngredient.ingredient?.saturates ?? 0.0
+            total += recipeIngredient.saturates
         }
         
         return total
@@ -147,7 +147,7 @@ extension Recipe {
         recipeIngredientsArray.forEach {
             recipeIngredient in
             
-            total += recipeIngredient.ingredient?.sugars ?? 0.0
+            total += recipeIngredient.sugars
         }
         
         return total

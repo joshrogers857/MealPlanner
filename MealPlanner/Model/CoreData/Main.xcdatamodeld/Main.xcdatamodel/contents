@@ -11,6 +11,7 @@
         <attribute name="salt" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="saturates" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="sugars" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
         <attribute name="unit" optional="YES" attributeType="String"/>
         <relationship name="recipeIngredients" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RecipeIngredient" inverseName="ingredient" inverseEntity="RecipeIngredient"/>
         <uniquenessConstraints>
@@ -85,7 +86,7 @@
         </uniquenessConstraints>
     </entity>
     <elements>
-        <element name="Ingredient" positionX="0" positionY="90" width="128" height="209"/>
+        <element name="Ingredient" positionX="0" positionY="90" width="128" height="224"/>
         <element name="Instruction" positionX="-18" positionY="63" width="128" height="74"/>
         <element name="MealPlan" positionX="-54" positionY="-9" width="128" height="59"/>
         <element name="MealPlanStage" positionX="-36" positionY="27" width="128" height="89"/>

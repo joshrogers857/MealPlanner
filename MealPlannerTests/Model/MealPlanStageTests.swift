@@ -115,14 +115,16 @@ class MealPlanStageTests: XCTestCase {
         ingredient1.calories = 5
         ingredient2.calories = 7
         recipeIngredient1.ingredient = ingredient1
+        recipeIngredient1.quantity = 2
         recipeIngredient2.ingredient = ingredient2
+        recipeIngredient2.quantity = 2
         
         recipe.addToRecipeIngredients(recipeIngredient1)
         recipe.addToRecipeIngredients(recipeIngredient2)
         mealPlanStage.addToRecipes(recipe)
         let result = mealPlanStage.calories
         
-        XCTAssertEqual(result, 12)
+        XCTAssertEqual(result, 24)
     }
     
     func test_MealPlanStage_WhenRecipes_CarbsShouldBeTotalOfRecipes() {
@@ -136,14 +138,16 @@ class MealPlanStageTests: XCTestCase {
         ingredient1.carbs = 5.0
         ingredient2.carbs = 7.0
         recipeIngredient1.ingredient = ingredient1
+        recipeIngredient1.quantity = 2
         recipeIngredient2.ingredient = ingredient2
+        recipeIngredient2.quantity = 2
         
         recipe.addToRecipeIngredients(recipeIngredient1)
         recipe.addToRecipeIngredients(recipeIngredient2)
         mealPlanStage.addToRecipes(recipe)
         let result = mealPlanStage.carbs
         
-        XCTAssertEqual(result, 12.0)
+        XCTAssertEqual(result, 24.0)
     }
     
     func test_MealPlanStage_WhenRecipes_FatShouldBeTotalOfRecipes() {
@@ -157,14 +161,16 @@ class MealPlanStageTests: XCTestCase {
         ingredient1.fat = 5.0
         ingredient2.fat = 7.0
         recipeIngredient1.ingredient = ingredient1
+        recipeIngredient1.quantity = 2
         recipeIngredient2.ingredient = ingredient2
+        recipeIngredient2.quantity = 2
         
         recipe.addToRecipeIngredients(recipeIngredient1)
         recipe.addToRecipeIngredients(recipeIngredient2)
         mealPlanStage.addToRecipes(recipe)
         let result = mealPlanStage.fat
         
-        XCTAssertEqual(result, 12.0)
+        XCTAssertEqual(result, 24.0)
     }
     
     func test_MealPlanStage_WhenRecipes_FibreShouldBeTotalOfRecipes() {
@@ -181,11 +187,13 @@ class MealPlanStageTests: XCTestCase {
         recipeIngredient2.ingredient = ingredient2
         
         recipe.addToRecipeIngredients(recipeIngredient1)
+        recipeIngredient1.quantity = 2
         recipe.addToRecipeIngredients(recipeIngredient2)
+        recipeIngredient2.quantity = 2
         mealPlanStage.addToRecipes(recipe)
         let result = mealPlanStage.fibre
         
-        XCTAssertEqual(result, 12.0)
+        XCTAssertEqual(result, 24.0)
     }
     
     func test_MealPlanStage_WhenRecipes_ProteinShouldBeTotalOfRecipes() {
@@ -199,14 +207,16 @@ class MealPlanStageTests: XCTestCase {
         ingredient1.protein = 5.0
         ingredient2.protein = 7.0
         recipeIngredient1.ingredient = ingredient1
+        recipeIngredient1.quantity = 2
         recipeIngredient2.ingredient = ingredient2
+        recipeIngredient2.quantity = 2
         
         recipe.addToRecipeIngredients(recipeIngredient1)
         recipe.addToRecipeIngredients(recipeIngredient2)
         mealPlanStage.addToRecipes(recipe)
         let result = mealPlanStage.protein
         
-        XCTAssertEqual(result, 12.0)
+        XCTAssertEqual(result, 24.0)
     }
     
     func test_MealPlanStage_WhenRecipes_SaltShouldBeTotalOfRecipes() {
@@ -220,14 +230,16 @@ class MealPlanStageTests: XCTestCase {
         ingredient1.salt = 5.0
         ingredient2.salt = 7.0
         recipeIngredient1.ingredient = ingredient1
+        recipeIngredient1.quantity = 2
         recipeIngredient2.ingredient = ingredient2
+        recipeIngredient2.quantity = 2
         
         recipe.addToRecipeIngredients(recipeIngredient1)
         recipe.addToRecipeIngredients(recipeIngredient2)
         mealPlanStage.addToRecipes(recipe)
         let result = mealPlanStage.salt
         
-        XCTAssertEqual(result, 12.0)
+        XCTAssertEqual(result, 24.0)
     }
     
     func test_MealPlanStage_WhenRecipes_SaturatesShouldBeTotalOfRecipes() {
@@ -244,11 +256,13 @@ class MealPlanStageTests: XCTestCase {
         recipeIngredient2.ingredient = ingredient2
         
         recipe.addToRecipeIngredients(recipeIngredient1)
+        recipeIngredient1.quantity = 2
         recipe.addToRecipeIngredients(recipeIngredient2)
+        recipeIngredient2.quantity = 2
         mealPlanStage.addToRecipes(recipe)
         let result = mealPlanStage.saturates
         
-        XCTAssertEqual(result, 12.0)
+        XCTAssertEqual(result, 24.0)
     }
     
     func test_MealPlanStage_WhenRecipes_SugarsShouldBeTotalOfRecipes() {
@@ -262,13 +276,15 @@ class MealPlanStageTests: XCTestCase {
         ingredient1.sugars = 5.0
         ingredient2.sugars = 7.0
         recipeIngredient1.ingredient = ingredient1
+        recipeIngredient1.quantity = 2
         recipeIngredient2.ingredient = ingredient2
+        recipeIngredient2.quantity = 2
         
         recipe.addToRecipeIngredients(recipeIngredient1)
         recipe.addToRecipeIngredients(recipeIngredient2)
         mealPlanStage.addToRecipes(recipe)
         let result = mealPlanStage.sugars
         
-        XCTAssertEqual(result, 12.0)
+        XCTAssertEqual(result, 24.0)
     }
 }

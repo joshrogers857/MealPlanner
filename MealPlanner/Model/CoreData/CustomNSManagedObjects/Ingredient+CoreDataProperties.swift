@@ -27,6 +27,7 @@ extension Ingredient {
     @NSManaged public var saturates: Double
     @NSManaged public var sugars: Double
     @NSManaged public var unit: String?
+    @NSManaged public var type: String?
     @NSManaged public var recipeIngredients: NSSet?
 
     public var wrappedName: String {
@@ -35,6 +36,10 @@ extension Ingredient {
     
     public var wrappedUnit: String {
         unit ?? "Unknown unit"
+    }
+    
+    public var wrappedType: String {
+        type ?? "Unknown type"
     }
 }
 
