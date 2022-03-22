@@ -27,7 +27,7 @@ struct MealPlanView: View {
                 
                 Spacer()
                 
-                /* Button("DELETE ALL") {
+                /*Button("DELETE ALL") {
                     for plan in mealPlans {
                         moc.delete(plan)
                     }
@@ -45,7 +45,7 @@ struct MealPlanView: View {
                     }
                     
                     PersistenceController.shared.save()
-                } */
+                }*/
             }
             .navigationTitle("Meal Plan")
             .toolbar {
