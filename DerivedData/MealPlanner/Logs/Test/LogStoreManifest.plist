@@ -6,6 +6,92 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
+		<key>6F7972E6-547E-44F1-BE60-E4DC5F91BAEF</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>AC73DA9F-5D17-4C5B-95ED-3CE69E71E09F</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.unit.cocoaUnitTest</string>
+			<key>fileName</key>
+			<string>Test-MealPlanner-2022.03.23_16-43-42-+0000.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MealPlanner project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MealPlanner</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Test MealPlanner</string>
+			<key>timeStartedRecording</key>
+			<real>669746622.073156</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Test MealPlanner</string>
+			<key>uniqueIdentifier</key>
+			<string>6F7972E6-547E-44F1-BE60-E4DC5F91BAEF</string>
+		</dict>
+		<key>C565890A-0538-43AD-9786-77DBF6792D85</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>3386FE84-48A9-4A9A-B445-90FD3A4A23DF</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.unit.cocoaUnitTest</string>
+			<key>fileName</key>
+			<string>Test-MealPlanner-2022.03.23_16-43-31-+0000.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MealPlanner project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MealPlanner</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Test MealPlanner</string>
+			<key>timeStartedRecording</key>
+			<real>669746611.63536704</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Test MealPlanner</string>
+			<key>uniqueIdentifier</key>
+			<string>C565890A-0538-43AD-9786-77DBF6792D85</string>
+		</dict>
 		<key>F82E1F12-E6F5-4885-A643-1022177F5068</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>

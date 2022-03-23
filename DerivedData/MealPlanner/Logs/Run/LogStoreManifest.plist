@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>031BCBFC-82D2-47CB-B8A8-CAF477C6CA62</key>
+		<key>06EE969C-F16A-47F1-BC6F-73D6F5FA4AD9</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>031BCBFC-82D2-47CB-B8A8-CAF477C6CA62.xcactivitylog</string>
+			<string>06EE969C-F16A-47F1-BC6F-73D6F5FA4AD9.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -32,15 +32,15 @@
 			<key>signature</key>
 			<string>Run MealPlanner</string>
 			<key>timeStartedRecording</key>
-			<real>669738670.88233399</real>
+			<real>669753061.33316302</real>
 			<key>timeStoppedRecording</key>
-			<real>669738728.82783794</real>
+			<real>669753090.682778</real>
 			<key>title</key>
 			<string>Run MealPlanner</string>
 			<key>uniqueIdentifier</key>
-			<string>031BCBFC-82D2-47CB-B8A8-CAF477C6CA62</string>
+			<string>06EE969C-F16A-47F1-BC6F-73D6F5FA4AD9</string>
 		</dict>
-		<key>0C0EAF0A-C949-42F5-88F4-CE10DDE6A57E</key>
+		<key>321B4D5F-F613-4FE1-92F9-DC25EC8CA964</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -49,7 +49,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>0C0EAF0A-C949-42F5-88F4-CE10DDE6A57E.xcactivitylog</string>
+			<string>321B4D5F-F613-4FE1-92F9-DC25EC8CA964.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -66,353 +66,13 @@
 			<key>signature</key>
 			<string>Run MealPlanner</string>
 			<key>timeStartedRecording</key>
-			<real>669737506.82519305</real>
+			<real>669753105.72445905</real>
 			<key>timeStoppedRecording</key>
-			<real>669737614.43731403</real>
+			<real>669753112.47287905</real>
 			<key>title</key>
 			<string>Run MealPlanner</string>
 			<key>uniqueIdentifier</key>
-			<string>0C0EAF0A-C949-42F5-88F4-CE10DDE6A57E</string>
-		</dict>
-		<key>13521EFE-115C-4996-844F-20FCED0DF4B2</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>13521EFE-115C-4996-844F-20FCED0DF4B2.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>MealPlanner project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>MealPlanner</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run MealPlanner</string>
-			<key>timeStartedRecording</key>
-			<real>669738214.93292296</real>
-			<key>timeStoppedRecording</key>
-			<real>669738286.88333499</real>
-			<key>title</key>
-			<string>Run MealPlanner</string>
-			<key>uniqueIdentifier</key>
-			<string>13521EFE-115C-4996-844F-20FCED0DF4B2</string>
-		</dict>
-		<key>323E0B3A-7181-49A6-AA5D-B5B34629E50D</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>323E0B3A-7181-49A6-AA5D-B5B34629E50D.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>MealPlanner project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>MealPlanner</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run MealPlanner</string>
-			<key>timeStartedRecording</key>
-			<real>669738379.78106296</real>
-			<key>timeStoppedRecording</key>
-			<real>669738558.76229203</real>
-			<key>title</key>
-			<string>Run MealPlanner</string>
-			<key>uniqueIdentifier</key>
-			<string>323E0B3A-7181-49A6-AA5D-B5B34629E50D</string>
-		</dict>
-		<key>67A2E1AD-88B6-4EFF-A9BB-79F852038603</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>67A2E1AD-88B6-4EFF-A9BB-79F852038603.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>MealPlanner project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>MealPlanner</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run MealPlanner</string>
-			<key>timeStartedRecording</key>
-			<real>669737686.47114098</real>
-			<key>timeStoppedRecording</key>
-			<real>669737713.70846403</real>
-			<key>title</key>
-			<string>Run MealPlanner</string>
-			<key>uniqueIdentifier</key>
-			<string>67A2E1AD-88B6-4EFF-A9BB-79F852038603</string>
-		</dict>
-		<key>6B3DA3E6-8CC1-4067-ADA6-2DDEE6E8E814</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>6B3DA3E6-8CC1-4067-ADA6-2DDEE6E8E814.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>MealPlanner project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>MealPlanner</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run MealPlanner</string>
-			<key>timeStartedRecording</key>
-			<real>669738161.09456396</real>
-			<key>timeStoppedRecording</key>
-			<real>669738214.50768304</real>
-			<key>title</key>
-			<string>Run MealPlanner</string>
-			<key>uniqueIdentifier</key>
-			<string>6B3DA3E6-8CC1-4067-ADA6-2DDEE6E8E814</string>
-		</dict>
-		<key>764BFEDB-6AD0-4624-83B5-9372EE3AEEEE</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>764BFEDB-6AD0-4624-83B5-9372EE3AEEEE.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>MealPlanner project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>MealPlanner</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run MealPlanner</string>
-			<key>timeStartedRecording</key>
-			<real>669737250.68270397</real>
-			<key>timeStoppedRecording</key>
-			<real>669737260.31722605</real>
-			<key>title</key>
-			<string>Run MealPlanner</string>
-			<key>uniqueIdentifier</key>
-			<string>764BFEDB-6AD0-4624-83B5-9372EE3AEEEE</string>
-		</dict>
-		<key>7AC8C2AB-D278-49D9-BBF1-75C7639E3F03</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>7AC8C2AB-D278-49D9-BBF1-75C7639E3F03.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>MealPlanner project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>MealPlanner</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run MealPlanner</string>
-			<key>timeStartedRecording</key>
-			<real>669737928.539042</real>
-			<key>timeStoppedRecording</key>
-			<real>669738160.55832601</real>
-			<key>title</key>
-			<string>Run MealPlanner</string>
-			<key>uniqueIdentifier</key>
-			<string>7AC8C2AB-D278-49D9-BBF1-75C7639E3F03</string>
-		</dict>
-		<key>7F8849B6-6FD4-47E3-AB5F-2F2AD9DF54F7</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>7F8849B6-6FD4-47E3-AB5F-2F2AD9DF54F7.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>MealPlanner project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>MealPlanner</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run MealPlanner</string>
-			<key>timeStartedRecording</key>
-			<real>669737493.83895898</real>
-			<key>timeStoppedRecording</key>
-			<real>669737500.45293999</real>
-			<key>title</key>
-			<string>Run MealPlanner</string>
-			<key>uniqueIdentifier</key>
-			<string>7F8849B6-6FD4-47E3-AB5F-2F2AD9DF54F7</string>
-		</dict>
-		<key>7F925190-C9F8-4596-8DEC-0CAB4D0DD367</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>7F925190-C9F8-4596-8DEC-0CAB4D0DD367.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>MealPlanner project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>MealPlanner</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run MealPlanner</string>
-			<key>timeStartedRecording</key>
-			<real>669738300.15444005</real>
-			<key>timeStoppedRecording</key>
-			<real>669738365.89124799</real>
-			<key>title</key>
-			<string>Run MealPlanner</string>
-			<key>uniqueIdentifier</key>
-			<string>7F925190-C9F8-4596-8DEC-0CAB4D0DD367</string>
-		</dict>
-		<key>8BF53934-42E1-4943-ACA0-22B6F15F64D0</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>8BF53934-42E1-4943-ACA0-22B6F15F64D0.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>MealPlanner project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>MealPlanner</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run MealPlanner</string>
-			<key>timeStartedRecording</key>
-			<real>669737615.14989996</real>
-			<key>timeStoppedRecording</key>
-			<real>669737685.97096395</real>
-			<key>title</key>
-			<string>Run MealPlanner</string>
-			<key>uniqueIdentifier</key>
-			<string>8BF53934-42E1-4943-ACA0-22B6F15F64D0</string>
-		</dict>
-		<key>9028D98B-10A3-4CCB-888D-AB3664E4EB7E</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>9028D98B-10A3-4CCB-888D-AB3664E4EB7E.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>MealPlanner project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>MealPlanner</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run MealPlanner</string>
-			<key>timeStartedRecording</key>
-			<real>669737714.20756996</real>
-			<key>timeStoppedRecording</key>
-			<real>669737828.66098595</real>
-			<key>title</key>
-			<string>Run MealPlanner</string>
-			<key>uniqueIdentifier</key>
-			<string>9028D98B-10A3-4CCB-888D-AB3664E4EB7E</string>
+			<string>321B4D5F-F613-4FE1-92F9-DC25EC8CA964</string>
 		</dict>
 		<key>9AF56E9E-1E52-4740-A73E-ADB7155E8CAB</key>
 		<dict>
@@ -448,7 +108,7 @@
 			<key>uniqueIdentifier</key>
 			<string>9AF56E9E-1E52-4740-A73E-ADB7155E8CAB</string>
 		</dict>
-		<key>A54C7246-9122-45C8-AD9D-E1458382409D</key>
+		<key>F39C1E0F-8AD2-4FC8-A873-B310C4C32922</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -457,7 +117,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>A54C7246-9122-45C8-AD9D-E1458382409D.xcactivitylog</string>
+			<string>F39C1E0F-8AD2-4FC8-A873-B310C4C32922.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -474,353 +134,13 @@
 			<key>signature</key>
 			<string>Run MealPlanner</string>
 			<key>timeStartedRecording</key>
-			<real>669738366.32386005</real>
+			<real>669753126.97042203</real>
 			<key>timeStoppedRecording</key>
-			<real>669738379.93147898</real>
+			<real>669753170.936656</real>
 			<key>title</key>
 			<string>Run MealPlanner</string>
 			<key>uniqueIdentifier</key>
-			<string>A54C7246-9122-45C8-AD9D-E1458382409D</string>
-		</dict>
-		<key>A8A7C8DA-8F63-4260-8EF8-948FD510D4BE</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>A8A7C8DA-8F63-4260-8EF8-948FD510D4BE.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>MealPlanner project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>MealPlanner</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run MealPlanner</string>
-			<key>timeStartedRecording</key>
-			<real>669738559.31312001</real>
-			<key>timeStoppedRecording</key>
-			<real>669738632.55331099</real>
-			<key>title</key>
-			<string>Run MealPlanner</string>
-			<key>uniqueIdentifier</key>
-			<string>A8A7C8DA-8F63-4260-8EF8-948FD510D4BE</string>
-		</dict>
-		<key>ACBAF40A-5001-45C5-951E-0801A7F19879</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>ACBAF40A-5001-45C5-951E-0801A7F19879.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>MealPlanner project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>MealPlanner</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run MealPlanner</string>
-			<key>timeStartedRecording</key>
-			<real>669737189.72009206</real>
-			<key>timeStoppedRecording</key>
-			<real>669737232.54900599</real>
-			<key>title</key>
-			<string>Run MealPlanner</string>
-			<key>uniqueIdentifier</key>
-			<string>ACBAF40A-5001-45C5-951E-0801A7F19879</string>
-		</dict>
-		<key>B699BB9E-06A7-47E2-8F2C-EF992C9361A3</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>B699BB9E-06A7-47E2-8F2C-EF992C9361A3.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>MealPlanner project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>MealPlanner</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run MealPlanner</string>
-			<key>timeStartedRecording</key>
-			<real>669736910.103701</real>
-			<key>timeStoppedRecording</key>
-			<real>669737009.64091003</real>
-			<key>title</key>
-			<string>Run MealPlanner</string>
-			<key>uniqueIdentifier</key>
-			<string>B699BB9E-06A7-47E2-8F2C-EF992C9361A3</string>
-		</dict>
-		<key>BDFBE1FD-2E45-48F6-96FE-BE21E13E8775</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>BDFBE1FD-2E45-48F6-96FE-BE21E13E8775.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>MealPlanner project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>MealPlanner</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run MealPlanner</string>
-			<key>timeStartedRecording</key>
-			<real>669735562.41639602</real>
-			<key>timeStoppedRecording</key>
-			<real>669735664.77811503</real>
-			<key>title</key>
-			<string>Run MealPlanner</string>
-			<key>uniqueIdentifier</key>
-			<string>BDFBE1FD-2E45-48F6-96FE-BE21E13E8775</string>
-		</dict>
-		<key>E02A72B5-585B-4754-891F-CA47DF7C7557</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>E02A72B5-585B-4754-891F-CA47DF7C7557.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>MealPlanner project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>MealPlanner</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run MealPlanner</string>
-			<key>timeStartedRecording</key>
-			<real>669736742.08525205</real>
-			<key>timeStoppedRecording</key>
-			<real>669736899.98494804</real>
-			<key>title</key>
-			<string>Run MealPlanner</string>
-			<key>uniqueIdentifier</key>
-			<string>E02A72B5-585B-4754-891F-CA47DF7C7557</string>
-		</dict>
-		<key>E49BDEF7-E67D-4A0F-A149-7FB4925FA2E1</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>E49BDEF7-E67D-4A0F-A149-7FB4925FA2E1.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>MealPlanner project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>MealPlanner</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run MealPlanner</string>
-			<key>timeStartedRecording</key>
-			<real>669737010.31094801</real>
-			<key>timeStoppedRecording</key>
-			<real>669737083.13158596</real>
-			<key>title</key>
-			<string>Run MealPlanner</string>
-			<key>uniqueIdentifier</key>
-			<string>E49BDEF7-E67D-4A0F-A149-7FB4925FA2E1</string>
-		</dict>
-		<key>E76E05CD-D951-4602-9618-D952B01A87B3</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>E76E05CD-D951-4602-9618-D952B01A87B3.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>MealPlanner project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>MealPlanner</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run MealPlanner</string>
-			<key>timeStartedRecording</key>
-			<real>669736433.14523995</real>
-			<key>timeStoppedRecording</key>
-			<real>669736478.91036999</real>
-			<key>title</key>
-			<string>Run MealPlanner</string>
-			<key>uniqueIdentifier</key>
-			<string>E76E05CD-D951-4602-9618-D952B01A87B3</string>
-		</dict>
-		<key>F022B595-DA15-4FF0-A3E0-D1FDDE51C431</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>F022B595-DA15-4FF0-A3E0-D1FDDE51C431.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>MealPlanner project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>MealPlanner</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run MealPlanner</string>
-			<key>timeStartedRecording</key>
-			<real>669737260.14925504</real>
-			<key>timeStoppedRecording</key>
-			<real>669737400.17599905</real>
-			<key>title</key>
-			<string>Run MealPlanner</string>
-			<key>uniqueIdentifier</key>
-			<string>F022B595-DA15-4FF0-A3E0-D1FDDE51C431</string>
-		</dict>
-		<key>F0C5307B-CD32-439C-BFCC-16F4842D237E</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>F0C5307B-CD32-439C-BFCC-16F4842D237E.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>MealPlanner project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>MealPlanner</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run MealPlanner</string>
-			<key>timeStartedRecording</key>
-			<real>669737879.87426198</real>
-			<key>timeStoppedRecording</key>
-			<real>669737928.04837298</real>
-			<key>title</key>
-			<string>Run MealPlanner</string>
-			<key>uniqueIdentifier</key>
-			<string>F0C5307B-CD32-439C-BFCC-16F4842D237E</string>
-		</dict>
-		<key>F88B7A9B-5661-4BAF-8DCE-FE56E4D2CB16</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>F88B7A9B-5661-4BAF-8DCE-FE56E4D2CB16.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>MealPlanner project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>MealPlanner</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run MealPlanner</string>
-			<key>timeStartedRecording</key>
-			<real>669737829.15595102</real>
-			<key>timeStoppedRecording</key>
-			<real>669737870.522156</real>
-			<key>title</key>
-			<string>Run MealPlanner</string>
-			<key>uniqueIdentifier</key>
-			<string>F88B7A9B-5661-4BAF-8DCE-FE56E4D2CB16</string>
+			<string>F39C1E0F-8AD2-4FC8-A873-B310C4C32922</string>
 		</dict>
 	</dict>
 </dict>

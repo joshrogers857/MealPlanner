@@ -575,7 +575,7 @@ struct PersistenceController {
         recipe7.addToRecipeIngredients(recipeIngredient29)
         recipe7.addToRecipeIngredients(recipeIngredient30)
         
-        let recipe8 = Recipe(context: container.viewContext)
+        /* let recipe8 = Recipe(context: container.viewContext)
         recipe8.name = "Chicken Salad"
         recipe8.preparationTime = 600.0
         recipe8.cookingTime = 600.0
@@ -585,7 +585,7 @@ struct PersistenceController {
         recipe9.name = "Chicken Noodles"
         recipe9.preparationTime = 600.0
         recipe9.cookingTime = 0.0
-        recipe9.serves = 2
+        recipe9.serves = 2 */
         
         let recipe10 = Recipe(context: container.viewContext)
         recipe10.name = "Chicken with Butter Beans"
@@ -593,11 +593,102 @@ struct PersistenceController {
         recipe10.cookingTime = 0.0
         recipe10.serves = 2
         
-        let recipe11 = Recipe(context: container.viewContext)
+        let butterBeansCan = Ingredient(context: container.viewContext)
+        butterBeansCan.name = "Can of butter beans"
+        butterBeansCan.type = "product"
+        butterBeansCan.unit = "g"
+        butterBeansCan.quantity = 400
+        butterBeansCan.calories = 270
+        butterBeansCan.carbs = 45.0
+        butterBeansCan.fat = 1.5
+        butterBeansCan.fibre = 15.0
+        butterBeansCan.protein = 18.0
+        butterBeansCan.salt = 1.86
+        butterBeansCan.saturates = 0.0
+        butterBeansCan.sugars = 6.0
+        
+        let rocket = Ingredient(context: container.viewContext)
+        rocket.name = "Rocket"
+        rocket.type = "raw"
+        rocket.unit = "g"
+        rocket.quantity = 1
+        rocket.calories = 1
+        rocket.carbs = 0.04
+        rocket.fat = 0.01
+        rocket.fibre = 0.02
+        rocket.protein = 0.03
+        rocket.salt = 0.00027
+        rocket.saturates = 0.0
+        rocket.sugars = 0.02
+        
+        let cookedChicken = Ingredient(context: container.viewContext)
+        cookedChicken.name = "Cooked chicken"
+        cookedChicken.type = "raw"
+        cookedChicken.unit = "g"
+        cookedChicken.quantity = 1
+        cookedChicken.calories = 2
+        cookedChicken.carbs = 0.001
+        cookedChicken.fat = 0.13
+        cookedChicken.fibre = 0.0
+        cookedChicken.protein = 0.24
+        cookedChicken.salt = 0.00071
+        cookedChicken.saturates = 0.037
+        cookedChicken.sugars = 0.0
+        
+        let fetaCheese = Ingredient(context: container.viewContext)
+        fetaCheese.name = "Feta cheese"
+        fetaCheese.type = "raw"
+        fetaCheese.unit = "g"
+        fetaCheese.quantity = 1
+        fetaCheese.calories = 3
+        fetaCheese.carbs = 0.041
+        fetaCheese.fat = 0.21
+        fetaCheese.fibre = 0.0
+        fetaCheese.protein = 0.14
+        fetaCheese.salt = 0.00917
+        fetaCheese.saturates = 0.15
+        fetaCheese.sugars = 0.041
+        
+        let recipeIngredient31 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient32 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient33 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient34 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient35 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient36 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient37 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient38 = RecipeIngredient(context: container.viewContext)
+        
+        recipeIngredient31.ingredient = garlicClove
+        recipeIngredient31.quantity = 2
+        recipeIngredient32.ingredient = oliveOil
+        recipeIngredient32.quantity = 26
+        recipeIngredient33.ingredient = butterBeansCan
+        recipeIngredient33.quantity = 1
+        recipeIngredient34.ingredient = romanoPepper
+        recipeIngredient34.quantity = 2
+        recipeIngredient35.ingredient = cherryTomato
+        recipeIngredient35.quantity = 9
+        recipeIngredient36.ingredient = rocket
+        recipeIngredient36.quantity = 100
+        recipeIngredient37.ingredient = cookedChicken
+        recipeIngredient37.quantity = 150
+        recipeIngredient38.ingredient = fetaCheese
+        recipeIngredient38.quantity = 25
+        
+        recipe10.addToRecipeIngredients(recipeIngredient31)
+        recipe10.addToRecipeIngredients(recipeIngredient32)
+        recipe10.addToRecipeIngredients(recipeIngredient33)
+        recipe10.addToRecipeIngredients(recipeIngredient34)
+        recipe10.addToRecipeIngredients(recipeIngredient35)
+        recipe10.addToRecipeIngredients(recipeIngredient36)
+        recipe10.addToRecipeIngredients(recipeIngredient37)
+        recipe10.addToRecipeIngredients(recipeIngredient38)
+        
+        /* let recipe11 = Recipe(context: container.viewContext)
         recipe11.name = "Slow Cooker Chicken Casserole"
         recipe11.preparationTime = 600.0
         recipe11.cookingTime = 21600.0
-        recipe11.serves = 4
+        recipe11.serves = 4 */
         
         let recipe12 = Recipe(context: container.viewContext)
         recipe12.name = "Chicken and Bean Enchiladas"
@@ -605,11 +696,101 @@ struct PersistenceController {
         recipe12.cookingTime = 1800.0
         recipe12.serves = 4
         
-        let recipe13 = Recipe(context: container.viewContext)
+        let kidneyBeansCan = Ingredient(context: container.viewContext)
+        kidneyBeansCan.name = "Can of kidney beans"
+        kidneyBeansCan.type = "product"
+        kidneyBeansCan.unit = "g"
+        kidneyBeansCan.quantity = 395
+        kidneyBeansCan.calories = 348
+        kidneyBeansCan.carbs = 66.4
+        kidneyBeansCan.fat = 0.0
+        kidneyBeansCan.fibre = 15.8
+        kidneyBeansCan.protein = 25.3
+        kidneyBeansCan.salt = 1.0428
+        kidneyBeansCan.saturates = 0.0
+        kidneyBeansCan.sugars = 3.2
+        
+        let sweetcornCan = Ingredient(context: container.viewContext)
+        sweetcornCan.name = "Can of sweetcorn"
+        sweetcornCan.type = "product"
+        sweetcornCan.unit = "g"
+        sweetcornCan.quantity = 195
+        sweetcornCan.calories = 195
+        sweetcornCan.carbs = 39.0
+        sweetcornCan.fat = 1.2
+        sweetcornCan.fibre = 2.3
+        sweetcornCan.protein = 4.9
+        sweetcornCan.salt = 0.585
+        sweetcornCan.saturates = 0.0
+        sweetcornCan.sugars = 11.9
+        
+        let flourTortillas = Ingredient(context: container.viewContext)
+        flourTortillas.name = "Flour tortillas"
+        flourTortillas.type = "product"
+        flourTortillas.quantity = 1
+        flourTortillas.calories = 159
+        flourTortillas.carbs = 27.0
+        flourTortillas.fat = 3.5
+        flourTortillas.fibre = 1.6
+        flourTortillas.protein = 4.3
+        flourTortillas.salt = 0.234
+        flourTortillas.saturates = 0.9
+        flourTortillas.sugars = 0.0
+        
+        let hardCheese = Ingredient(context: container.viewContext)
+        hardCheese.name = "Hard cheese"
+        hardCheese.type = "raw"
+        hardCheese.unit = "g"
+        hardCheese.quantity = 1
+        hardCheese.calories = 4
+        hardCheese.carbs = 0.031
+        hardCheese.fat = 0.33
+        hardCheese.fibre = 0.0
+        hardCheese.protein = 0.23
+        hardCheese.salt = 0.00653
+        hardCheese.saturates = 0.19
+        hardCheese.sugars = 0.005
+        
+        let recipeIngredient39 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient40 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient41 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient42 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient43 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient44 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient45 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient46 = RecipeIngredient(context: container.viewContext)
+        
+        recipeIngredient39.ingredient = vegetableOil
+        recipeIngredient39.quantity = 18
+        recipeIngredient40.ingredient = redOnion
+        recipeIngredient40.quantity = 1
+        recipeIngredient41.ingredient = garlicClove
+        recipeIngredient41.quantity = 1
+        recipeIngredient42.ingredient = kidneyBeansCan
+        recipeIngredient42.quantity = 2
+        recipeIngredient43.ingredient = cookedChicken
+        recipeIngredient43.quantity = 150
+        recipeIngredient44.ingredient = sweetcornCan
+        recipeIngredient44.quantity = 1
+        recipeIngredient45.ingredient = flourTortillas
+        recipeIngredient45.quantity = 8
+        recipeIngredient46.ingredient = hardCheese
+        recipeIngredient46.quantity = 140
+        
+        recipe12.addToRecipeIngredients(recipeIngredient39)
+        recipe12.addToRecipeIngredients(recipeIngredient40)
+        recipe12.addToRecipeIngredients(recipeIngredient41)
+        recipe12.addToRecipeIngredients(recipeIngredient42)
+        recipe12.addToRecipeIngredients(recipeIngredient43)
+        recipe12.addToRecipeIngredients(recipeIngredient44)
+        recipe12.addToRecipeIngredients(recipeIngredient45)
+        recipe12.addToRecipeIngredients(recipeIngredient46)
+        
+        /* let recipe13 = Recipe(context: container.viewContext)
         recipe13.name = "Fish Pie"
         recipe13.preparationTime = 900.0
         recipe13.cookingTime = 2700.0
-        recipe13.serves = 4
+        recipe13.serves = 4 */
         
         let recipe14 = Recipe(context: container.viewContext)
         recipe14.name = "Lasagne"
@@ -617,11 +798,174 @@ struct PersistenceController {
         recipe14.cookingTime = 3600.0
         recipe14.serves = 4
         
+        let minceBeef = Ingredient(context: container.viewContext)
+        minceBeef.name = "Mince beef"
+        minceBeef.type = "product"
+        minceBeef.unit = "g"
+        minceBeef.quantity = 500
+        minceBeef.calories = 1360
+        minceBeef.carbs = 0.0
+        minceBeef.fat = 85.0
+        minceBeef.fibre = 0.0
+        minceBeef.protein = 135.0
+        minceBeef.salt = 0.455
+        minceBeef.saturates = 32.5
+        minceBeef.sugars = 0.0
+        
+        let choppedTomatoCan = Ingredient(context: container.viewContext)
+        choppedTomatoCan.name = "Can of chopped tomatoes"
+        choppedTomatoCan.type = "product"
+        choppedTomatoCan.unit = "g"
+        choppedTomatoCan.quantity = 400
+        choppedTomatoCan.calories = 104
+        choppedTomatoCan.carbs = 18.8
+        choppedTomatoCan.fat = 0.8
+        choppedTomatoCan.fibre = 2.0
+        choppedTomatoCan.protein = 4.0
+        choppedTomatoCan.salt = 0.16
+        choppedTomatoCan.saturates = 0.0
+        choppedTomatoCan.sugars = 16.4
+        
+        let lasagneSheets = Ingredient(context: container.viewContext)
+        lasagneSheets.name = "Pack of lasagne sheets"
+        lasagneSheets.type = "product"
+        lasagneSheets.unit = "g"
+        lasagneSheets.quantity = 500
+        lasagneSheets.calories = 133
+        lasagneSheets.carbs = 26.7
+        lasagneSheets.fat = 0.0
+        lasagneSheets.fibre = 13.3
+        lasagneSheets.protein = 6.7
+        lasagneSheets.salt = 0.4
+        lasagneSheets.saturates = 0.0
+        lasagneSheets.sugars = 0.0
+        
+        let mozzarellaBall = Ingredient(context: container.viewContext)
+        mozzarellaBall.name = "Ball of mozzarella"
+        mozzarellaBall.type = "product"
+        mozzarellaBall.quantity = 1
+        mozzarellaBall.calories = 391
+        mozzarellaBall.carbs = 2.9
+        mozzarellaBall.fat = 29.0
+        mozzarellaBall.fibre = 0.0
+        mozzarellaBall.protein = 29.0
+        mozzarellaBall.salt = 0.8188
+        mozzarellaBall.saturates = 17.0
+        mozzarellaBall.sugars = 1.3
+        
+        let recipeIngredient47 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient48 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient49 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient50 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient51 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient52 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient53 = RecipeIngredient(context: container.viewContext)
+        
+        recipeIngredient47.ingredient = oliveOil
+        recipeIngredient47.quantity = 18
+        recipeIngredient48.ingredient = redOnion
+        recipeIngredient48.quantity = 1
+        recipeIngredient49.ingredient = garlicClove
+        recipeIngredient49.quantity = 2
+        recipeIngredient50.ingredient = minceBeef
+        recipeIngredient50.quantity = 1
+        recipeIngredient51.ingredient = choppedTomatoCan
+        recipeIngredient51.quantity = 2
+        recipeIngredient52.ingredient = lasagneSheets
+        recipeIngredient52.quantity = 1
+        recipeIngredient53.ingredient = mozzarellaBall
+        recipeIngredient53.quantity = 1
+        
+        recipe14.addToRecipeIngredients(recipeIngredient47)
+        recipe14.addToRecipeIngredients(recipeIngredient48)
+        recipe14.addToRecipeIngredients(recipeIngredient49)
+        recipe14.addToRecipeIngredients(recipeIngredient50)
+        recipe14.addToRecipeIngredients(recipeIngredient51)
+        recipe14.addToRecipeIngredients(recipeIngredient52)
+        recipe14.addToRecipeIngredients(recipeIngredient53)
+        
         let recipe15 = Recipe(context: container.viewContext)
         recipe15.name = "Chicken and Sweet Potato Curry"
         recipe15.preparationTime = 600.0
         recipe15.cookingTime = 2700.0
         recipe15.serves = 4
+        
+        let kormaPasteJar = Ingredient(context: container.viewContext)
+        kormaPasteJar.name = "Jar of korma paste"
+        kormaPasteJar.type = "product"
+        kormaPasteJar.unit = "g"
+        kormaPasteJar.quantity = 165
+        kormaPasteJar.calories = 242
+        kormaPasteJar.carbs = 25.2
+        kormaPasteJar.fat = 19.8
+        kormaPasteJar.fibre = 0.0
+        kormaPasteJar.protein = 2.1
+        kormaPasteJar.salt = 0.4752
+        kormaPasteJar.saturates = 11.1
+        kormaPasteJar.sugars = 11.2
+        
+        let sweetPotato = Ingredient(context: container.viewContext)
+        sweetPotato.name = "Sweet potato"
+        sweetPotato.type = "raw"
+        sweetPotato.unit = "g"
+        sweetPotato.quantity = 1
+        sweetPotato.calories = 1
+        sweetPotato.carbs = 0.216
+        sweetPotato.fat = 0.002
+        sweetPotato.fibre = 0.034
+        sweetPotato.protein = 0.021
+        sweetPotato.salt = 0.000369
+        sweetPotato.saturates = 0.001
+        sweetPotato.sugars = 0.067
+        
+        let basmatiRice = Ingredient(context: container.viewContext)
+        basmatiRice.name = "Basmati rice"
+        basmatiRice.type = "raw"
+        basmatiRice.unit = "g"
+        basmatiRice.quantity = 1
+        basmatiRice.calories = 1
+        basmatiRice.carbs = 0.28
+        basmatiRice.fat = 0.003
+        basmatiRice.fibre = 0.004
+        basmatiRice.protein = 0.027
+        basmatiRice.salt = 0.00001
+        basmatiRice.saturates = 0.001
+        basmatiRice.sugars = 0.001
+        
+        let recipeIngredient54 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient55 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient56 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient57 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient58 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient59 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient60 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient61 = RecipeIngredient(context: container.viewContext)
+        
+        recipeIngredient54.ingredient = vegetableOil
+        recipeIngredient54.quantity = 18
+        recipeIngredient55.ingredient = redOnion
+        recipeIngredient55.quantity = 1
+        recipeIngredient56.ingredient = cookedChicken
+        recipeIngredient56.quantity = 450
+        recipeIngredient57.ingredient = kormaPasteJar
+        recipeIngredient57.quantity = 1
+        recipeIngredient58.ingredient = garlicClove
+        recipeIngredient58.quantity = 2
+        recipeIngredient59.ingredient = sweetPotato
+        recipeIngredient59.quantity = 500
+        recipeIngredient60.ingredient = choppedTomatoCan
+        recipeIngredient60.quantity = 1
+        recipeIngredient61.ingredient = basmatiRice
+        recipeIngredient61.quantity = 300
+        
+        recipe15.addToRecipeIngredients(recipeIngredient54)
+        recipe15.addToRecipeIngredients(recipeIngredient55)
+        recipe15.addToRecipeIngredients(recipeIngredient56)
+        recipe15.addToRecipeIngredients(recipeIngredient57)
+        recipe15.addToRecipeIngredients(recipeIngredient58)
+        recipe15.addToRecipeIngredients(recipeIngredient59)
+        recipe15.addToRecipeIngredients(recipeIngredient60)
+        recipe15.addToRecipeIngredients(recipeIngredient61)
     }
     
     static func prePopulatePreview(using container: NSPersistentContainer) {
