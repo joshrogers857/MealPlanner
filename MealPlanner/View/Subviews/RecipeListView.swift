@@ -2,7 +2,7 @@
 //  RecipeListView.swift
 //  MealPlanner
 //
-//  Created by Joshua Rogers on 10/03/2022.
+//  Created by Joshua Rogers on 23/03/2022.
 //
 
 import SwiftUI
@@ -17,19 +17,17 @@ struct RecipeListView: View {
     ) var recipeList: FetchedResults<Recipe>
     
     var body: some View {
-        NavigationView {
-            List {
-                if(recipeList.isEmpty) {
-                    Text("No recipes found")
-                } else {
-                    ForEach(recipeList, id: \.self) {
-                        recipe in
-                        RecipeListItemView(name: recipe.wrappedName)
-                    }
+        List {
+            if(recipeList.isEmpty) {
+                Text("No recipes found")
+            } else {
+                ForEach(recipeList, id: \.self) {
+                    recipe in
+                    RecipeListItemView(name: recipe.wrappedName)
                 }
             }
-            .navigationTitle("Recipes")
         }
+        .navigationTitle("Recipes")
     }
 }
 

@@ -17,7 +17,7 @@ struct MainView: View {
                     Label("Meal Plan", systemImage: "list.dash")
                 }
             
-            RecipeListView()
+            RecipeView()
                 .tabItem {
                     Label("Recipes", systemImage: "book")
                 }

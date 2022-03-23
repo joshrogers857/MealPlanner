@@ -444,7 +444,7 @@ struct PersistenceController {
         tomato.sugars = 3.2
         
         let romanoPepper = Ingredient(context: container.viewContext)
-        romanoPepper.name = "romanoPepper"
+        romanoPepper.name = "Romano pepper"
         romanoPepper.type = "product"
         romanoPepper.quantity = 1
         romanoPepper.calories = 32
