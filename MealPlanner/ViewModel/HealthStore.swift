@@ -57,11 +57,7 @@ class HealthStore: ObservableObject {
             options: .cumulativeSum
         ) { (query, statisticsOrNil, errorOrNil) in
             
-            guard let statistics = statisticsOrNil else {
-                return
-            }
-            
-            let sum = statistics.sumQuantity()
+            let sum = statisticsOrNil?.sumQuantity()
             let totalActiveCalories = sum?.doubleValue(for: HKUnit.largeCalorie())
             
             DispatchQueue.main.async {
@@ -88,11 +84,7 @@ class HealthStore: ObservableObject {
             options: .cumulativeSum
         ) { (query, statisticsOrNil, errorOrNil) in
             
-            guard let statistics = statisticsOrNil else {
-                return
-            }
-            
-            let sum = statistics.sumQuantity()
+            let sum = statisticsOrNil?.sumQuantity()
             let totalBasalCalories = sum?.doubleValue(for: HKUnit.largeCalorie())
             
             DispatchQueue.main.async {

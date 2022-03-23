@@ -9,8 +9,7 @@ import SwiftUI
 
 struct CalorieView: View {
     @ObservedObject private var healthStore = HealthStore.shared
-    var startDate: Date
-    var endDate: Date
+    var dates: [Date]
     
     var body: some View {
         if(healthStore.store == nil) {
@@ -33,20 +32,14 @@ struct CalorieView: View {
                 .padding(.top, 0.1)
             }
             .onAppear {
-                healthStore.activeCaloriesQuery(startDate: startDate, endDate: endDate)
-                healthStore.basalCaloriesQuery(startDate: startDate, endDate: endDate)
+                healthStore.activeCaloriesQuery(startDate: dates[0], endDate: dates[1])
+                healthStore.basalCaloriesQuery(startDate: dates[0], endDate: dates[1])
             }
-            .onChange(of: startDate) {
+            .onChange(of: dates) {
                 newValue in
                 
-                healthStore.activeCaloriesQuery(startDate: newValue, endDate: endDate)
-                healthStore.basalCaloriesQuery(startDate: newValue, endDate: endDate)
-            }
-            .onChange(of: endDate) {
-                newValue in
-                
-                healthStore.activeCaloriesQuery(startDate: startDate, endDate: newValue)
-                healthStore.basalCaloriesQuery(startDate: startDate, endDate: newValue)
+                healthStore.activeCaloriesQuery(startDate: newValue[0], endDate: newValue[1])
+                healthStore.basalCaloriesQuery(startDate: newValue[0], endDate: newValue[1])
             }
         }
     }
