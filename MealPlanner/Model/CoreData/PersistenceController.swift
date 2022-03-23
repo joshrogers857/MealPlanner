@@ -422,7 +422,7 @@ struct PersistenceController {
         recipe5.name = "Eggs Benedict"
         recipe5.preparationTime = 300.0
         recipe5.cookingTime = 900.0
-        recipe5.serves = 2
+        recipe5.serves = 2 */
         
         let recipe6 = Recipe(context: container.viewContext)
         recipe6.name = "Red Pepper and Tomato Soup"
@@ -430,11 +430,150 @@ struct PersistenceController {
         recipe6.cookingTime = 1800.0
         recipe6.serves = 2
         
+        let tomato = Ingredient(context: container.viewContext)
+        tomato.name = "Tomato"
+        tomato.type = "product"
+        tomato.quantity = 1
+        tomato.calories = 22
+        tomato.carbs = 4.8
+        tomato.fat = 0.3
+        tomato.fibre = 1.5
+        tomato.protein = 1.1
+        tomato.salt = 0.0062
+        tomato.saturates = 0.0
+        tomato.sugars = 3.2
+        
+        let romanoPepper = Ingredient(context: container.viewContext)
+        romanoPepper.name = "romanoPepper"
+        romanoPepper.type = "product"
+        romanoPepper.quantity = 1
+        romanoPepper.calories = 32
+        romanoPepper.carbs = 7.6
+        romanoPepper.fat = 0.2
+        romanoPepper.fibre = 1.4
+        romanoPepper.protein = 1.0
+        romanoPepper.salt = 0.0023
+        romanoPepper.saturates = 0.0
+        romanoPepper.sugars = 5.0
+        
+        let redWineVinegar = Ingredient(context: container.viewContext)
+        redWineVinegar.name = "Red wine vinegar"
+        redWineVinegar.type = "raw"
+        redWineVinegar.unit = "ml"
+        redWineVinegar.quantity = 1
+        redWineVinegar.calories = 1
+        redWineVinegar.carbs = 0.0
+        redWineVinegar.fat = 0.0
+        redWineVinegar.fibre = 0.0
+        redWineVinegar.protein = 0.0
+        redWineVinegar.salt = 0.0006
+        redWineVinegar.saturates = 0.0
+        redWineVinegar.sugars = 0.0
+        
+        let recipeIngredient21 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient22 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient23 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient24 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient25 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient26 = RecipeIngredient(context: container.viewContext)
+        
+        recipeIngredient21.ingredient = tomato
+        recipeIngredient21.quantity = 4
+        recipeIngredient22.ingredient = redOnion
+        recipeIngredient22.quantity = 1
+        recipeIngredient23.ingredient = romanoPepper
+        recipeIngredient23.quantity = 2
+        recipeIngredient24.ingredient = oliveOil
+        recipeIngredient24.quantity = 36
+        recipeIngredient25.ingredient = garlicClove
+        recipeIngredient25.quantity = 2
+        recipeIngredient26.ingredient = redWineVinegar
+        recipeIngredient26.quantity = 18
+        
+        recipe6.addToRecipeIngredients(recipeIngredient21)
+        recipe6.addToRecipeIngredients(recipeIngredient22)
+        recipe6.addToRecipeIngredients(recipeIngredient23)
+        recipe6.addToRecipeIngredients(recipeIngredient24)
+        recipe6.addToRecipeIngredients(recipeIngredient25)
+        recipe6.addToRecipeIngredients(recipeIngredient26)
+        
         let recipe7 = Recipe(context: container.viewContext)
         recipe7.name = "Tuna Lettuce Wraps"
         recipe7.preparationTime = 900.0
         recipe7.cookingTime = 120.0
         recipe7.serves = 2
+        
+        let tunaFillet = Ingredient(context: container.viewContext)
+        tunaFillet.name = "Tuna fillet"
+        tunaFillet.type = "product"
+        tunaFillet.unit = "g"
+        tunaFillet.quantity = 159
+        tunaFillet.calories = 173
+        tunaFillet.carbs = 0.0
+        tunaFillet.fat = 1.4
+        tunaFillet.fibre = 0.0
+        tunaFillet.protein = 38
+        tunaFillet.salt = 0.18
+        tunaFillet.saturates = 0.4
+        tunaFillet.sugars = 0.0
+        
+        let avocado = Ingredient(context: container.viewContext)
+        avocado.name = "Avocado"
+        avocado.type = "product"
+        avocado.quantity = 1
+        avocado.calories = 322
+        avocado.carbs = 17.0
+        avocado.fat = 29.0
+        avocado.fibre = 13.0
+        avocado.protein = 4.0
+        avocado.salt = 0.014
+        avocado.saturates = 4.3
+        avocado.sugars = 1.3
+        
+        let romaineLettuce = Ingredient(context: container.viewContext)
+        romaineLettuce.name = "Romaine lettuce"
+        romaineLettuce.type = "product"
+        romaineLettuce.quantity = 1
+        romaineLettuce.calories = 6
+        romaineLettuce.carbs = 3.1
+        romaineLettuce.fat = 0.3
+        romaineLettuce.fibre = 2.0
+        romaineLettuce.protein = 1.2
+        romaineLettuce.salt = 0.0075
+        romaineLettuce.saturates = 0.0
+        romaineLettuce.sugars = 1.1
+        
+        let cherryTomato = Ingredient(context: container.viewContext)
+        cherryTomato.name = "Cherry tomato"
+        cherryTomato.type = "product"
+        cherryTomato.quantity = 1
+        cherryTomato.calories = 3
+        cherryTomato.carbs = 0.7
+        cherryTomato.fat = 0.0
+        cherryTomato.fibre = 0.2
+        cherryTomato.protein = 0.1
+        cherryTomato.salt = 0.00008
+        cherryTomato.saturates = 0.0
+        cherryTomato.sugars = 0.5
+        
+        let recipeIngredient27 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient28 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient29 = RecipeIngredient(context: container.viewContext)
+        let recipeIngredient30 = RecipeIngredient(context: container.viewContext)
+        
+        recipeIngredient27.ingredient = tunaFillet
+        recipeIngredient27.quantity = 2
+        recipeIngredient28.ingredient = avocado
+        recipeIngredient28.quantity = 1
+        recipeIngredient29.ingredient = romaineLettuce
+        recipeIngredient29.quantity = 1
+        recipeIngredient30.ingredient = cherryTomato
+        recipeIngredient30.quantity = 16
+        
+        recipe7.addToRecipeIngredients(recipeIngredient27)
+        recipe7.addToRecipeIngredients(recipeIngredient28)
+        recipe7.addToRecipeIngredients(recipeIngredient29)
+        recipe7.addToRecipeIngredients(recipeIngredient30)
         
         let recipe8 = Recipe(context: container.viewContext)
         recipe8.name = "Chicken Salad"
@@ -482,7 +621,7 @@ struct PersistenceController {
         recipe15.name = "Chicken and Sweet Potato Curry"
         recipe15.preparationTime = 600.0
         recipe15.cookingTime = 2700.0
-        recipe15.serves = 4 */
+        recipe15.serves = 4
     }
     
     static func prePopulatePreview(using container: NSPersistentContainer) {
