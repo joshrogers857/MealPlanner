@@ -40,6 +40,7 @@
 		BD3EA78127EA1D1B0045D9A3 /* MealPlanStage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EA77527EA1D1B0045D9A3 /* MealPlanStage+CoreDataClass.swift */; };
 		BD3EA78227EA1D1B0045D9A3 /* MealPlanStage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EA77627EA1D1B0045D9A3 /* MealPlanStage+CoreDataProperties.swift */; };
 		BD3EA78427EA2C0B0045D9A3 /* RecipeIngredientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EA78327EA2C0B0045D9A3 /* RecipeIngredientTests.swift */; };
+		BD5A7A4C27EBBA3A00556FC4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5A7A4B27EBBA3A00556FC4 /* SettingsView.swift */; };
 		BD67925B27E21B4C006523AC /* StageHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD67925A27E21B4C006523AC /* StageHeaderView.swift */; };
 		BD67925E27E21F4E006523AC /* DeviceRotationViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD67925D27E21F4E006523AC /* DeviceRotationViewModifier.swift */; };
 		BD67926227E239C5006523AC /* AddRecipePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD67926127E239C5006523AC /* AddRecipePickerView.swift */; };
@@ -116,6 +117,7 @@
 		BD3EA77527EA1D1B0045D9A3 /* MealPlanStage+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealPlanStage+CoreDataClass.swift"; sourceTree = "<group>"; };
 		BD3EA77627EA1D1B0045D9A3 /* MealPlanStage+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealPlanStage+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BD3EA78327EA2C0B0045D9A3 /* RecipeIngredientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeIngredientTests.swift; sourceTree = "<group>"; };
+		BD5A7A4B27EBBA3A00556FC4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		BD67925A27E21B4C006523AC /* StageHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageHeaderView.swift; sourceTree = "<group>"; };
 		BD67925D27E21F4E006523AC /* DeviceRotationViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRotationViewModifier.swift; sourceTree = "<group>"; };
 		BD67926127E239C5006523AC /* AddRecipePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipePickerView.swift; sourceTree = "<group>"; };
@@ -310,6 +312,7 @@
 				BD0B40D827DA656F001F07C4 /* MealPlanView.swift */,
 				BD2B0F0F27C556C800D3CD6A /* MainView.swift */,
 				BDC43BB427E8DC70007F9207 /* StagesView.swift */,
+				BD5A7A4B27EBBA3A00556FC4 /* SettingsView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -535,6 +538,7 @@
 				BDC6303E27E8C35900CCCFEE /* MealPlanStageList.swift in Sources */,
 				BD2C1BE327E1E24200769FD0 /* NutritionView.swift in Sources */,
 				BDC6303B27E89A8E00CCCFEE /* SelectedDate.swift in Sources */,
+				BD5A7A4C27EBBA3A00556FC4 /* SettingsView.swift in Sources */,
 				BD3EA77727EA1D1B0045D9A3 /* MealPlan+CoreDataClass.swift in Sources */,
 				BDC6304027E8C36600CCCFEE /* MealPlanStageRecipeList.swift in Sources */,
 				BD3EA77B27EA1D1B0045D9A3 /* Instruction+CoreDataClass.swift in Sources */,

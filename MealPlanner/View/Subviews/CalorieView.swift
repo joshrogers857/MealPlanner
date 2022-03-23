@@ -24,9 +24,7 @@ struct CalorieView: View {
                 Text("Total calories: \(healthStore.totalCalories)")
                 
                 VStack(alignment: .leading) {
-                    Text("Recommended (men): 2500/day")
-                        .font(.caption)
-                    Text("Recommended (women): 2000/day")
+                    Text("Recommended: \(UserDefaults.standard.string(forKey: "sex") == "Male" ? 2500 : 2000)/day")
                         .font(.caption)
                 }
                 .padding(.top, 0.1)

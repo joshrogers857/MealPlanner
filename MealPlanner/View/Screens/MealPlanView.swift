@@ -57,6 +57,12 @@ struct MealPlanView: View {
                 ToolbarItem {
                     EditButton()
                 }
+                
+                ToolbarItem(placement: .navigationBarLeading) {
+                    NavigationLink(destination: SettingsView()) {
+                        Label("Settings", systemImage: "gearshape.fill")
+                    }
+                }
             }
         }
     }

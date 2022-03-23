@@ -34,7 +34,7 @@
 			<key>uniqueIdentifier</key>
 			<string>7F2E32DC-520F-4C50-8C94-E133F65A9AF8</string>
 		</dict>
-		<key>D57F4DA5-B81D-4ABA-AE50-8FAE54F63DD2</key>
+		<key>8AFCCDF5-8663-43EA-A2B6-8F5F5B7D3104</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -43,7 +43,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>D57F4DA5-B81D-4ABA-AE50-8FAE54F63DD2.xcactivitylog</string>
+			<string>8AFCCDF5-8663-43EA-A2B6-8F5F5B7D3104.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -54,13 +54,13 @@
 			<key>signature</key>
 			<string>MealPlanner-cnavxnuytvfcyngzxneikxxwqyxs</string>
 			<key>timeStartedRecording</key>
-			<real>669754852.98640203</real>
+			<real>669763050.68490601</real>
 			<key>timeStoppedRecording</key>
-			<real>669754853.69587004</real>
+			<real>669763051.74193799</real>
 			<key>title</key>
 			<string>Build target MealPlanner</string>
 			<key>uniqueIdentifier</key>
-			<string>D57F4DA5-B81D-4ABA-AE50-8FAE54F63DD2</string>
+			<string>8AFCCDF5-8663-43EA-A2B6-8F5F5B7D3104</string>
 		</dict>
 		<key>D85509DB-10C1-4973-B6E2-4CD582BAF557</key>
 		<dict>
