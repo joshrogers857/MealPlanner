@@ -252,7 +252,6 @@
 			children = (
 				BD018C6627E0D83800508661 /* Service */,
 				BD2FD3B927DB6C44004BABB9 /* Model */,
-				BD83D48327D7C372003261DE /* View */,
 				BD2B0F2327C556C900D3CD6A /* MealPlannerTests.swift */,
 			);
 			path = MealPlannerTests;
@@ -357,13 +356,6 @@
 				BD67925C27E21F32006523AC /* ViewModifiers */,
 				BD67925727E21AF2006523AC /* Subviews */,
 				BD67925627E21AE8006523AC /* Screens */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		BD83D48327D7C372003261DE /* View */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
