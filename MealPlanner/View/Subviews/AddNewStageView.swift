@@ -11,6 +11,7 @@ struct AddNewStageView: View {
     @Environment(\.managedObjectContext) private var moc
     
     @State private var newStageName = ""
+    @State private var numberEating: Int?
     @Binding var isShowing: Bool
     
     var mealPlan: MealPlan
@@ -24,11 +25,16 @@ struct AddNewStageView: View {
             
             Form {
                 TextField("Name", text: $newStageName)
+                TextField("Number eating",
+                          value: $numberEating,
+                          format: .number)
+                    .keyboardType(.decimalPad)
                 
                 Button("Add New Stage") {
                     let stage = MealPlanStage(context: moc)
                     stage.name = newStageName
                     stage.listPosition = 1
+                    stage.numberEating = Int16(numberEating!) //Assert not nil as the button is only enabled when the value is valid
                     
                     for (index, stage) in stages.enumerated() {
                         stage.listPosition = Int16((index + 2))
@@ -39,7 +45,7 @@ struct AddNewStageView: View {
                     
                     isShowing = false
                 }
-                .disabled(newStageName.isEmpty)
+                .disabled(newStageName.isEmpty || numberEating == nil || numberEating ?? 0 <= 0)
             }
         }
     }

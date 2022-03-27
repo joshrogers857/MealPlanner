@@ -64,6 +64,27 @@ struct PersistenceController {
         recipe1.cookingTime = 2400.0
         recipe1.serves = 10
         
+        let instruction1 = Instruction(context: container.viewContext)
+        instruction1.stepNumber = 1
+        instruction1.body = "Preheat your oven to 180C/160C fan. Oil and line a 20cm deep tin with baking parchment"
+        
+        let instruction2 = Instruction(context: container.viewContext)
+        instruction2.stepNumber = 2
+        instruction2.body = "Mash the bananas, then stir in the oil, egg, and sugar"
+        
+        let instruction3 = Instruction(context: container.viewContext)
+        instruction3.stepNumber = 3
+        instruction3.body = "Fold in the muesli, 80% of the fruit mix and add a pinch of salt"
+        
+        let instruction4 = Instruction(context: container.viewContext)
+        instruction4.stepNumber = 4
+        instruction4.body = "Bake for 40 minutes. Allow to cool, then turn out and cut into 10 bars"
+        
+        recipe1.addToInstructions(instruction1)
+        recipe1.addToInstructions(instruction2)
+        recipe1.addToInstructions(instruction3)
+        recipe1.addToInstructions(instruction4)
+        
         let vegetableOil = Ingredient(context: container.viewContext)
         vegetableOil.name = "Vegetable oil"
         vegetableOil.type = "raw"
@@ -178,6 +199,27 @@ struct PersistenceController {
         recipe2.preparationTime = 300.0
         recipe2.cookingTime = 1200.0
         recipe2.serves = 2
+        
+        let instruction5 = Instruction(context: container.viewContext)
+        instruction5.stepNumber = 1
+        instruction5.body = "Heat the oil in a frying pan, with the lid on"
+        
+        let instruction6 = Instruction(context: container.viewContext)
+        instruction6.stepNumber = 2
+        instruction6.body = "Soften the onions, chili, garlic and coriander for 5 minutes"
+        
+        let instruction7 = Instruction(context: container.viewContext)
+        instruction7.stepNumber = 3
+        instruction7.body = "Stir in the tomatoes and sugar, and simmer for 8-10 minutes"
+        
+        let instruction8 = Instruction(context: container.viewContext)
+        instruction8.stepNumber = 4
+        instruction8.body = "Using the back of a large spoon, make 4 wells in the sauce. Crack an egg into each one. Put the lid back on the pan and cook on a low heat for 6-8 minutes"
+        
+        recipe2.addToInstructions(instruction5)
+        recipe2.addToInstructions(instruction6)
+        recipe2.addToInstructions(instruction7)
+        recipe2.addToInstructions(instruction8)
         
         let oliveOil = Ingredient(context: container.viewContext)
         oliveOil.name = "Olive oil"
@@ -315,6 +357,17 @@ struct PersistenceController {
         recipe3.cookingTime = 0.0
         recipe3.serves = 2
         
+        let instruction9 = Instruction(context: container.viewContext)
+        instruction9.stepNumber = 1
+        instruction9.body = "Put all ingredients into a blender and blend for 1 minute"
+        
+        let instruction10 = Instruction(context: container.viewContext)
+        instruction10.stepNumber = 2
+        instruction10.body = "Pour into two glasses and serve"
+        
+        recipe3.addToInstructions(instruction9)
+        recipe3.addToInstructions(instruction10)
+        
         let porridgeOats = Ingredient(context: container.viewContext)
         porridgeOats.name = "Porridge oats"
         porridgeOats.type = "raw"
@@ -430,6 +483,22 @@ struct PersistenceController {
         recipe6.cookingTime = 1800.0
         recipe6.serves = 2
         
+        let instruction11 = Instruction(context: container.viewContext)
+        instruction11.stepNumber = 1
+        instruction11.body = "Preheat your oven to 200C/180C fan/gas 6. Put the tomatoes, onion and peppers in a roasting tin, toss with the oil and season. Roast for 25-30 minutes."
+        
+        let instruction12 = Instruction(context: container.viewContext)
+        instruction12.stepNumber = 2
+        instruction12.body = "Add the garlic cloves to the tin. Mix the vinegar into the tin then blend everything with a stick blender, adding water to loosen to your preferred consistency (we used around 150ml)."
+        
+        let instruction13 = Instruction(context: container.viewContext)
+        instruction13.stepNumber = 3
+        instruction13.body = "Reheat the soup if necessary, then spoon into two bowls and top each with a drizzle of oil. Serve"
+        
+        recipe6.addToInstructions(instruction11)
+        recipe6.addToInstructions(instruction12)
+        recipe6.addToInstructions(instruction13)
+        
         let tomato = Ingredient(context: container.viewContext)
         tomato.name = "Tomato"
         tomato.type = "product"
@@ -502,6 +571,22 @@ struct PersistenceController {
         recipe7.preparationTime = 900.0
         recipe7.cookingTime = 120.0
         recipe7.serves = 2
+        
+        let instruction14 = Instruction(context: container.viewContext)
+        instruction14.stepNumber = 1
+        instruction14.body = "Brush the tuna with a little oil. Heat a non-stick pan, add the tuna and cook for 1 min each side. Transfer to a plate to rest"
+        
+        let instruction15 = Instruction(context: container.viewContext)
+        instruction15.stepNumber = 2
+        instruction15.body = "Halve and stone the avocado and scoop the flesh into a small bowl. Mash well until smooth. Spoon into two small dishes and put on serving plates with the lettuce leaves, and tomatoes."
+        
+        let instruction16 = Instruction(context: container.viewContext)
+        instruction16.stepNumber = 3
+        instruction16.body = "Slice the tuna and arrange on the plates. Spoon some of the mixture on the lettuce leaves and top with tuna and cherry tomatoes. Roll up and serve"
+        
+        recipe7.addToInstructions(instruction14)
+        recipe7.addToInstructions(instruction15)
+        recipe7.addToInstructions(instruction16)
         
         let tunaFillet = Ingredient(context: container.viewContext)
         tunaFillet.name = "Tuna fillet"
@@ -592,6 +677,22 @@ struct PersistenceController {
         recipe10.preparationTime = 300.0
         recipe10.cookingTime = 0.0
         recipe10.serves = 2
+        
+        let instruction17 = Instruction(context: container.viewContext)
+        instruction17.stepNumber = 1
+        instruction17.body = "Roast the garlic cloves"
+        
+        let instruction18 = Instruction(context: container.viewContext)
+        instruction18.stepNumber = 2
+        instruction18.body = "Squeeze the garlic out of the skins and whisk together with the oil and seasoning in a bowl. Add the butter beans, peppers, tomatoes and rocket, and mix"
+        
+        let instruction19 = Instruction(context: container.viewContext)
+        instruction19.stepNumber = 3
+        instruction19.body = "Divide between two bowls. Top with the chicken and crumble over the feta"
+        
+        recipe10.addToInstructions(instruction17)
+        recipe10.addToInstructions(instruction18)
+        recipe10.addToInstructions(instruction19)
         
         let butterBeansCan = Ingredient(context: container.viewContext)
         butterBeansCan.name = "Can of butter beans"
@@ -696,6 +797,27 @@ struct PersistenceController {
         recipe12.cookingTime = 1800.0
         recipe12.serves = 4
         
+        let instruction20 = Instruction(context: container.viewContext)
+        instruction20.stepNumber = 1
+        instruction20.body = "Preheat oven to 180C/160C fan/gas 4. Heat the oil in a frying pan and cook the onion and garlic for 5 mins"
+        
+        let instruction21 = Instruction(context: container.viewContext)
+        instruction21.stepNumber = 2
+        instruction21.body = "Stir in the kidney beans, chicken, and sweetcorn"
+        
+        let instruction22 = Instruction(context: container.viewContext)
+        instruction22.stepNumber = 3
+        instruction22.body = "Divide the mixture between the tortillas, sprinkle over half the cheese, then roll up and place into a baking dish"
+        
+        let instruction23 = Instruction(context: container.viewContext)
+        instruction23.stepNumber = 4
+        instruction23.body = "Sprinkle over the remaining cheese, then bake for 20-25 mins"
+        
+        recipe12.addToInstructions(instruction20)
+        recipe12.addToInstructions(instruction21)
+        recipe12.addToInstructions(instruction22)
+        recipe12.addToInstructions(instruction23)
+        
         let kidneyBeansCan = Ingredient(context: container.viewContext)
         kidneyBeansCan.name = "Can of kidney beans"
         kidneyBeansCan.type = "product"
@@ -798,6 +920,32 @@ struct PersistenceController {
         recipe14.cookingTime = 3600.0
         recipe14.serves = 4
         
+        let instruction24 = Instruction(context: container.viewContext)
+        instruction24.stepNumber = 1
+        instruction24.body = "Heat the oil in a large saucepan. Add the onion, and cook over a medium heat for 5 minutes until softened"
+        
+        let instruction25 = Instruction(context: container.viewContext)
+        instruction25.stepNumber = 2
+        instruction25.body = "Add the garlic and cook for 1 minute, then add the mince and cook for 6 mins until browned"
+        
+        let instruction26 = Instruction(context: container.viewContext)
+        instruction26.stepNumber = 3
+        instruction26.body = "Add the chopped tomatoes. Fill each can half full with water to rinse out any tomatoes left in the can, and add to the pan. Season to taste. Simmer for 20 mins"
+        
+        let instruction27 = Instruction(context: container.viewContext)
+        instruction27.stepNumber = 4
+        instruction27.body = "Preheat oven to 200C/180C fan. To assemble the lasagne, ladle a little of the sauce into the bottom of the roasting tin, spreading it. Place 2 sheets of lasagne on top of the sauce overlapping, then repeat with more sauce and another layer of pasta. Repeat with a further 2 layers of sauce and pasta, finishing with a layer of pasta"
+        
+        let instruction28 = Instruction(context: container.viewContext)
+        instruction28.stepNumber = 5
+        instruction28.body = "Top with the mozzarella. Bake for 25–30 minutes. Allow to cool and serve"
+        
+        recipe14.addToInstructions(instruction24)
+        recipe14.addToInstructions(instruction25)
+        recipe14.addToInstructions(instruction26)
+        recipe14.addToInstructions(instruction27)
+        recipe14.addToInstructions(instruction28)
+        
         let minceBeef = Ingredient(context: container.viewContext)
         minceBeef.name = "Mince beef"
         minceBeef.type = "product"
@@ -889,6 +1037,22 @@ struct PersistenceController {
         recipe15.preparationTime = 600.0
         recipe15.cookingTime = 2700.0
         recipe15.serves = 4
+        
+        let instruction29 = Instruction(context: container.viewContext)
+        instruction29.stepNumber = 1
+        instruction29.body = "Heat the oil in a pan, add the onion and cook over a low heat for about 5 minutes until softened. Increase the heat, add the chicken to heat through"
+        
+        let instruction30 = Instruction(context: container.viewContext)
+        instruction30.stepNumber = 2
+        instruction30.body = "Crush the garlic cloves. Stir in the curry paste and garlic, cooking for 2 minutes. Add 100ml water, the sweet potatoes and chopped tomatoes. Simmer for 20-30 mins until the chicken is cooked through and the sweet potato is tender"
+        
+        let instruction31 = Instruction(context: container.viewContext)
+        instruction31.stepNumber = 3
+        instruction31.body = "Season to taste, removing the pan from the heat and stirring. Serve with basmati rice"
+        
+        recipe15.addToInstructions(instruction29)
+        recipe15.addToInstructions(instruction30)
+        recipe15.addToInstructions(instruction31)
         
         let kormaPasteJar = Ingredient(context: container.viewContext)
         kormaPasteJar.name = "Jar of korma paste"
