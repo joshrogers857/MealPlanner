@@ -27,7 +27,12 @@ struct StagesView: View {
                     ForEach(stages) {
                         stage in
                         
-                        Text("\(stage.listPosition): \(stage.wrappedName)")
+                        VStack(alignment: .leading) {
+                            Text("\(stage.listPosition): \(stage.wrappedName)")
+                            Text("Number eating: \(stage.numberEating)")
+                                .font(.caption)
+                        }
+                        
                     }
                     .onDelete { offsets in
                         for index in offsets {
