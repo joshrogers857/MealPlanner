@@ -23,7 +23,7 @@ struct RecipeListView: View {
             } else {
                 ForEach(recipeList, id: \.self) {
                     recipe in
-                    RecipeListItemView(name: recipe.wrappedName)
+                    RecipeListItemView(recipe: recipe)
                 }
             }
         }
