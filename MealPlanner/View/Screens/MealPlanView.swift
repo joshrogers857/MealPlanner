@@ -14,6 +14,7 @@ struct MealPlanView: View {
     //@FetchRequest private var recipes: FetchedResults<Recipe>
     //@FetchRequest private var recipeIngredients: FetchedResults<RecipeIngredient>
     //@FetchRequest private var ingredients: FetchedResults<Ingredient>
+    //@FetchRequest private var instructions: FetchedResults<Instruction>
     
     @Environment(\.managedObjectContext) private var moc
     
@@ -28,7 +29,7 @@ struct MealPlanView: View {
                 
                 Spacer()
                 
-                /* Button("DELETE ALL") {
+                /*Button("DELETE ALL") {
                     for plan in mealPlans {
                         moc.delete(plan)
                     }
@@ -49,8 +50,12 @@ struct MealPlanView: View {
                         moc.delete(ingredient)
                     }
                     
+                    for instruction in instructions {
+                        moc.delete(instruction)
+                    }
+                    
                     PersistenceController.shared.save()
-                } */
+                }*/
             }
             .navigationTitle("Meal Plan")
             .toolbar {
@@ -85,6 +90,10 @@ struct MealPlanView: View {
         )
         
         _ingredients = FetchRequest<Ingredient>(
+            sortDescriptors: []
+        )
+        
+        _instructions = FetchRequest<Instruction>(
             sortDescriptors: []
         )
     } */

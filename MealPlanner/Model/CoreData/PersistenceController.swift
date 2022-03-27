@@ -87,7 +87,6 @@ struct PersistenceController {
         
         let vegetableOil = Ingredient(context: container.viewContext)
         vegetableOil.name = "Vegetable oil"
-        vegetableOil.type = "raw"
         vegetableOil.unit = "ml"
         vegetableOil.quantity = 1
         vegetableOil.calories = 7
@@ -101,7 +100,6 @@ struct PersistenceController {
         
         let banana = Ingredient(context: container.viewContext)
         banana.name = "Banana"
-        banana.type = "product"
         banana.quantity = 1
         banana.calories = 105
         banana.carbs = 27.0
@@ -114,7 +112,6 @@ struct PersistenceController {
 
         let largeEgg = Ingredient(context: container.viewContext)
         largeEgg.name = "Large egg"
-        largeEgg.type = "product"
         largeEgg.quantity = 1
         largeEgg.calories = 72
         largeEgg.carbs = 0.4
@@ -127,7 +124,6 @@ struct PersistenceController {
         
         let brownSugar = Ingredient(context: container.viewContext)
         brownSugar.name = "Brown sugar"
-        brownSugar.type = "raw"
         brownSugar.unit = "g"
         brownSugar.quantity = 1
         brownSugar.calories = 3
@@ -141,7 +137,6 @@ struct PersistenceController {
 
         let nutMuesli = Ingredient(context: container.viewContext)
         nutMuesli.name = "Nut muesli"
-        nutMuesli.type = "raw"
         nutMuesli.unit = "g"
         nutMuesli.quantity = 1
         nutMuesli.calories = 4
@@ -155,7 +150,6 @@ struct PersistenceController {
 
         let driedFruitMix = Ingredient(context: container.viewContext)
         driedFruitMix.name = "Dried fruit mix"
-        driedFruitMix.type = "raw"
         driedFruitMix.unit = "g"
         driedFruitMix.quantity = 1
         driedFruitMix.calories = 3
@@ -223,7 +217,6 @@ struct PersistenceController {
         
         let oliveOil = Ingredient(context: container.viewContext)
         oliveOil.name = "Olive oil"
-        oliveOil.type = "raw"
         oliveOil.unit = "ml"
         oliveOil.quantity = 1
         oliveOil.calories = 7
@@ -237,7 +230,6 @@ struct PersistenceController {
         
         let redOnion = Ingredient(context: container.viewContext)
         redOnion.name = "Red onion"
-        redOnion.type = "product"
         redOnion.quantity = 1
         redOnion.calories = 41
         redOnion.carbs = 9.5
@@ -250,7 +242,6 @@ struct PersistenceController {
         
         let redChili = Ingredient(context: container.viewContext)
         redChili.name = "Red chili"
-        redChili.type = "product"
         redChili.quantity = 1
         redChili.calories = 18
         redChili.carbs = 4.0
@@ -263,7 +254,6 @@ struct PersistenceController {
         
         let garlicClove = Ingredient(context: container.viewContext)
         garlicClove.name = "Garlic clove"
-        garlicClove.type = "product"
         garlicClove.quantity = 1
         garlicClove.calories = 5
         garlicClove.carbs = 1.0
@@ -276,7 +266,6 @@ struct PersistenceController {
         
         let coriander = Ingredient(context: container.viewContext)
         coriander.name = "Coriander"
-        coriander.type = "raw"
         coriander.unit = "g"
         coriander.quantity = 1
         coriander.calories = 1
@@ -290,7 +279,6 @@ struct PersistenceController {
         
         let cherryTomatoCan = Ingredient(context: container.viewContext)
         cherryTomatoCan.name = "Can of cherry tomatoes"
-        cherryTomatoCan.type = "product"
         cherryTomatoCan.unit = "g"
         cherryTomatoCan.quantity = 190
         cherryTomatoCan.calories = 30
@@ -304,7 +292,6 @@ struct PersistenceController {
         
         let casterSugar = Ingredient(context: container.viewContext)
         casterSugar.name = "Caster sugar"
-        casterSugar.type = "raw"
         casterSugar.unit = "g"
         casterSugar.quantity = 1
         casterSugar.calories = 4
@@ -370,7 +357,6 @@ struct PersistenceController {
         
         let porridgeOats = Ingredient(context: container.viewContext)
         porridgeOats.name = "Porridge oats"
-        porridgeOats.type = "raw"
         porridgeOats.unit = "g"
         porridgeOats.quantity = 1
         porridgeOats.calories = 1
@@ -384,7 +370,6 @@ struct PersistenceController {
         
         let softFruit = Ingredient(context: container.viewContext)
         softFruit.name = "Soft fruit"
-        softFruit.type = "raw"
         softFruit.unit = "g"
         softFruit.quantity = 1
         softFruit.calories = 1
@@ -398,7 +383,6 @@ struct PersistenceController {
         
         let milk = Ingredient(context: container.viewContext)
         milk.name = "Milk"
-        milk.type = "raw"
         milk.unit = "ml"
         milk.quantity = 1
         milk.calories = 1
@@ -412,7 +396,6 @@ struct PersistenceController {
         
         let honey = Ingredient(context: container.viewContext)
         honey.name = "Honey"
-        honey.type = "raw"
         honey.unit = "ml"
         honey.quantity = 1
         honey.calories = 4
@@ -426,7 +409,6 @@ struct PersistenceController {
         
         let vanillaExtract = Ingredient(context: container.viewContext)
         vanillaExtract.name = "Vanilla extract"
-        vanillaExtract.type = "raw"
         vanillaExtract.unit = "ml"
         vanillaExtract.quantity = 1
         vanillaExtract.calories = 2
@@ -501,7 +483,6 @@ struct PersistenceController {
         
         let tomato = Ingredient(context: container.viewContext)
         tomato.name = "Tomato"
-        tomato.type = "product"
         tomato.quantity = 1
         tomato.calories = 22
         tomato.carbs = 4.8
@@ -514,7 +495,6 @@ struct PersistenceController {
         
         let romanoPepper = Ingredient(context: container.viewContext)
         romanoPepper.name = "Romano pepper"
-        romanoPepper.type = "product"
         romanoPepper.quantity = 1
         romanoPepper.calories = 32
         romanoPepper.carbs = 7.6
@@ -527,7 +507,6 @@ struct PersistenceController {
         
         let redWineVinegar = Ingredient(context: container.viewContext)
         redWineVinegar.name = "Red wine vinegar"
-        redWineVinegar.type = "raw"
         redWineVinegar.unit = "ml"
         redWineVinegar.quantity = 1
         redWineVinegar.calories = 1
@@ -590,7 +569,6 @@ struct PersistenceController {
         
         let tunaFillet = Ingredient(context: container.viewContext)
         tunaFillet.name = "Tuna fillet"
-        tunaFillet.type = "product"
         tunaFillet.unit = "g"
         tunaFillet.quantity = 159
         tunaFillet.calories = 173
@@ -604,7 +582,6 @@ struct PersistenceController {
         
         let avocado = Ingredient(context: container.viewContext)
         avocado.name = "Avocado"
-        avocado.type = "product"
         avocado.quantity = 1
         avocado.calories = 322
         avocado.carbs = 17.0
@@ -617,7 +594,6 @@ struct PersistenceController {
         
         let romaineLettuce = Ingredient(context: container.viewContext)
         romaineLettuce.name = "Romaine lettuce"
-        romaineLettuce.type = "product"
         romaineLettuce.quantity = 1
         romaineLettuce.calories = 6
         romaineLettuce.carbs = 3.1
@@ -630,7 +606,6 @@ struct PersistenceController {
         
         let cherryTomato = Ingredient(context: container.viewContext)
         cherryTomato.name = "Cherry tomato"
-        cherryTomato.type = "product"
         cherryTomato.quantity = 1
         cherryTomato.calories = 3
         cherryTomato.carbs = 0.7
@@ -696,7 +671,6 @@ struct PersistenceController {
         
         let butterBeansCan = Ingredient(context: container.viewContext)
         butterBeansCan.name = "Can of butter beans"
-        butterBeansCan.type = "product"
         butterBeansCan.unit = "g"
         butterBeansCan.quantity = 400
         butterBeansCan.calories = 270
@@ -710,7 +684,6 @@ struct PersistenceController {
         
         let rocket = Ingredient(context: container.viewContext)
         rocket.name = "Rocket"
-        rocket.type = "raw"
         rocket.unit = "g"
         rocket.quantity = 1
         rocket.calories = 1
@@ -724,7 +697,6 @@ struct PersistenceController {
         
         let cookedChicken = Ingredient(context: container.viewContext)
         cookedChicken.name = "Cooked chicken"
-        cookedChicken.type = "raw"
         cookedChicken.unit = "g"
         cookedChicken.quantity = 1
         cookedChicken.calories = 2
@@ -738,7 +710,6 @@ struct PersistenceController {
         
         let fetaCheese = Ingredient(context: container.viewContext)
         fetaCheese.name = "Feta cheese"
-        fetaCheese.type = "raw"
         fetaCheese.unit = "g"
         fetaCheese.quantity = 1
         fetaCheese.calories = 3
@@ -820,7 +791,6 @@ struct PersistenceController {
         
         let kidneyBeansCan = Ingredient(context: container.viewContext)
         kidneyBeansCan.name = "Can of kidney beans"
-        kidneyBeansCan.type = "product"
         kidneyBeansCan.unit = "g"
         kidneyBeansCan.quantity = 395
         kidneyBeansCan.calories = 348
@@ -834,7 +804,6 @@ struct PersistenceController {
         
         let sweetcornCan = Ingredient(context: container.viewContext)
         sweetcornCan.name = "Can of sweetcorn"
-        sweetcornCan.type = "product"
         sweetcornCan.unit = "g"
         sweetcornCan.quantity = 195
         sweetcornCan.calories = 195
@@ -848,7 +817,6 @@ struct PersistenceController {
         
         let flourTortillas = Ingredient(context: container.viewContext)
         flourTortillas.name = "Flour tortillas"
-        flourTortillas.type = "product"
         flourTortillas.quantity = 1
         flourTortillas.calories = 159
         flourTortillas.carbs = 27.0
@@ -861,7 +829,6 @@ struct PersistenceController {
         
         let hardCheese = Ingredient(context: container.viewContext)
         hardCheese.name = "Hard cheese"
-        hardCheese.type = "raw"
         hardCheese.unit = "g"
         hardCheese.quantity = 1
         hardCheese.calories = 4
@@ -948,7 +915,6 @@ struct PersistenceController {
         
         let minceBeef = Ingredient(context: container.viewContext)
         minceBeef.name = "Mince beef"
-        minceBeef.type = "product"
         minceBeef.unit = "g"
         minceBeef.quantity = 500
         minceBeef.calories = 1360
@@ -962,7 +928,6 @@ struct PersistenceController {
         
         let choppedTomatoCan = Ingredient(context: container.viewContext)
         choppedTomatoCan.name = "Can of chopped tomatoes"
-        choppedTomatoCan.type = "product"
         choppedTomatoCan.unit = "g"
         choppedTomatoCan.quantity = 400
         choppedTomatoCan.calories = 104
@@ -976,7 +941,6 @@ struct PersistenceController {
         
         let lasagneSheets = Ingredient(context: container.viewContext)
         lasagneSheets.name = "Pack of lasagne sheets"
-        lasagneSheets.type = "product"
         lasagneSheets.unit = "g"
         lasagneSheets.quantity = 500
         lasagneSheets.calories = 133
@@ -990,7 +954,6 @@ struct PersistenceController {
         
         let mozzarellaBall = Ingredient(context: container.viewContext)
         mozzarellaBall.name = "Ball of mozzarella"
-        mozzarellaBall.type = "product"
         mozzarellaBall.quantity = 1
         mozzarellaBall.calories = 391
         mozzarellaBall.carbs = 2.9
@@ -1056,7 +1019,6 @@ struct PersistenceController {
         
         let kormaPasteJar = Ingredient(context: container.viewContext)
         kormaPasteJar.name = "Jar of korma paste"
-        kormaPasteJar.type = "product"
         kormaPasteJar.unit = "g"
         kormaPasteJar.quantity = 165
         kormaPasteJar.calories = 242
@@ -1070,7 +1032,6 @@ struct PersistenceController {
         
         let sweetPotato = Ingredient(context: container.viewContext)
         sweetPotato.name = "Sweet potato"
-        sweetPotato.type = "raw"
         sweetPotato.unit = "g"
         sweetPotato.quantity = 1
         sweetPotato.calories = 1
@@ -1084,7 +1045,6 @@ struct PersistenceController {
         
         let basmatiRice = Ingredient(context: container.viewContext)
         basmatiRice.name = "Basmati rice"
-        basmatiRice.type = "raw"
         basmatiRice.unit = "g"
         basmatiRice.quantity = 1
         basmatiRice.calories = 1
