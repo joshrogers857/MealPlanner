@@ -2,7 +2,7 @@
 //  MealPlanStage+CoreDataProperties.swift
 //  MealPlanner
 //
-//  Created by Joshua Rogers on 22/03/2022.
+//  Created by Joshua Rogers on 27/03/2022.
 //
 //
 
@@ -18,6 +18,7 @@ extension MealPlanStage {
 
     @NSManaged public var listPosition: Int16
     @NSManaged public var name: String?
+    @NSManaged public var numberEating: Int16
     @NSManaged public var origin: MealPlan?
     @NSManaged public var recipes: NSSet?
 

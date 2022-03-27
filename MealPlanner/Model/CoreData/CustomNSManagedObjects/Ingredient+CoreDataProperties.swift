@@ -2,7 +2,7 @@
 //  Ingredient+CoreDataProperties.swift
 //  MealPlanner
 //
-//  Created by Joshua Rogers on 22/03/2022.
+//  Created by Joshua Rogers on 27/03/2022.
 //
 //
 
@@ -26,8 +26,8 @@ extension Ingredient {
     @NSManaged public var salt: Double
     @NSManaged public var saturates: Double
     @NSManaged public var sugars: Double
-    @NSManaged public var unit: String?
     @NSManaged public var type: String?
+    @NSManaged public var unit: String?
     @NSManaged public var recipeIngredients: NSSet?
 
     public var wrappedName: String {
