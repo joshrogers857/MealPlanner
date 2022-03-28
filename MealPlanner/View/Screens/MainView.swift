@@ -9,15 +9,16 @@ import SwiftUI
 
 struct MainView: View {
     @StateObject var selectedDate = SelectedDate()
+    @State var refresh = false
     
     var body: some View {
         TabView {
-            MealPlanView()
+            MealPlanView(refresh: $refresh)
                 .tabItem {
                     Label("Meal Plan", systemImage: "list.dash")
                 }
             
-            ShoppingListView()
+            ShoppingListView(refresh: $refresh)
                 .tabItem {
                     Label("Shopping List", systemImage: "cart.fill")
                 }

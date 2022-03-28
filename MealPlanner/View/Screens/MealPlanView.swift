@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MealPlanView: View {
     @EnvironmentObject private var selectedDate: SelectedDate
+    @Binding var refresh: Bool
     //@FetchRequest private var mealPlans: FetchedResults<MealPlan>
     //@FetchRequest private var mealPlanStages: FetchedResults<MealPlanStage>
     //@FetchRequest private var recipes: FetchedResults<Recipe>
@@ -69,6 +70,9 @@ struct MealPlanView: View {
                     }
                 }
             }
+            .onDisappear {
+                refresh = true
+            }
         }
     }
     
@@ -111,10 +115,10 @@ struct MealPlanView: View {
     }
 }
 
-struct MealPlanView_Previews: PreviewProvider {
+/*struct MealPlanView_Previews: PreviewProvider {
     static var previews: some View {
         MealPlanView()
             .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
             .environmentObject(SelectedDate())
     }
-}
+}*/

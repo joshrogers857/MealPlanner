@@ -11,25 +11,27 @@ import CoreData
 struct ShoppingListView: View {
     @FetchRequest private var mealPlans: FetchedResults<MealPlan>
     private let shoppingListService = ShoppingListService()
+    @Binding var refresh: Bool
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(mealPlans) {
-                    mealPlan in
+                ForEach(shoppingListService.totalIngredients(mealPlans: mealPlans), id: \.self) {
+                    ingredient in
                     
-                    ForEach(shoppingListService.totalIngredients(mealPlanStages: mealPlan.stagesArray), id: \.self) {
-                        ingredient in
-                        
-                        Text("Test")
-                    }
+                    Text(ingredient)
                 }
             }
             .navigationTitle("Shopping List")
         }
+        .onChange(of: refresh) {
+            newValue in
+            
+            refresh = false
+        }
     }
     
-    init() {
+    init(refresh: Binding<Bool>) {
         // Start
         // Code adapted from: https://stackoverflow.com/a/71482203/11821338
         // and https://www.reddit.com/r/swift/comments/7oqkbp/get_the_date_of_the_next_sunday/
@@ -51,11 +53,13 @@ struct ShoppingListView: View {
             ],
             predicate: predicate
         )
+        
+        _refresh = refresh
     }
 }
 
-struct ShoppingListView_Previews: PreviewProvider {
+/*struct ShoppingListView_Previews: PreviewProvider {
     static var previews: some View {
         ShoppingListView()
     }
-}
+}*/
