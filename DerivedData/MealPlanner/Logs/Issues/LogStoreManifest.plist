@@ -6,35 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>237B99FF-4127-426A-8B14-FBB8ECAD62D3</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.bundle</string>
-			<key>fileName</key>
-			<string>237B99FF-4127-426A-8B14-FBB8ECAD62D3.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>signature</key>
-			<string>MealPlannerTests-cnavxnuytvfcyngzxneikxxwqyxs</string>
-			<key>timeStartedRecording</key>
-			<real>670160262.36377001</real>
-			<key>timeStoppedRecording</key>
-			<real>670160262.49519598</real>
-			<key>title</key>
-			<string>Build target MealPlannerTests</string>
-			<key>uniqueIdentifier</key>
-			<string>237B99FF-4127-426A-8B14-FBB8ECAD62D3</string>
-		</dict>
-		<key>67AE00C5-79E6-4458-8BA8-ACCE7DDDB5C1</key>
+		<key>CC2D5431-9929-4FD9-92A2-124639898290</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -43,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>67AE00C5-79E6-4458-8BA8-ACCE7DDDB5C1.xcactivitylog</string>
+			<string>CC2D5431-9929-4FD9-92A2-124639898290.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -54,13 +26,13 @@
 			<key>signature</key>
 			<string>MealPlanner-cnavxnuytvfcyngzxneikxxwqyxs</string>
 			<key>timeStartedRecording</key>
-			<real>670162432.73212695</real>
+			<real>670163171.01911902</real>
 			<key>timeStoppedRecording</key>
-			<real>670162433.288921</real>
+			<real>670163171.69772899</real>
 			<key>title</key>
 			<string>Build target MealPlanner</string>
 			<key>uniqueIdentifier</key>
-			<string>67AE00C5-79E6-4458-8BA8-ACCE7DDDB5C1</string>
+			<string>CC2D5431-9929-4FD9-92A2-124639898290</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>
