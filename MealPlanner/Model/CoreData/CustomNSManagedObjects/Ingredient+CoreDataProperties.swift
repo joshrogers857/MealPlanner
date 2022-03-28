@@ -34,7 +34,7 @@ extension Ingredient {
     }
     
     public var wrappedUnit: String {
-        unit ?? "Unknown unit"
+        unit ?? ""
     }
 }
 

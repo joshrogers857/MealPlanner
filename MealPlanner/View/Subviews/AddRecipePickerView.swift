@@ -31,7 +31,7 @@ struct AddRecipePickerView: View {
                 } else {
                     ForEach(recipeList, id: \.self) {
                         recipe in
-                        RecipeListItemView(name: recipe.wrappedName)
+                        RecipeListItemView(recipe: recipe, scaledTo: nil)
                             .onTapGesture {
                                 stage.addToRecipes(recipe)
                                 PersistenceController.shared.save()

@@ -8,28 +8,31 @@
 import SwiftUI
 
 struct RecipeListItemView: View {
-    let name: String
+    let recipe: Recipe
+    let scaledTo: Int?
     
     var body: some View {
-        HStack {
-            ZStack {
-                Color.black
-                    .frame(width: 102, height: 62, alignment: .leading)
-            
-                Image(decorative: name)
-                    .resizable()
-                    .frame(width: 100, height: 60, alignment: .leading)
+        NavigationLink(destination: RecipeSummaryView(recipe: recipe, scaledTo: scaledTo)) {
+            HStack {
+                ZStack {
+                    Color.black
+                        .frame(width: 102, height: 62, alignment: .leading)
+                
+                    Image(decorative: recipe.wrappedName)
+                        .resizable()
+                        .frame(width: 100, height: 60, alignment: .leading)
+                }
+                
+                Text(recipe.wrappedName)
+                    .tag(recipe.wrappedName)
+                    .padding()
             }
-            
-            Text(name)
-                .tag(name)
-                .padding()
         }
     }
 }
 
-struct RecipeListItemView_Previews: PreviewProvider {
+/*struct RecipeListItemView_Previews: PreviewProvider {
     static var previews: some View {
-        RecipeListItemView(name: "Shakshuka")
+        RecipeListItemView()
     }
-}
+}*/
