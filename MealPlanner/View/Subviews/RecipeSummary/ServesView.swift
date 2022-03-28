@@ -12,7 +12,7 @@ struct ServesView: View {
     let scaledTo: Int?
     
     var body: some View {
-        Text("Serves: \(serves) people\(scaledTo != nil ? " (scaled to \(scaledTo!)" : "")")
+        Text("Serves: \(serves) people\(scaledTo != nil ? " (scaled to \(scaledTo!))" : "")")
     }
 }
 

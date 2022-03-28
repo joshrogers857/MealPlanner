@@ -18,7 +18,7 @@ struct MealPlanStageRecipeList: View {
             ForEach(recipes) {
                 recipe in
                 
-                RecipeListItemView(recipe: recipe)
+                RecipeListItemView(recipe: recipe, scaledTo: Int(stage.numberEating))
             }
             .onDelete { offsets in
                 for index in offsets {

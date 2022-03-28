@@ -9,6 +9,14 @@ import SwiftUI
 
 struct RecipeSummaryView: View {
     let recipe: Recipe
+    let scaledTo: Int?
+    var scalePercentage: Double? {
+        if(scaledTo != nil) {
+            return Double(scaledTo!) / Double(recipe.serves) //Assert not nil because of if statement
+        } else {
+            return nil
+        }
+    }
     
     var body: some View {
         VStack {
@@ -21,11 +29,12 @@ struct RecipeSummaryView: View {
             
             ImageView(name: recipe.wrappedName)
             
-            //ServesView(serves: Int(recipe.serves), scaledTo: scaledTo)
+            ServesView(serves: Int(recipe.serves), scaledTo: scaledTo)
             
             IngredientInstructionListView(
                 ingredients: recipe.recipeIngredientsArray,
-                instructions: recipe.instructionsArray
+                instructions: recipe.instructionsArray,
+                scaleToPercentage: scalePercentage
             )
         }
         .navigationTitle(recipe.wrappedName)

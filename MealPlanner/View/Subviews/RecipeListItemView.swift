@@ -9,9 +9,10 @@ import SwiftUI
 
 struct RecipeListItemView: View {
     let recipe: Recipe
+    let scaledTo: Int?
     
     var body: some View {
-        NavigationLink(destination: RecipeSummaryView(recipe: recipe)) {
+        NavigationLink(destination: RecipeSummaryView(recipe: recipe, scaledTo: scaledTo)) {
             HStack {
                 ZStack {
                     Color.black

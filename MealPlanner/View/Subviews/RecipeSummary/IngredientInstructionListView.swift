@@ -10,6 +10,7 @@ import SwiftUI
 struct IngredientInstructionListView: View {
     let ingredients: [RecipeIngredient]
     let instructions: [Instruction]
+    let scaleToPercentage: Double?
     @State private var choice = "Ingredients"
     
     var body: some View {
@@ -22,7 +23,10 @@ struct IngredientInstructionListView: View {
         .padding(.trailing, 8)
         
         if(choice == "Ingredients") {
-            SummaryIngredientListView(ingredients: ingredients)
+            SummaryIngredientListView(
+                ingredients: ingredients,
+                scaleToPercentage: scaleToPercentage
+            )
         } else {
             SummaryInstructionsListView(instructions: instructions)
         }

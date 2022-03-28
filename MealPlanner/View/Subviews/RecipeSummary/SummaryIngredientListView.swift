@@ -9,6 +9,8 @@ import SwiftUI
 
 struct SummaryIngredientListView: View {
     let ingredients: [RecipeIngredient]
+    let scaleToPercentage: Double?
+    private let ingredientService = IngredientService()
     
     var body: some View {
         List {
@@ -16,9 +18,9 @@ struct SummaryIngredientListView: View {
                 recipeIngredient in
                 
                 if(recipeIngredient.ingredient!.quantity > 1) {
-                    Text("\(recipeIngredient.quantity)x \(recipeIngredient.ingredient!.quantity)\(recipeIngredient.ingredient!.wrappedUnit) \(recipeIngredient.ingredient!.wrappedName)")
+                    Text("\(ingredientService.scaledRecipeIngredientQuantity(quantity: recipeIngredient.quantity, percentage: scaleToPercentage))x \(recipeIngredient.ingredient!.quantity)\(recipeIngredient.ingredient!.wrappedUnit) \(recipeIngredient.ingredient!.wrappedName)")
                 } else {
-                    Text("\(recipeIngredient.quantity)\(recipeIngredient.ingredient!.wrappedUnit) \(recipeIngredient.ingredient!.wrappedName)")
+                    Text("\(ingredientService.scaledRecipeIngredientQuantity(quantity: recipeIngredient.quantity, percentage: scaleToPercentage))\(recipeIngredient.ingredient!.wrappedUnit) \(recipeIngredient.ingredient!.wrappedName)")
                 }
             }
         }
