@@ -10,9 +10,23 @@ import CoreData
 
 struct ShoppingListView: View {
     @FetchRequest private var mealPlans: FetchedResults<MealPlan>
+    private let shoppingListService = ShoppingListService()
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List {
+                ForEach(mealPlans) {
+                    mealPlan in
+                    
+                    ForEach(shoppingListService.totalIngredients(mealPlanStages: mealPlan.stagesArray), id: \.self) {
+                        ingredient in
+                        
+                        Text("Test")
+                    }
+                }
+            }
+            .navigationTitle("Shopping List")
+        }
     }
     
     init() {

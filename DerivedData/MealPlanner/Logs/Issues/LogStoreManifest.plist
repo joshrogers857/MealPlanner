@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>CC2D5431-9929-4FD9-92A2-124639898290</key>
+		<key>FC734385-A43B-4E99-9309-C9BD47B898A4</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>CC2D5431-9929-4FD9-92A2-124639898290.xcactivitylog</string>
+			<string>FC734385-A43B-4E99-9309-C9BD47B898A4.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -26,13 +26,13 @@
 			<key>signature</key>
 			<string>MealPlanner-cnavxnuytvfcyngzxneikxxwqyxs</string>
 			<key>timeStartedRecording</key>
-			<real>670163171.01911902</real>
+			<real>670164268.432621</real>
 			<key>timeStoppedRecording</key>
-			<real>670163171.69772899</real>
+			<real>670164269.10944605</real>
 			<key>title</key>
 			<string>Build target MealPlanner</string>
 			<key>uniqueIdentifier</key>
-			<string>CC2D5431-9929-4FD9-92A2-124639898290</string>
+			<string>FC734385-A43B-4E99-9309-C9BD47B898A4</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>
