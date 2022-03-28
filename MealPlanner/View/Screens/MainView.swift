@@ -17,6 +17,11 @@ struct MainView: View {
                     Label("Meal Plan", systemImage: "list.dash")
                 }
             
+            ShoppingListView()
+                .tabItem {
+                    Label("Shopping List", systemImage: "cart.fill")
+                }
+            
             RecipeView()
                 .tabItem {
                     Label("Recipes", systemImage: "book")

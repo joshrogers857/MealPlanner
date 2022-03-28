@@ -16,13 +16,13 @@ struct NutritionalInformationView: View {
     var body: some View {
         Group {
             Text("Calories: \(mealPlans.reduce(0) { $0 + $1.caloriesPerPerson})")
-            NutritionListItem(primaryText: "Carbs: \(mealPlans.reduce(0) { $0 + $1.carbsPerPerson})g", recommended: "260g")
-            NutritionListItem(primaryText: "Fat: \(mealPlans.reduce(0) { $0 + $1.fatPerPerson})g", recommended: "less than 70g")
-            NutritionListItem(primaryText: "Fibre: \(mealPlans.reduce(0) { $0 + $1.fibrePerPerson})g", recommended: "30g")
-            NutritionListItem(primaryText: "Protein: \(mealPlans.reduce(0) { $0 + $1.proteinPerPerson})g", recommended: "50g")
-            NutritionListItem(primaryText: "Salt: \(mealPlans.reduce(0) { $0 + $1.saltPerPerson})g", recommended: "less than 6g")
-            NutritionListItem(primaryText: "Saturates: \(mealPlans.reduce(0) { $0 + $1.saturatesPerPerson})g", recommended: "less than 20g")
-            NutritionListItem(primaryText: "Sugars: \(mealPlans.reduce(0) { $0 + $1.sugarsPerPerson})g", recommended: "90g")
+            NutritionListItemView(primaryText: "Carbs: \(mealPlans.reduce(0) { $0 + $1.carbsPerPerson})g", recommended: "260g")
+            NutritionListItemView(primaryText: "Fat: \(mealPlans.reduce(0) { $0 + $1.fatPerPerson})g", recommended: "less than 70g")
+            NutritionListItemView(primaryText: "Fibre: \(mealPlans.reduce(0) { $0 + $1.fibrePerPerson})g", recommended: "30g")
+            NutritionListItemView(primaryText: "Protein: \(mealPlans.reduce(0) { $0 + $1.proteinPerPerson})g", recommended: "50g")
+            NutritionListItemView(primaryText: "Salt: \(mealPlans.reduce(0) { $0 + $1.saltPerPerson})g", recommended: "less than 6g")
+            NutritionListItemView(primaryText: "Saturates: \(mealPlans.reduce(0) { $0 + $1.saturatesPerPerson})g", recommended: "less than 20g")
+            NutritionListItemView(primaryText: "Sugars: \(mealPlans.reduce(0) { $0 + $1.sugarsPerPerson})g", recommended: "90g")
         }
         .onChange(of: refresh) {
             newValue in

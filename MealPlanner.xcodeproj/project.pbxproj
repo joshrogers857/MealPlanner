@@ -46,7 +46,8 @@
 		BD67926227E239C5006523AC /* AddRecipePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD67926127E239C5006523AC /* AddRecipePickerView.swift */; };
 		BDA4A7A927F1C0090049B153 /* IngredientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA4A7A827F1C0090049B153 /* IngredientService.swift */; };
 		BDA4A7AB27F1C0C30049B153 /* IngredientServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA4A7AA27F1C0C30049B153 /* IngredientServiceTests.swift */; };
-		BDA4A7AD27F1D96E0049B153 /* NutritionListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA4A7AC27F1D96E0049B153 /* NutritionListItem.swift */; };
+		BDA4A7AD27F1D96E0049B153 /* NutritionListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA4A7AC27F1D96E0049B153 /* NutritionListItemView.swift */; };
+		BDA4A7AF27F1DDA10049B153 /* ShoppingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA4A7AE27F1DDA10049B153 /* ShoppingListView.swift */; };
 		BDA5A25F27F0D2C500F0E55E /* RecipeSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA5A25E27F0D2C500F0E55E /* RecipeSummaryView.swift */; };
 		BDA5A26227F0D7BB00F0E55E /* TimingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA5A26127F0D7BB00F0E55E /* TimingsView.swift */; };
 		BDA5A26427F0DA7E00F0E55E /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA5A26327F0DA7E00F0E55E /* ImageView.swift */; };
@@ -133,7 +134,8 @@
 		BD67926127E239C5006523AC /* AddRecipePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipePickerView.swift; sourceTree = "<group>"; };
 		BDA4A7A827F1C0090049B153 /* IngredientService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientService.swift; sourceTree = "<group>"; };
 		BDA4A7AA27F1C0C30049B153 /* IngredientServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientServiceTests.swift; sourceTree = "<group>"; };
-		BDA4A7AC27F1D96E0049B153 /* NutritionListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionListItem.swift; sourceTree = "<group>"; };
+		BDA4A7AC27F1D96E0049B153 /* NutritionListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionListItemView.swift; sourceTree = "<group>"; };
+		BDA4A7AE27F1DDA10049B153 /* ShoppingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListView.swift; sourceTree = "<group>"; };
 		BDA5A25E27F0D2C500F0E55E /* RecipeSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSummaryView.swift; sourceTree = "<group>"; };
 		BDA5A26127F0D7BB00F0E55E /* TimingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimingsView.swift; sourceTree = "<group>"; };
 		BDA5A26327F0DA7E00F0E55E /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
@@ -335,6 +337,7 @@
 				BDC43BB427E8DC70007F9207 /* StagesView.swift */,
 				BD5A7A4B27EBBA3A00556FC4 /* SettingsView.swift */,
 				BDA5A25E27F0D2C500F0E55E /* RecipeSummaryView.swift */,
+				BDA4A7AE27F1DDA10049B153 /* ShoppingListView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -353,7 +356,7 @@
 				BDC43BB627E8EAE7007F9207 /* AddNewStageView.swift */,
 				BD076A8B27EBA0D600C2B8DB /* RecipeListView.swift */,
 				BD076A8D27EBA0E400C2B8DB /* IngredientListView.swift */,
-				BDA4A7AC27F1D96E0049B153 /* NutritionListItem.swift */,
+				BDA4A7AC27F1D96E0049B153 /* NutritionListItemView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -578,6 +581,7 @@
 				BD018C6327E0D80B00508661 /* MealPlanService.swift in Sources */,
 				BD0B40DB27DA6C0B001F07C4 /* RecipeListItemView.swift in Sources */,
 				BD3B81F327F0C86400823F45 /* MealPlanStage+CoreDataProperties.swift in Sources */,
+				BDA4A7AF27F1DDA10049B153 /* ShoppingListView.swift in Sources */,
 				BD3B81F127F0C86400823F45 /* Instruction+CoreDataProperties.swift in Sources */,
 				BD3B81F427F0C86400823F45 /* MealPlan+CoreDataClass.swift in Sources */,
 				BD3B81F227F0C86400823F45 /* MealPlanStage+CoreDataClass.swift in Sources */,
@@ -597,7 +601,7 @@
 				BD3B81F527F0C86400823F45 /* MealPlan+CoreDataProperties.swift in Sources */,
 				BD67925E27E21F4E006523AC /* DeviceRotationViewModifier.swift in Sources */,
 				BD023F4327DA473B007638E9 /* RecipeView.swift in Sources */,
-				BDA4A7AD27F1D96E0049B153 /* NutritionListItem.swift in Sources */,
+				BDA4A7AD27F1D96E0049B153 /* NutritionListItemView.swift in Sources */,
 				BDDA404F27DF774C000BAE32 /* Main.xcdatamodeld in Sources */,
 				BDC43BB527E8DC70007F9207 /* StagesView.swift in Sources */,
 				BDDA406E27DF9EA4000BAE32 /* PersistenceController.swift in Sources */,

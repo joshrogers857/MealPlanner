@@ -1,5 +1,5 @@
 //
-//  NutritionListItem.swift
+//  NutritionListItemView.swift
 //  MealPlanner
 //
 //  Created by Joshua Rogers on 28/03/2022.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NutritionListItem: View {
+struct NutritionListItemView: View {
     let primaryText: String
     let recommended: String
     
@@ -20,8 +20,8 @@ struct NutritionListItem: View {
     }
 }
 
-/*struct NutritionListItem_Previews: PreviewProvider {
+/*struct NutritionListItemView_Previews: PreviewProvider {
     static var previews: some View {
-        NutritionListItem()
+        NutritionListItemView()
     }
 }*/
