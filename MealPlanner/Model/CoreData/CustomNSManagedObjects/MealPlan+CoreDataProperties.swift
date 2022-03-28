@@ -43,6 +43,18 @@ extension MealPlan {
         return total
     }
     
+    public var caloriesPerPerson: Double {
+        var total = 0.0
+        
+        stagesArray.forEach {
+            stage in
+            
+            total += stage.caloriesPerPerson
+        }
+        
+        return total
+    }
+    
     public var carbs: Double {
         var total = 0.0
         
@@ -50,6 +62,18 @@ extension MealPlan {
             stage in
             
             total += stage.carbs
+        }
+        
+        return total
+    }
+    
+    public var carbsPerPerson: Double {
+        var total = 0.0
+        
+        stagesArray.forEach {
+            stage in
+            
+            total += stage.carbsPerPerson
         }
         
         return total
@@ -67,6 +91,18 @@ extension MealPlan {
         return total
     }
     
+    public var fatPerPerson: Double {
+        var total = 0.0
+        
+        stagesArray.forEach {
+            stage in
+            
+            total += stage.fatPerPerson
+        }
+        
+        return total
+    }
+    
     public var fibre: Double {
         var total = 0.0
         
@@ -74,6 +110,18 @@ extension MealPlan {
             stage in
             
             total += stage.fibre
+        }
+        
+        return total
+    }
+    
+    public var fibrePerPerson: Double {
+        var total = 0.0
+        
+        stagesArray.forEach {
+            stage in
+            
+            total += stage.fibrePerPerson
         }
         
         return total
@@ -91,6 +139,18 @@ extension MealPlan {
         return total
     }
     
+    public var proteinPerPerson: Double {
+        var total = 0.0
+        
+        stagesArray.forEach {
+            stage in
+            
+            total += stage.proteinPerPerson
+        }
+        
+        return total
+    }
+    
     public var salt: Double {
         var total = 0.0
         
@@ -98,6 +158,18 @@ extension MealPlan {
             stage in
             
             total += stage.salt
+        }
+        
+        return total
+    }
+    
+    public var saltPerPerson: Double {
+        var total = 0.0
+        
+        stagesArray.forEach {
+            stage in
+            
+            total += stage.saltPerPerson
         }
         
         return total
@@ -115,6 +187,18 @@ extension MealPlan {
         return total
     }
     
+    public var saturatesPerPerson: Double {
+        var total = 0.0
+        
+        stagesArray.forEach {
+            stage in
+            
+            total += stage.saturatesPerPerson
+        }
+        
+        return total
+    }
+    
     public var sugars: Double {
         var total = 0.0
         
@@ -122,6 +206,18 @@ extension MealPlan {
             stage in
             
             total += stage.sugars
+        }
+        
+        return total
+    }
+    
+    public var sugarsPerPerson: Double {
+        var total = 0.0
+        
+        stagesArray.forEach {
+            stage in
+            
+            total += stage.sugarsPerPerson
         }
         
         return total

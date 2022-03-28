@@ -46,6 +46,18 @@ extension MealPlanStage {
         return total
     }
     
+    public var caloriesPerPerson: Double {
+        var total = 0.0
+        
+        recipesArray.forEach {
+            recipe in
+            
+            total += recipe.caloriesPerPerson
+        }
+        
+        return total
+    }
+    
     public var carbs: Double {
         var total = 0.0
         
@@ -53,6 +65,18 @@ extension MealPlanStage {
             recipe in
             
             total += recipe.carbs
+        }
+        
+        return total
+    }
+    
+    public var carbsPerPerson: Double {
+        var total = 0.0
+        
+        recipesArray.forEach {
+            recipe in
+            
+            total += recipe.carbsPerPerson
         }
         
         return total
@@ -70,6 +94,18 @@ extension MealPlanStage {
         return total
     }
     
+    public var fatPerPerson: Double {
+        var total = 0.0
+        
+        recipesArray.forEach {
+            recipe in
+            
+            total += recipe.fatPerPerson
+        }
+        
+        return total
+    }
+    
     public var fibre: Double {
         var total = 0.0
         
@@ -77,6 +113,18 @@ extension MealPlanStage {
             recipe in
             
             total += recipe.fibre
+        }
+        
+        return total
+    }
+    
+    public var fibrePerPerson: Double {
+        var total = 0.0
+        
+        recipesArray.forEach {
+            recipe in
+            
+            total += recipe.fibrePerPerson
         }
         
         return total
@@ -94,6 +142,18 @@ extension MealPlanStage {
         return total
     }
     
+    public var proteinPerPerson: Double {
+        var total = 0.0
+        
+        recipesArray.forEach {
+            recipe in
+            
+            total += recipe.proteinPerPerson
+        }
+        
+        return total
+    }
+    
     public var salt: Double {
         var total = 0.0
         
@@ -101,6 +161,18 @@ extension MealPlanStage {
             recipe in
             
             total += recipe.salt
+        }
+        
+        return total
+    }
+    
+    public var saltPerPerson: Double {
+        var total = 0.0
+        
+        recipesArray.forEach {
+            recipe in
+            
+            total += recipe.saltPerPerson
         }
         
         return total
@@ -118,6 +190,18 @@ extension MealPlanStage {
         return total
     }
     
+    public var saturatesPerPerson: Double {
+        var total = 0.0
+        
+        recipesArray.forEach {
+            recipe in
+            
+            total += recipe.saturatesPerPerson
+        }
+        
+        return total
+    }
+    
     public var sugars: Double {
         var total = 0.0
         
@@ -125,6 +209,18 @@ extension MealPlanStage {
             recipe in
             
             total += recipe.sugars
+        }
+        
+        return total
+    }
+    
+    public var sugarsPerPerson: Double {
+        var total = 0.0
+        
+        recipesArray.forEach {
+            recipe in
+            
+            total += recipe.sugarsPerPerson
         }
         
         return total

@@ -69,6 +69,10 @@ extension Recipe {
         return total
     }
     
+    public var caloriesPerPerson: Double {
+        Double(calories) / Double(serves)
+    }
+    
     public var carbs: Double {
         var total = 0.0
         
@@ -79,6 +83,10 @@ extension Recipe {
         }
         
         return total
+    }
+    
+    public var carbsPerPerson: Double {
+        Double(carbs) / Double(serves)
     }
     
     public var fat: Double {
@@ -93,6 +101,10 @@ extension Recipe {
         return total
     }
     
+    public var fatPerPerson: Double {
+        Double(fat) / Double(serves)
+    }
+    
     public var fibre: Double {
         var total = 0.0
         
@@ -103,6 +115,10 @@ extension Recipe {
         }
         
         return total
+    }
+    
+    public var fibrePerPerson: Double {
+        Double(fibre) / Double(serves)
     }
     
     public var protein: Double {
@@ -117,6 +133,10 @@ extension Recipe {
         return total
     }
     
+    public var proteinPerPerson: Double {
+        Double(protein) / Double(serves)
+    }
+    
     public var salt: Double {
         var total = 0.0
         
@@ -127,6 +147,10 @@ extension Recipe {
         }
         
         return total
+    }
+    
+    public var saltPerPerson: Double {
+        Double(salt) / Double(serves)
     }
     
     public var saturates: Double {
@@ -141,6 +165,10 @@ extension Recipe {
         return total
     }
     
+    public var saturatesPerPerson: Double {
+        Double(saturates) / Double(serves)
+    }
+    
     public var sugars: Double {
         var total = 0.0
         
@@ -151,6 +179,10 @@ extension Recipe {
         }
         
         return total
+    }
+    
+    public var sugarsPerPerson: Double {
+        Double(sugars) / Double(serves)
     }
 }
 

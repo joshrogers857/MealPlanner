@@ -15,14 +15,14 @@ struct NutritionalInformationView: View {
     
     var body: some View {
         Group {
-            Text("Calories: \(mealPlans.reduce(0) { $0 + $1.calories})")
-            Text("Carbs: \(mealPlans.reduce(0) { $0 + $1.carbs})g")
-            Text("Fat: \(mealPlans.reduce(0) { $0 + $1.fat})g")
-            Text("Fibre: \(mealPlans.reduce(0) { $0 + $1.fibre})g")
-            Text("Protein: \(mealPlans.reduce(0) { $0 + $1.protein})g")
-            Text("Salt: \(mealPlans.reduce(0) { $0 + $1.salt})g")
-            Text("Saturates: \(mealPlans.reduce(0) { $0 + $1.saturates})g")
-            Text("Sugars: \(mealPlans.reduce(0) { $0 + $1.sugars})g")
+            Text("Calories: \(mealPlans.reduce(0) { $0 + $1.caloriesPerPerson})")
+            Text("Carbs: \(mealPlans.reduce(0) { $0 + $1.carbsPerPerson})g")
+            Text("Fat: \(mealPlans.reduce(0) { $0 + $1.fatPerPerson})g")
+            Text("Fibre: \(mealPlans.reduce(0) { $0 + $1.fibrePerPerson})g")
+            Text("Protein: \(mealPlans.reduce(0) { $0 + $1.proteinPerPerson})g")
+            Text("Salt: \(mealPlans.reduce(0) { $0 + $1.saltPerPerson})g")
+            Text("Saturates: \(mealPlans.reduce(0) { $0 + $1.saturatesPerPerson})g")
+            Text("Sugars: \(mealPlans.reduce(0) { $0 + $1.sugarsPerPerson})g")
         }
         .onChange(of: refresh) {
             newValue in
