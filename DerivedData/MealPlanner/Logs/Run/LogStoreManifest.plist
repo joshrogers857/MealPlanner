@@ -40,6 +40,40 @@
 			<key>uniqueIdentifier</key>
 			<string>057E37BD-A5E0-4FF1-90E6-166440E72915</string>
 		</dict>
+		<key>1B1A666D-34A1-4F7C-9447-434DF72C1A10</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>1B1A666D-34A1-4F7C-9447-434DF72C1A10.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MealPlanner project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MealPlanner</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run MealPlanner</string>
+			<key>timeStartedRecording</key>
+			<real>670161729.04823303</real>
+			<key>timeStoppedRecording</key>
+			<real>670162141.47172797</real>
+			<key>title</key>
+			<string>Run MealPlanner</string>
+			<key>uniqueIdentifier</key>
+			<string>1B1A666D-34A1-4F7C-9447-434DF72C1A10</string>
+		</dict>
 		<key>492F3C99-00A0-4FA6-BDA0-1E91066A5A41</key>
 		<dict>
 			<key>className</key>
@@ -243,6 +277,40 @@
 			<string>Run MealPlanner</string>
 			<key>uniqueIdentifier</key>
 			<string>9155EF1B-09B0-4D69-AED6-3435A2D810B4</string>
+		</dict>
+		<key>938828B6-4CA0-4A02-96A6-FDF2D2CA02D3</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>938828B6-4CA0-4A02-96A6-FDF2D2CA02D3.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MealPlanner project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MealPlanner</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run MealPlanner</string>
+			<key>timeStartedRecording</key>
+			<real>670162433.29439497</real>
+			<key>timeStoppedRecording</key>
+			<real>670162453.24925303</real>
+			<key>title</key>
+			<string>Run MealPlanner</string>
+			<key>uniqueIdentifier</key>
+			<string>938828B6-4CA0-4A02-96A6-FDF2D2CA02D3</string>
 		</dict>
 		<key>9C0A15DC-7826-46D9-8425-4D6C35366E61</key>
 		<dict>

@@ -584,6 +584,40 @@
 			<key>uniqueIdentifier</key>
 			<string>2F7987E3-8FAE-4E05-AA12-944A90027147</string>
 		</dict>
+		<key>2F873F33-B447-4283-9FBE-DC2B264CB991</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.IndexBuildLog</string>
+			<key>fileName</key>
+			<string>2F873F33-B447-4283-9FBE-DC2B264CB991.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>MealPlanner Build Preparation</string>
+			<key>timeStartedRecording</key>
+			<real>670162355.65303504</real>
+			<key>timeStoppedRecording</key>
+			<real>670162355.66794002</real>
+			<key>title</key>
+			<string>MealPlanner Build Preparation</string>
+			<key>uniqueIdentifier</key>
+			<string>2F873F33-B447-4283-9FBE-DC2B264CB991</string>
+		</dict>
 		<key>3057F98C-8571-4A69-BAA5-6F26B3A9EE5C</key>
 		<dict>
 			<key>className</key>
@@ -821,6 +855,40 @@
 			<string>MealPlannerTests Build Preparation</string>
 			<key>uniqueIdentifier</key>
 			<string>3BC94A7A-51D3-4847-9E71-3653FA971A34</string>
+		</dict>
+		<key>3D7EFE9E-195B-4128-B3A8-5D69161E91C8</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.IndexBuildLog</string>
+			<key>fileName</key>
+			<string>3D7EFE9E-195B-4128-B3A8-5D69161E91C8.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>MealPlanner Build Preparation</string>
+			<key>timeStartedRecording</key>
+			<real>670162432.70225596</real>
+			<key>timeStoppedRecording</key>
+			<real>670162432.72534597</real>
+			<key>title</key>
+			<string>MealPlanner Build Preparation</string>
+			<key>uniqueIdentifier</key>
+			<string>3D7EFE9E-195B-4128-B3A8-5D69161E91C8</string>
 		</dict>
 		<key>40ADF89B-0E15-4D26-927C-DCBCB25AC0E1</key>
 		<dict>
@@ -1672,6 +1740,74 @@
 			<key>uniqueIdentifier</key>
 			<string>6BB52E1E-570F-448A-ABBC-B2AE596B2B68</string>
 		</dict>
+		<key>6D69DEAE-D26E-4696-9CC2-C1C953845535</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.IndexBuildLog</string>
+			<key>fileName</key>
+			<string>6D69DEAE-D26E-4696-9CC2-C1C953845535.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Workspace Build Description</string>
+			<key>timeStartedRecording</key>
+			<real>670162337.43416405</real>
+			<key>timeStoppedRecording</key>
+			<real>670162338.19363499</real>
+			<key>title</key>
+			<string>Workspace Build Description</string>
+			<key>uniqueIdentifier</key>
+			<string>6D69DEAE-D26E-4696-9CC2-C1C953845535</string>
+		</dict>
+		<key>70FA8C99-315A-4BF2-8AA1-58C4C5A20E8C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.IndexBuildLog</string>
+			<key>fileName</key>
+			<string>70FA8C99-315A-4BF2-8AA1-58C4C5A20E8C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Workspace Build Description</string>
+			<key>timeStartedRecording</key>
+			<real>670162355.58510995</real>
+			<key>timeStoppedRecording</key>
+			<real>670162355.73338199</real>
+			<key>title</key>
+			<string>Workspace Build Description</string>
+			<key>uniqueIdentifier</key>
+			<string>70FA8C99-315A-4BF2-8AA1-58C4C5A20E8C</string>
+		</dict>
 		<key>763CA12E-65C0-4013-84E3-2C5B6723EB4D</key>
 		<dict>
 			<key>className</key>
@@ -2215,6 +2351,74 @@
 			<string>MealPlanner Build Preparation</string>
 			<key>uniqueIdentifier</key>
 			<string>916AF114-4488-4AFF-8978-5BE4B3FBBA8F</string>
+		</dict>
+		<key>92FFEE23-F7A2-43A1-9FDD-C8126FE14F03</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.IndexBuildLog</string>
+			<key>fileName</key>
+			<string>92FFEE23-F7A2-43A1-9FDD-C8126FE14F03.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>MealPlanner Build Description</string>
+			<key>timeStartedRecording</key>
+			<real>670162355.58546698</real>
+			<key>timeStoppedRecording</key>
+			<real>670162355.65144205</real>
+			<key>title</key>
+			<string>MealPlanner Build Description</string>
+			<key>uniqueIdentifier</key>
+			<string>92FFEE23-F7A2-43A1-9FDD-C8126FE14F03</string>
+		</dict>
+		<key>932C2B62-4A80-4007-9634-696532AF7B06</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.IndexBuildLog</string>
+			<key>fileName</key>
+			<string>932C2B62-4A80-4007-9634-696532AF7B06.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>MealPlanner Build Description</string>
+			<key>timeStartedRecording</key>
+			<real>670162337.43436003</real>
+			<key>timeStoppedRecording</key>
+			<real>670162338.11312997</real>
+			<key>title</key>
+			<string>MealPlanner Build Description</string>
+			<key>uniqueIdentifier</key>
+			<string>932C2B62-4A80-4007-9634-696532AF7B06</string>
 		</dict>
 		<key>962DFE2B-D146-4833-8D43-BEDD205E573C</key>
 		<dict>
@@ -3066,6 +3270,40 @@
 			<key>uniqueIdentifier</key>
 			<string>DD18FA77-7ABA-4E58-9B1D-37A0675A8CD3</string>
 		</dict>
+		<key>DD955B85-FE58-44A1-A23F-294A707C0B2C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.IndexBuildLog</string>
+			<key>fileName</key>
+			<string>DD955B85-FE58-44A1-A23F-294A707C0B2C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>MealPlanner Build Preparation</string>
+			<key>timeStartedRecording</key>
+			<real>670162365.16569996</real>
+			<key>timeStoppedRecording</key>
+			<real>670162365.194821</real>
+			<key>title</key>
+			<string>MealPlanner Build Preparation</string>
+			<key>uniqueIdentifier</key>
+			<string>DD955B85-FE58-44A1-A23F-294A707C0B2C</string>
+		</dict>
 		<key>E0C4C1DB-18AF-45BD-8396-5E049370AAC0</key>
 		<dict>
 			<key>className</key>
@@ -3099,6 +3337,40 @@
 			<string>MealPlanner Build Preparation</string>
 			<key>uniqueIdentifier</key>
 			<string>E0C4C1DB-18AF-45BD-8396-5E049370AAC0</string>
+		</dict>
+		<key>E0FD5593-9D69-4779-912E-831898CC06B2</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.IndexBuildLog</string>
+			<key>fileName</key>
+			<string>E0FD5593-9D69-4779-912E-831898CC06B2.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>MealPlanner Build Preparation</string>
+			<key>timeStartedRecording</key>
+			<real>670162338.11475396</real>
+			<key>timeStoppedRecording</key>
+			<real>670162338.12921095</real>
+			<key>title</key>
+			<string>MealPlanner Build Preparation</string>
+			<key>uniqueIdentifier</key>
+			<string>E0FD5593-9D69-4779-912E-831898CC06B2</string>
 		</dict>
 		<key>E2C5A137-5260-4926-82D2-350433FE5390</key>
 		<dict>
@@ -3643,6 +3915,40 @@
 			<string>MealPlanner Build Preparation</string>
 			<key>uniqueIdentifier</key>
 			<string>F94D6FA4-199D-4D19-A3DB-D44E7E67148D</string>
+		</dict>
+		<key>FF81132F-5324-4741-BB59-D238EC8ED45B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.IndexBuildLog</string>
+			<key>fileName</key>
+			<string>FF81132F-5324-4741-BB59-D238EC8ED45B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>MealPlanner Build Preparation</string>
+			<key>timeStartedRecording</key>
+			<real>670162413.11070895</real>
+			<key>timeStoppedRecording</key>
+			<real>670162413.12167203</real>
+			<key>title</key>
+			<string>MealPlanner Build Preparation</string>
+			<key>uniqueIdentifier</key>
+			<string>FF81132F-5324-4741-BB59-D238EC8ED45B</string>
 		</dict>
 	</dict>
 </dict>
