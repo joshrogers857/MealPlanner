@@ -38,11 +38,11 @@ struct ShoppingListView: View {
         
         let calendar = Calendar.current
         
-        let weekday = 1 // Sunday
-        let sundayComponents = DateComponents(calendar: calendar, weekday: weekday)
+        let weekday = 2 // Monday
+        let mondayComponents = DateComponents(calendar: calendar, weekday: weekday)
         
         let startDate = calendar.startOfDay(for: Date.now)
-        let endDate = calendar.nextDate(after: startDate, matching: sundayComponents, matchingPolicy: .nextTimePreservingSmallerComponents)!
+        let endDate = calendar.nextDate(after: startDate, matching: mondayComponents, matchingPolicy: .nextTimePreservingSmallerComponents)!
         let predicate = NSPredicate(format: "date >= %@ AND date < %@", argumentArray: [startDate, endDate])
         
         // End
