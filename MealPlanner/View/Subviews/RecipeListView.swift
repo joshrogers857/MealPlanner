@@ -28,6 +28,13 @@ struct RecipeListView: View {
             }
         }
         .navigationTitle("Recipes")
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                NavigationLink(destination: AddNewRecipeView()) {
+                    Label("Add New Recipe", systemImage: "plus")
+                }
+            }
+        }
     }
 }
 
