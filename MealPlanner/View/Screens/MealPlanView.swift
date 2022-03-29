@@ -30,6 +30,14 @@ struct MealPlanView: View {
                 
                 Spacer()
                 
+                /*List {
+                    ForEach(instructions) {
+                        instruction in
+                        
+                        Text(instruction.wrappedBody)
+                    }
+                }*/
+                
                 /*Button("DELETE ALL") {
                     for plan in mealPlans {
                         moc.delete(plan)
@@ -76,8 +84,8 @@ struct MealPlanView: View {
         }
     }
     
-    /* init() {
-        _mealPlans = FetchRequest<MealPlan>(
+    /*init() {
+        /* _mealPlans = FetchRequest<MealPlan>(
             sortDescriptors: []
         )
         
@@ -95,12 +103,12 @@ struct MealPlanView: View {
         
         _ingredients = FetchRequest<Ingredient>(
             sortDescriptors: []
-        )
+        ) */
         
         _instructions = FetchRequest<Instruction>(
             sortDescriptors: []
         )
-    } */
+    }*/
     
     private func dateToString(_ date: Date) -> (String, String) {
         let df = DateFormatter()
