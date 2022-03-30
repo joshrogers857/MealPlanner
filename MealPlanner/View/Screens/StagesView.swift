@@ -12,7 +12,9 @@ struct StagesView: View {
     @FetchRequest private var stages: FetchedResults<MealPlanStage>
     private var mealPlan: MealPlan
     
-    @State private var isShowing = false
+    @State private var isShowingAddStage = false
+    
+    @Environment(\.editMode) private var editMode
     
     var body: some View {
         Group {
@@ -27,12 +29,17 @@ struct StagesView: View {
                     ForEach(stages) {
                         stage in
                         
-                        VStack(alignment: .leading) {
-                            Text("\(stage.listPosition): \(stage.wrappedName)")
-                            Text("Number eating: \(stage.numberEating)")
-                                .font(.caption)
+                        HStack {
+                            VStack(alignment: .leading) {
+                                Text("\(stage.listPosition): \(stage.wrappedName)")
+                                Text("Number eating: \(stage.numberEating)")
+                                    .font(.caption)
+                            }
+                            
+                            if(editMode?.wrappedValue != .active) {
+                                NavigationLink(destination: EditMealPlanStageView(mealPlanStage: stage)) {}
+                            }
                         }
-                        
                     }
                     .onDelete { offsets in
                         for index in offsets {
@@ -52,14 +59,14 @@ struct StagesView: View {
             
             ToolbarItem(placement: .primaryAction) {
                 Button {
-                    isShowing = true
+                    isShowingAddStage = true
                 } label: {
                     Label("Add stage", systemImage: "plus")
                 }
             }
         }
-        .sheet(isPresented: $isShowing) {
-            AddNewStageView(isShowing: $isShowing, mealPlan: mealPlan, stages: stages)
+        .sheet(isPresented: $isShowingAddStage) {
+            AddNewStageView(isShowing: $isShowingAddStage, mealPlan: mealPlan, stages: stages)
         }
     }
     
