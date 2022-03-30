@@ -25,13 +25,14 @@ struct StagesView: View {
                 
                 Spacer()
             } else {
+                
                 List {
                     ForEach(stages) {
                         stage in
                         
                         HStack {
                             VStack(alignment: .leading) {
-                                Text("\(stage.listPosition): \(stage.wrappedName)")
+                                Text("\(stage.listPosition + 1): \(stage.wrappedName)")
                                 Text("Number eating: \(stage.numberEating)")
                                     .font(.caption)
                             }
@@ -47,7 +48,14 @@ struct StagesView: View {
                             
                             PersistenceController.shared.save()
                         }
+                        
+                        for (index, stage) in stages.enumerated() {
+                            stage.listPosition = Int16(index)
+                        }
+                        
+                        PersistenceController.shared.save()
                     }
+                    .onMove(perform: move)
                 }
             }
         }
@@ -79,6 +87,24 @@ struct StagesView: View {
         )
         
         self.mealPlan = mealPlan
+    }
+    
+    //Adapted from: https://stackoverflow.com/a/62239979/11821338
+    func move(from source: IndexSet, to destination: Int) {
+        
+        var revisedItems: [MealPlanStage] = stages.map{ $0 }
+
+        revisedItems.move(fromOffsets: source, toOffset: destination )
+
+        for reverseIndex in stride( from: revisedItems.count - 1,
+                                    through: 0,
+                                    by: -1 )
+        {
+            revisedItems[ reverseIndex ].listPosition =
+                Int16( reverseIndex )
+        }
+        
+        PersistenceController.shared.save()
     }
 }
 

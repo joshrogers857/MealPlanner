@@ -14,7 +14,7 @@ struct StageHeaderView: View {
     
     var body: some View {
             HStack {
-                Text(stage[0].wrappedName)
+                Text(stage.first?.wrappedName ?? "Unknown")
                 
                 Group {
                     Spacer()
@@ -49,10 +49,12 @@ struct StageHeaderView: View {
             orientation = newOrientation
         }
         .sheet(isPresented: $showing) {
-            AddRecipePickerView(
-                isDone: $showing,
-                stage: stage[0]
-            )
+            if(stage.first != nil) {
+                AddRecipePickerView(
+                    isDone: $showing,
+                    stage: stage.first!
+                )
+            }
         }
     }
     
