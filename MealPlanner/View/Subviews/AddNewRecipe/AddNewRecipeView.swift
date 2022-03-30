@@ -14,6 +14,7 @@ struct AddNewRecipeView: View {
     @State private var preparationTime: Double? = nil
     @State private var cookingTime: Double? = nil
     @State private var serves: Int? = nil
+    @State private var tag: RecipeTag = .untagged
     
     @State private var listType: String = "Ingredients"
     
@@ -58,6 +59,15 @@ struct AddNewRecipeView: View {
                     .keyboardType(.decimalPad)
                     .focused($keyboardIsFocused)
                 
+                Picker("Tag", selection: $tag) {
+                    ForEach(RecipeTag.allCases, id: \.self) {
+                        value in
+                        
+                        Text(value.localizedName).tag(value)
+                    }
+                }
+                .pickerStyle(.segmented)
+                
                 Picker("List type", selection: $listType) {
                     Text("Ingredients").tag("Ingredients")
                     Text("Instructions").tag("Instructions")
@@ -77,6 +87,7 @@ struct AddNewRecipeView: View {
                     recipe.preparationTime = preparationTime! //Can assert nil as if nil we will not reach this code
                     recipe.cookingTime = cookingTime!
                     recipe.serves = Int16(serves!)
+                    recipe.tag = tag.rawValue
                     
                     for (index, _) in ingredients.enumerated() {
                         let recipeIngredient = RecipeIngredient(context: moc)

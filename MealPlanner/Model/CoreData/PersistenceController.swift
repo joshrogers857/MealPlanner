@@ -60,6 +60,7 @@ struct PersistenceController {
         
         let recipe1 = Recipe(context: container.viewContext)
         recipe1.name = "Breakfast Bars"
+        recipe1.tag = "Breakfast"
         recipe1.preparationTime = 300.0
         recipe1.cookingTime = 2400.0
         recipe1.serves = 10
@@ -190,6 +191,7 @@ struct PersistenceController {
         
         let recipe2 = Recipe(context: container.viewContext)
         recipe2.name = "Shakshuka"
+        recipe2.tag = "Breakfast"
         recipe2.preparationTime = 300.0
         recipe2.cookingTime = 1200.0
         recipe2.serves = 2
@@ -340,6 +342,7 @@ struct PersistenceController {
         
         let recipe3 = Recipe(context: container.viewContext)
         recipe3.name = "Breakfast Smoothie"
+        recipe3.tag = "Breakfast"
         recipe3.preparationTime = 120.0
         recipe3.cookingTime = 0.0
         recipe3.serves = 2
@@ -461,6 +464,7 @@ struct PersistenceController {
         
         let recipe6 = Recipe(context: container.viewContext)
         recipe6.name = "Red Pepper and Tomato Soup"
+        recipe6.tag = "Lunch"
         recipe6.preparationTime = 600.0
         recipe6.cookingTime = 1800.0
         recipe6.serves = 2
@@ -547,6 +551,7 @@ struct PersistenceController {
         
         let recipe7 = Recipe(context: container.viewContext)
         recipe7.name = "Tuna Lettuce Wraps"
+        recipe7.tag = "Lunch"
         recipe7.preparationTime = 900.0
         recipe7.cookingTime = 120.0
         recipe7.serves = 2
@@ -649,6 +654,7 @@ struct PersistenceController {
         
         let recipe10 = Recipe(context: container.viewContext)
         recipe10.name = "Chicken with Butter Beans"
+        recipe10.tag = "Lunch"
         recipe10.preparationTime = 300.0
         recipe10.cookingTime = 0.0
         recipe10.serves = 2
@@ -764,6 +770,7 @@ struct PersistenceController {
         
         let recipe12 = Recipe(context: container.viewContext)
         recipe12.name = "Chicken and Bean Enchiladas"
+        recipe12.tag = "Dinner"
         recipe12.preparationTime = 600.0
         recipe12.cookingTime = 1800.0
         recipe12.serves = 4
@@ -883,6 +890,7 @@ struct PersistenceController {
         
         let recipe14 = Recipe(context: container.viewContext)
         recipe14.name = "Lasagne"
+        recipe14.tag = "Dinner"
         recipe14.preparationTime = 900.0
         recipe14.cookingTime = 3600.0
         recipe14.serves = 4
@@ -997,6 +1005,7 @@ struct PersistenceController {
         
         let recipe15 = Recipe(context: container.viewContext)
         recipe15.name = "Chicken and Sweet Potato Curry"
+        recipe15.tag = "Dinner"
         recipe15.preparationTime = 600.0
         recipe15.cookingTime = 2700.0
         recipe15.serves = 4

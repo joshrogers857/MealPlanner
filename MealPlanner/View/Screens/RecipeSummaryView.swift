@@ -20,6 +20,9 @@ struct RecipeSummaryView: View {
     
     var body: some View {
         VStack {
+            Text("\(recipe.wrappedTag) recipe")
+                .font(.caption)
+            
             Spacer()
             
             TimingsView(

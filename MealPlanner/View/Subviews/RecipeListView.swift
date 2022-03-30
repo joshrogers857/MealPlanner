@@ -10,36 +10,51 @@ import SwiftUI
 struct RecipeListView: View {
     @Environment(\.managedObjectContext) private var moc
     
-    @FetchRequest(
-        entity: Recipe.entity(),
-        sortDescriptors: [
-            NSSortDescriptor(keyPath: \Recipe.name, ascending: true)
-        ]
-    ) var recipeList: FetchedResults<Recipe>
+    @FetchRequest private var recipeList: FetchedResults<Recipe>
+    @FetchRequest private var breakfastRecipes: FetchedResults<Recipe>
+    @FetchRequest private var lunchRecipes: FetchedResults<Recipe>
+    @FetchRequest private var dinnerRecipes: FetchedResults<Recipe>
+    @FetchRequest private var untaggedRecipes: FetchedResults<Recipe>
     
     var body: some View {
         List {
             if(recipeList.isEmpty) {
                 Text("No recipes found")
             } else {
-                ForEach(recipeList, id: \.self) {
-                    recipe in
-                    RecipeListItemView(recipe: recipe, scaledTo: nil)
-                }
-                .onDelete { offsets in
-                    for index in offsets {
-                        for instruction in recipeList[index].instructionsArray {
-                            moc.delete(instruction)
-                        }
+                Section("Breakfast") {
+                    ForEach(breakfastRecipes, id: \.self) {
+                        recipe in
                         
-                        for recipeIngredient in recipeList[index].recipeIngredientsArray {
-                            moc.delete(recipeIngredient)
-                        }
-                        
-                        moc.delete(recipeList[index])
-                        
-                        PersistenceController.shared.save()
+                        RecipeListItemView(recipe: recipe, scaledTo: nil)
                     }
+                    .onDelete(perform: delete)
+                }
+                
+                Section("Lunch") {
+                    ForEach(lunchRecipes, id: \.self) {
+                        recipe in
+                        
+                        RecipeListItemView(recipe: recipe, scaledTo: nil)
+                    }
+                    .onDelete(perform: delete)
+                }
+                
+                Section("Dinner") {
+                    ForEach(dinnerRecipes, id: \.self) {
+                        recipe in
+                        
+                        RecipeListItemView(recipe: recipe, scaledTo: nil)
+                    }
+                    .onDelete(perform: delete)
+                }
+                
+                Section("Untagged") {
+                    ForEach(untaggedRecipes, id: \.self) {
+                        recipe in
+                        
+                        RecipeListItemView(recipe: recipe, scaledTo: nil)
+                    }
+                    .onDelete(perform: delete)
                 }
             }
         }
@@ -54,6 +69,63 @@ struct RecipeListView: View {
                     Label("Add New Recipe", systemImage: "plus")
                 }
             }
+        }
+    }
+    
+    init() {
+        _recipeList = FetchRequest(
+            entity: Recipe.entity(),
+            sortDescriptors: [
+                NSSortDescriptor(keyPath: \Recipe.name, ascending: true)
+            ]
+        )
+        
+        _breakfastRecipes = FetchRequest(
+            entity: Recipe.entity(),
+            sortDescriptors: [
+                NSSortDescriptor(keyPath: \Recipe.name, ascending: true)
+            ],
+            predicate: NSPredicate(format: "tag == %@", "Breakfast")
+        )
+        
+        _lunchRecipes = FetchRequest(
+            entity: Recipe.entity(),
+            sortDescriptors: [
+                NSSortDescriptor(keyPath: \Recipe.name, ascending: true)
+            ],
+            predicate: NSPredicate(format: "tag == %@", "Lunch")
+        )
+        
+        _dinnerRecipes = FetchRequest(
+            entity: Recipe.entity(),
+            sortDescriptors: [
+                NSSortDescriptor(keyPath: \Recipe.name, ascending: true)
+            ],
+            predicate: NSPredicate(format: "tag == %@", "Dinner")
+        )
+        
+        _untaggedRecipes = FetchRequest(
+            entity: Recipe.entity(),
+            sortDescriptors: [
+                NSSortDescriptor(keyPath: \Recipe.name, ascending: true)
+            ],
+            predicate: NSPredicate(format: "tag == %@", "Untagged")
+        )
+    }
+    
+    func delete(at offsets: IndexSet) {
+        for index in offsets {
+            for instruction in recipeList[index].instructionsArray {
+                moc.delete(instruction)
+            }
+            
+            for recipeIngredient in recipeList[index].recipeIngredientsArray {
+                moc.delete(recipeIngredient)
+            }
+            
+            moc.delete(recipeList[index])
+            
+            PersistenceController.shared.save()
         }
     }
 }
