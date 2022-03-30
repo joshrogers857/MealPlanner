@@ -33,11 +33,11 @@ struct AddNewStageView: View {
                 Button("Add New Stage") {
                     let stage = MealPlanStage(context: moc)
                     stage.name = newStageName
-                    stage.listPosition = 1
+                    stage.listPosition = 0
                     stage.numberEating = Int16(numberEating!) //Assert not nil as the button is only enabled when the value is valid
                     
                     for (index, stage) in stages.enumerated() {
-                        stage.listPosition = Int16((index + 2))
+                        stage.listPosition = Int16((index + 1))
                     }
                     
                     mealPlan.addToStages(stage)
