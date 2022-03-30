@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct StageHeaderView: View {
-    var stage: MealPlanStage
+    @FetchRequest private var stage: FetchedResults<MealPlanStage>
     @State private var orientation = UIDeviceOrientation.unknown
     @State private var showing: Bool = false
     
     var body: some View {
             HStack {
-                Text(stage.wrappedName)
+                Text(stage[0].wrappedName)
                 
                 Group {
                     Spacer()
@@ -51,9 +51,16 @@ struct StageHeaderView: View {
         .sheet(isPresented: $showing) {
             AddRecipePickerView(
                 isDone: $showing,
-                stage: stage
+                stage: stage[0]
             )
         }
+    }
+    
+    init(stage: MealPlanStage) {
+        _stage = FetchRequest<MealPlanStage>(
+            sortDescriptors: [],
+            predicate: NSPredicate(format: "self == %@", stage)
+        )
     }
 }
 
