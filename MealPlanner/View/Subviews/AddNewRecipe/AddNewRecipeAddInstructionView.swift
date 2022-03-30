@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct AddNewRecipeAddInstructionView: View {
-    @Environment(\.managedObjectContext) private var moc
     @FocusState private var keyboardIsFocused: Bool
     
-    @Binding var instructions: [Instruction]
+    @Binding var instructionBodies: [String]
     @Binding var isShowing: Bool
     
     @State private var instructionBody = ""
@@ -27,16 +26,16 @@ struct AddNewRecipeAddInstructionView: View {
                     .focused($keyboardIsFocused)
                 
                 Button {
-                    let instruction = Instruction(context: moc)
+                    /*let instruction = Instruction(context: moc)
                     instruction.body = instructionBody
                     
                     if(instructions.isEmpty) {
                         instruction.stepNumber = 1
                     } else {
                         instruction.stepNumber = (instructions.sorted(by: { $0.stepNumber > $1.stepNumber })[0].stepNumber + 1)
-                    }
+                    }*/
                     
-                    instructions.append(instruction)
+                    instructionBodies.append(instructionBody)
                     
                     isShowing = false
                 } label: {

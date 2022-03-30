@@ -16,11 +16,13 @@ struct AddNewRecipeView: View {
     @State private var serves: Int? = nil
     
     @State private var listType: String = "Ingredients"
-    @State private var ingredients = [RecipeIngredient]()
-    @State private var instructions = [Instruction]()
+    
+    @State private var quantities = [Int16]()
+    @State private var ingredients = [Ingredient]()
+    @State private var instructionBodies = [String]()
     
     private var isFormIncomplete: Bool {
-        return name.isEmpty || preparationTime == nil || preparationTime == 0.0 || cookingTime == nil || cookingTime == 0.0 || serves == nil || serves == 0 || ingredients.isEmpty || instructions.isEmpty
+        return name.isEmpty || preparationTime == nil || preparationTime == 0.0 || cookingTime == nil || cookingTime == 0.0 || serves == nil || serves == 0 || ingredients.isEmpty || instructionBodies.isEmpty
     }
     
     @FocusState private var keyboardIsFocused: Bool
@@ -63,9 +65,9 @@ struct AddNewRecipeView: View {
                 .pickerStyle(.segmented)
                 
                 if(listType == "Ingredients") {
-                    AddNewRecipeIngredientList(ingredients: $ingredients)
+                    AddNewRecipeIngredientList(quantities: $quantities, ingredients: $ingredients)
                 } else {
-                    AddNewRecipeInstructionList(instructions: $instructions)
+                    AddNewRecipeInstructionList(instructionBodies: $instructionBodies)
                 }
                 
                 Button("Add Recipe") {
@@ -76,11 +78,19 @@ struct AddNewRecipeView: View {
                     recipe.cookingTime = cookingTime!
                     recipe.serves = Int16(serves!)
                     
-                    for ingredient in ingredients {
-                        recipe.addToRecipeIngredients(ingredient)
+                    for (index, _) in ingredients.enumerated() {
+                        let recipeIngredient = RecipeIngredient(context: moc)
+                        recipeIngredient.quantity = quantities[index]
+                        recipeIngredient.ingredient = ingredients[index]
+                        
+                        recipe.addToRecipeIngredients(recipeIngredient)
                     }
                     
-                    for instruction in instructions {
+                    for (index, _) in instructionBodies.enumerated() {
+                        let instruction = Instruction(context: moc)
+                        instruction.body = instructionBodies[index]
+                        instruction.stepNumber = Int16((index + 1))
+                        
                         recipe.addToInstructions(instruction)
                     }
                     

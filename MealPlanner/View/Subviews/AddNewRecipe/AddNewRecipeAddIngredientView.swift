@@ -11,7 +11,8 @@ struct AddNewRecipeAddIngredientView: View {
     @Environment(\.managedObjectContext) private var moc
     @FocusState private var keyboardIsFocused: Bool
     
-    @Binding var ingredients: [RecipeIngredient]
+    @Binding var quantities: [Int16]
+    @Binding var ingredients: [Ingredient]
     @Binding var isShowing: Bool
     
     @State private var quantity: Int16? = nil
@@ -68,12 +69,8 @@ struct AddNewRecipeAddIngredientView: View {
                 
                 Section {
                     Button {
-                        let recipeIngredient = RecipeIngredient(context: moc)
-                        
-                        recipeIngredient.quantity = quantity! //Assert as this code will never be called if quantity and/or ingredient are nil
-                        recipeIngredient.ingredient = ingredient!
-                        
-                        ingredients.append(recipeIngredient)
+                        quantities.append(quantity!)
+                        ingredients.append(ingredient!)
                         
                         isShowing = false
                     } label: {

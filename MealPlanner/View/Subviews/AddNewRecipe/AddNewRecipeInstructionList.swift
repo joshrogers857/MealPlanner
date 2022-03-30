@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct AddNewRecipeInstructionList: View {
-    @Environment(\.managedObjectContext) private var moc
-    
-    @Binding var instructions: [Instruction]
+    @Binding var instructionBodies: [String]
     @State private var isShowing = false
     
     var body: some View {
@@ -26,25 +24,23 @@ struct AddNewRecipeInstructionList: View {
                 }
             }
             
-            if(instructions.isEmpty) {
+            if(instructionBodies.isEmpty) {
                 Text("No instructions")
             } else {
-                ForEach(instructions) {
-                    instruction in
+                ForEach(instructionBodies, id: \.self) {
+                    instructionBody in
                     
                     HStack {
-                        Text("\(instruction.stepNumber). \(instruction.wrappedBody)")
+                        Text(instructionBody)
                         
                         Spacer()
                         
                         Button {
-                            instructions.removeAll(where: { $0 == instruction })
+                            instructionBodies.removeAll(where: { $0 == instructionBody })
                             
-                            moc.delete(instruction)
-                            
-                            for (index, instruction) in instructions.enumerated() {
+                            /*for (index, instruction) in instructions.enumerated() {
                                 instruction.stepNumber = Int16((index + 1))
-                            }
+                            }*/
                         } label: {
                             Label("Delete ingredient", systemImage: "trash.fill")
                                 .labelStyle(.iconOnly)
@@ -55,7 +51,7 @@ struct AddNewRecipeInstructionList: View {
             }
         }
         .sheet(isPresented: $isShowing) {
-            AddNewRecipeAddInstructionView(instructions: $instructions, isShowing: $isShowing)
+            AddNewRecipeAddInstructionView(instructionBodies: $instructionBodies, isShowing: $isShowing)
         }
     }
 }

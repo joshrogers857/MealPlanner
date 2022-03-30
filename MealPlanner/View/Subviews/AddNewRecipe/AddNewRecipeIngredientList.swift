@@ -8,9 +8,8 @@
 import SwiftUI
 
 struct AddNewRecipeIngredientList: View {
-    @Environment(\.managedObjectContext) private var moc
-    
-    @Binding var ingredients: [RecipeIngredient]
+    @Binding var quantities: [Int16]
+    @Binding var ingredients: [Ingredient]
     @State private var isShowing = false
     
     var body: some View {
@@ -29,22 +28,21 @@ struct AddNewRecipeIngredientList: View {
             if(ingredients.isEmpty) {
                 Text("No ingredients")
             } else {
-                ForEach(ingredients) {
-                    ingredient in
+                ForEach(ingredients.indices, id: \.self) {
+                    index in
                     
                     HStack {
-                        if(ingredient.ingredient!.quantity > 1) {
-                            Text("\(ingredient.quantity)x \(ingredient.ingredient!.quantity)\(ingredient.ingredient!.wrappedUnit) \(ingredient.ingredient!.wrappedName)")
+                        if(ingredients[index].quantity > 1) {
+                            Text("\(quantities[index])x \(ingredients[index].quantity)\(ingredients[index].wrappedUnit) \(ingredients[index].wrappedName)")
                         } else {
-                            Text("\(ingredient.quantity)\(ingredient.ingredient!.wrappedUnit) \(ingredient.ingredient!.wrappedName)")
+                            Text("\(quantities[index])\(ingredients[index].wrappedUnit) \(ingredients[index].wrappedName)")
                         }
                         
                         Spacer()
                         
                         Button {
-                            ingredients.removeAll(where: { $0 == ingredient })
-                            
-                            moc.delete(ingredient)
+                            ingredients.remove(at: index)
+                            quantities.remove(at: index)
                         } label: {
                             Label("Delete ingredient", systemImage: "trash.fill")
                                 .labelStyle(.iconOnly)
@@ -54,7 +52,7 @@ struct AddNewRecipeIngredientList: View {
             }
         }
         .sheet(isPresented: $isShowing) {
-            AddNewRecipeAddIngredientView(ingredients: $ingredients, isShowing: $isShowing)
+            AddNewRecipeAddIngredientView(quantities: $quantities, ingredients: $ingredients, isShowing: $isShowing)
         }
     }
 }
