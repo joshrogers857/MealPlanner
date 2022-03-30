@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RecipeListView: View {
+    @Environment(\.managedObjectContext) private var moc
     
     @FetchRequest(
         entity: Recipe.entity(),
@@ -25,11 +26,30 @@ struct RecipeListView: View {
                     recipe in
                     RecipeListItemView(recipe: recipe, scaledTo: nil)
                 }
+                .onDelete { offsets in
+                    for index in offsets {
+                        for instruction in recipeList[index].instructionsArray {
+                            moc.delete(instruction)
+                        }
+                        
+                        for recipeIngredient in recipeList[index].recipeIngredientsArray {
+                            moc.delete(recipeIngredient)
+                        }
+                        
+                        moc.delete(recipeList[index])
+                        
+                        PersistenceController.shared.save()
+                    }
+                }
             }
         }
         .navigationTitle("Recipes")
         .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
+            ToolbarItem {
+                EditButton()
+            }
+            
+            ToolbarItem(placement: .primaryAction) {
                 NavigationLink(destination: AddNewRecipeView()) {
                     Label("Add New Recipe", systemImage: "plus")
                 }
