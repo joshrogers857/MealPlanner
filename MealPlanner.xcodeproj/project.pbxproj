@@ -32,19 +32,20 @@
 		BD2C1BE827E1E5EE00769FD0 /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2C1BE727E1E5EE00769FD0 /* HealthStore.swift */; };
 		BD2C1BEC27E1ED9F00769FD0 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD2C1BEB27E1ED9F00769FD0 /* HealthKit.framework */; };
 		BD32CA6127E340C90011EBF9 /* TimePeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD32CA6027E340C90011EBF9 /* TimePeriod.swift */; };
-		BD3B81EC27F0C86400823F45 /* RecipeIngredient+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3B81E027F0C86400823F45 /* RecipeIngredient+CoreDataClass.swift */; };
-		BD3B81ED27F0C86400823F45 /* RecipeIngredient+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3B81E127F0C86400823F45 /* RecipeIngredient+CoreDataProperties.swift */; };
-		BD3B81EE27F0C86400823F45 /* Ingredient+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3B81E227F0C86400823F45 /* Ingredient+CoreDataClass.swift */; };
-		BD3B81EF27F0C86400823F45 /* Ingredient+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3B81E327F0C86400823F45 /* Ingredient+CoreDataProperties.swift */; };
-		BD3B81F027F0C86400823F45 /* Instruction+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3B81E427F0C86400823F45 /* Instruction+CoreDataClass.swift */; };
-		BD3B81F127F0C86400823F45 /* Instruction+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3B81E527F0C86400823F45 /* Instruction+CoreDataProperties.swift */; };
-		BD3B81F227F0C86400823F45 /* MealPlanStage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3B81E627F0C86400823F45 /* MealPlanStage+CoreDataClass.swift */; };
-		BD3B81F327F0C86400823F45 /* MealPlanStage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3B81E727F0C86400823F45 /* MealPlanStage+CoreDataProperties.swift */; };
-		BD3B81F427F0C86400823F45 /* MealPlan+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3B81E827F0C86400823F45 /* MealPlan+CoreDataClass.swift */; };
-		BD3B81F527F0C86400823F45 /* MealPlan+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3B81E927F0C86400823F45 /* MealPlan+CoreDataProperties.swift */; };
-		BD3B81F627F0C86400823F45 /* Recipe+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3B81EA27F0C86400823F45 /* Recipe+CoreDataClass.swift */; };
-		BD3B81F727F0C86400823F45 /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3B81EB27F0C86400823F45 /* Recipe+CoreDataProperties.swift */; };
 		BD3EA78427EA2C0B0045D9A3 /* RecipeIngredientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EA78327EA2C0B0045D9A3 /* RecipeIngredientTests.swift */; };
+		BD51988427F45C5D00E9A9E4 /* Instruction+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD51987827F45C5D00E9A9E4 /* Instruction+CoreDataClass.swift */; };
+		BD51988527F45C5D00E9A9E4 /* Instruction+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD51987927F45C5D00E9A9E4 /* Instruction+CoreDataProperties.swift */; };
+		BD51988627F45C5D00E9A9E4 /* MealPlan+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD51987A27F45C5D00E9A9E4 /* MealPlan+CoreDataClass.swift */; };
+		BD51988727F45C5D00E9A9E4 /* MealPlan+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD51987B27F45C5D00E9A9E4 /* MealPlan+CoreDataProperties.swift */; };
+		BD51988827F45C5D00E9A9E4 /* MealPlanStage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD51987C27F45C5D00E9A9E4 /* MealPlanStage+CoreDataClass.swift */; };
+		BD51988927F45C5D00E9A9E4 /* MealPlanStage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD51987D27F45C5D00E9A9E4 /* MealPlanStage+CoreDataProperties.swift */; };
+		BD51988A27F45C5D00E9A9E4 /* Recipe+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD51987E27F45C5D00E9A9E4 /* Recipe+CoreDataClass.swift */; };
+		BD51988B27F45C5D00E9A9E4 /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD51987F27F45C5D00E9A9E4 /* Recipe+CoreDataProperties.swift */; };
+		BD51988C27F45C5D00E9A9E4 /* RecipeIngredient+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD51988027F45C5D00E9A9E4 /* RecipeIngredient+CoreDataClass.swift */; };
+		BD51988D27F45C5D00E9A9E4 /* RecipeIngredient+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD51988127F45C5D00E9A9E4 /* RecipeIngredient+CoreDataProperties.swift */; };
+		BD51988E27F45C5D00E9A9E4 /* Ingredient+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD51988227F45C5D00E9A9E4 /* Ingredient+CoreDataClass.swift */; };
+		BD51988F27F45C5D00E9A9E4 /* Ingredient+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD51988327F45C5D00E9A9E4 /* Ingredient+CoreDataProperties.swift */; };
+		BD51989227F4630200E9A9E4 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = BD51989127F4630200E9A9E4 /* CodeScanner */; };
 		BD5A7A4C27EBBA3A00556FC4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5A7A4B27EBBA3A00556FC4 /* SettingsView.swift */; };
 		BD67925B27E21B4C006523AC /* StageHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD67925A27E21B4C006523AC /* StageHeaderView.swift */; };
 		BD67925E27E21F4E006523AC /* DeviceRotationViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD67925D27E21F4E006523AC /* DeviceRotationViewModifier.swift */; };
@@ -126,19 +127,19 @@
 		BD2C1BE927E1ED9F00769FD0 /* MealPlanner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MealPlanner.entitlements; sourceTree = "<group>"; };
 		BD2C1BEB27E1ED9F00769FD0 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		BD32CA6027E340C90011EBF9 /* TimePeriod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePeriod.swift; sourceTree = "<group>"; };
-		BD3B81E027F0C86400823F45 /* RecipeIngredient+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecipeIngredient+CoreDataClass.swift"; sourceTree = "<group>"; };
-		BD3B81E127F0C86400823F45 /* RecipeIngredient+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecipeIngredient+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		BD3B81E227F0C86400823F45 /* Ingredient+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+CoreDataClass.swift"; sourceTree = "<group>"; };
-		BD3B81E327F0C86400823F45 /* Ingredient+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		BD3B81E427F0C86400823F45 /* Instruction+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instruction+CoreDataClass.swift"; sourceTree = "<group>"; };
-		BD3B81E527F0C86400823F45 /* Instruction+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instruction+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		BD3B81E627F0C86400823F45 /* MealPlanStage+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealPlanStage+CoreDataClass.swift"; sourceTree = "<group>"; };
-		BD3B81E727F0C86400823F45 /* MealPlanStage+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealPlanStage+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		BD3B81E827F0C86400823F45 /* MealPlan+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealPlan+CoreDataClass.swift"; sourceTree = "<group>"; };
-		BD3B81E927F0C86400823F45 /* MealPlan+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealPlan+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		BD3B81EA27F0C86400823F45 /* Recipe+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+CoreDataClass.swift"; sourceTree = "<group>"; };
-		BD3B81EB27F0C86400823F45 /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BD3EA78327EA2C0B0045D9A3 /* RecipeIngredientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeIngredientTests.swift; sourceTree = "<group>"; };
+		BD51987827F45C5D00E9A9E4 /* Instruction+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instruction+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BD51987927F45C5D00E9A9E4 /* Instruction+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Instruction+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BD51987A27F45C5D00E9A9E4 /* MealPlan+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealPlan+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BD51987B27F45C5D00E9A9E4 /* MealPlan+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealPlan+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BD51987C27F45C5D00E9A9E4 /* MealPlanStage+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealPlanStage+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BD51987D27F45C5D00E9A9E4 /* MealPlanStage+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealPlanStage+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BD51987E27F45C5D00E9A9E4 /* Recipe+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BD51987F27F45C5D00E9A9E4 /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BD51988027F45C5D00E9A9E4 /* RecipeIngredient+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecipeIngredient+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BD51988127F45C5D00E9A9E4 /* RecipeIngredient+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecipeIngredient+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BD51988227F45C5D00E9A9E4 /* Ingredient+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BD51988327F45C5D00E9A9E4 /* Ingredient+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ingredient+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BD5A7A4B27EBBA3A00556FC4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		BD67925A27E21B4C006523AC /* StageHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageHeaderView.swift; sourceTree = "<group>"; };
 		BD67925D27E21F4E006523AC /* DeviceRotationViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRotationViewModifier.swift; sourceTree = "<group>"; };
@@ -178,6 +179,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD51989227F4630200E9A9E4 /* CodeScanner in Frameworks */,
 				BD2C1BEC27E1ED9F00769FD0 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,18 +204,18 @@
 		BD018C3627E08FB800508661 /* CustomNSManagedObjects */ = {
 			isa = PBXGroup;
 			children = (
-				BD3B81E027F0C86400823F45 /* RecipeIngredient+CoreDataClass.swift */,
-				BD3B81E127F0C86400823F45 /* RecipeIngredient+CoreDataProperties.swift */,
-				BD3B81E227F0C86400823F45 /* Ingredient+CoreDataClass.swift */,
-				BD3B81E327F0C86400823F45 /* Ingredient+CoreDataProperties.swift */,
-				BD3B81E427F0C86400823F45 /* Instruction+CoreDataClass.swift */,
-				BD3B81E527F0C86400823F45 /* Instruction+CoreDataProperties.swift */,
-				BD3B81E627F0C86400823F45 /* MealPlanStage+CoreDataClass.swift */,
-				BD3B81E727F0C86400823F45 /* MealPlanStage+CoreDataProperties.swift */,
-				BD3B81E827F0C86400823F45 /* MealPlan+CoreDataClass.swift */,
-				BD3B81E927F0C86400823F45 /* MealPlan+CoreDataProperties.swift */,
-				BD3B81EA27F0C86400823F45 /* Recipe+CoreDataClass.swift */,
-				BD3B81EB27F0C86400823F45 /* Recipe+CoreDataProperties.swift */,
+				BD51987827F45C5D00E9A9E4 /* Instruction+CoreDataClass.swift */,
+				BD51987927F45C5D00E9A9E4 /* Instruction+CoreDataProperties.swift */,
+				BD51987A27F45C5D00E9A9E4 /* MealPlan+CoreDataClass.swift */,
+				BD51987B27F45C5D00E9A9E4 /* MealPlan+CoreDataProperties.swift */,
+				BD51987C27F45C5D00E9A9E4 /* MealPlanStage+CoreDataClass.swift */,
+				BD51987D27F45C5D00E9A9E4 /* MealPlanStage+CoreDataProperties.swift */,
+				BD51987E27F45C5D00E9A9E4 /* Recipe+CoreDataClass.swift */,
+				BD51987F27F45C5D00E9A9E4 /* Recipe+CoreDataProperties.swift */,
+				BD51988027F45C5D00E9A9E4 /* RecipeIngredient+CoreDataClass.swift */,
+				BD51988127F45C5D00E9A9E4 /* RecipeIngredient+CoreDataProperties.swift */,
+				BD51988227F45C5D00E9A9E4 /* Ingredient+CoreDataClass.swift */,
+				BD51988327F45C5D00E9A9E4 /* Ingredient+CoreDataProperties.swift */,
 			);
 			path = CustomNSManagedObjects;
 			sourceTree = "<group>";
@@ -471,6 +473,9 @@
 			dependencies = (
 			);
 			name = MealPlanner;
+			packageProductDependencies = (
+				BD51989127F4630200E9A9E4 /* CodeScanner */,
+			);
 			productName = MealPlanner;
 			productReference = BD2B0F0A27C556C800D3CD6A /* MealPlanner.app */;
 			productType = "com.apple.product-type.application";
@@ -543,6 +548,9 @@
 				Base,
 			);
 			mainGroup = BD2B0F0127C556C800D3CD6A;
+			packageReferences = (
+				BD51989027F4630200E9A9E4 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = BD2B0F0B27C556C800D3CD6A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -585,8 +593,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD3B81F027F0C86400823F45 /* Instruction+CoreDataClass.swift in Sources */,
-				BD3B81EC27F0C86400823F45 /* RecipeIngredient+CoreDataClass.swift in Sources */,
 				BD076A8C27EBA0D600C2B8DB /* RecipeListView.swift in Sources */,
 				BD23601F27F32EAF00630754 /* AddNewRecipeInstructionList.swift in Sources */,
 				BDC43BB727E8EAE7007F9207 /* AddNewStageView.swift in Sources */,
@@ -595,42 +601,44 @@
 				BD2C1BE527E1E27500769FD0 /* CalorieView.swift in Sources */,
 				BDC6303E27E8C35900CCCFEE /* MealPlanStageList.swift in Sources */,
 				BD2C1BE327E1E24200769FD0 /* NutritionView.swift in Sources */,
+				BD51988C27F45C5D00E9A9E4 /* RecipeIngredient+CoreDataClass.swift in Sources */,
 				BDA5A26227F0D7BB00F0E55E /* TimingsView.swift in Sources */,
 				BDC6303B27E89A8E00CCCFEE /* SelectedDate.swift in Sources */,
+				BD51988827F45C5D00E9A9E4 /* MealPlanStage+CoreDataClass.swift in Sources */,
 				BD5A7A4C27EBBA3A00556FC4 /* SettingsView.swift in Sources */,
 				BD23601D27F32EA100630754 /* AddNewRecipeIngredientList.swift in Sources */,
+				BD51988427F45C5D00E9A9E4 /* Instruction+CoreDataClass.swift in Sources */,
 				BDA5A26A27F0DF0000F0E55E /* SummaryInstructionsListView.swift in Sources */,
-				BD3B81ED27F0C86400823F45 /* RecipeIngredient+CoreDataProperties.swift in Sources */,
 				BDA5A26427F0DA7E00F0E55E /* ImageView.swift in Sources */,
 				BDC6304027E8C36600CCCFEE /* MealPlanStageRecipeList.swift in Sources */,
-				BD3B81F727F0C86400823F45 /* Recipe+CoreDataProperties.swift in Sources */,
 				BD23601827F3239900630754 /* AddNewRecipeView.swift in Sources */,
 				BDA5A26C27F0E11F00F0E55E /* ServesView.swift in Sources */,
 				BD076A8E27EBA0E400C2B8DB /* IngredientListView.swift in Sources */,
 				BD018C6327E0D80B00508661 /* MealPlanService.swift in Sources */,
 				BD0B40DB27DA6C0B001F07C4 /* RecipeListItemView.swift in Sources */,
-				BD3B81F327F0C86400823F45 /* MealPlanStage+CoreDataProperties.swift in Sources */,
+				BD51988927F45C5D00E9A9E4 /* MealPlanStage+CoreDataProperties.swift in Sources */,
 				BDA4A7AF27F1DDA10049B153 /* ShoppingListView.swift in Sources */,
-				BD3B81F127F0C86400823F45 /* Instruction+CoreDataProperties.swift in Sources */,
-				BD3B81F427F0C86400823F45 /* MealPlan+CoreDataClass.swift in Sources */,
-				BD3B81F227F0C86400823F45 /* MealPlanStage+CoreDataClass.swift in Sources */,
 				BD67926227E239C5006523AC /* AddRecipePickerView.swift in Sources */,
 				BD018C6C27E0EDA200508661 /* DateSelectorView.swift in Sources */,
-				BD3B81F627F0C86400823F45 /* Recipe+CoreDataClass.swift in Sources */,
+				BD51988527F45C5D00E9A9E4 /* Instruction+CoreDataProperties.swift in Sources */,
+				BD51988E27F45C5D00E9A9E4 /* Ingredient+CoreDataClass.swift in Sources */,
 				BDD9EA3D27E36A330025CDAE /* NutritionService.swift in Sources */,
 				BD2B0F1027C556C800D3CD6A /* MainView.swift in Sources */,
 				BD23602127F3322900630754 /* AddNewRecipeAddIngredientView.swift in Sources */,
-				BD3B81EF27F0C86400823F45 /* Ingredient+CoreDataProperties.swift in Sources */,
 				BDD9EA3B27E361D00025CDAE /* NutritionalInformationView.swift in Sources */,
 				BDC6303527E8963700CCCFEE /* MealPlanList.swift in Sources */,
+				BD51988727F45C5D00E9A9E4 /* MealPlan+CoreDataProperties.swift in Sources */,
 				BDA5A25F27F0D2C500F0E55E /* RecipeSummaryView.swift in Sources */,
 				BD23602327F3325600630754 /* AddNewRecipeAddInstructionView.swift in Sources */,
+				BD51988A27F45C5D00E9A9E4 /* Recipe+CoreDataClass.swift in Sources */,
 				BD2B0F0E27C556C800D3CD6A /* MealPlannerApp.swift in Sources */,
+				BD51988D27F45C5D00E9A9E4 /* RecipeIngredient+CoreDataProperties.swift in Sources */,
 				BDA5A26827F0DCB000F0E55E /* SummaryIngredientListView.swift in Sources */,
 				BDA4A7B127F1E5C10049B153 /* ShoppingListService.swift in Sources */,
+				BD51988B27F45C5D00E9A9E4 /* Recipe+CoreDataProperties.swift in Sources */,
 				BDA5A26627F0DB4F00F0E55E /* IngredientInstructionListView.swift in Sources */,
+				BD51988F27F45C5D00E9A9E4 /* Ingredient+CoreDataProperties.swift in Sources */,
 				BD67925B27E21B4C006523AC /* StageHeaderView.swift in Sources */,
-				BD3B81F527F0C86400823F45 /* MealPlan+CoreDataProperties.swift in Sources */,
 				BD67925E27E21F4E006523AC /* DeviceRotationViewModifier.swift in Sources */,
 				BD023F4327DA473B007638E9 /* RecipeView.swift in Sources */,
 				BDA4A7AD27F1D96E0049B153 /* NutritionListItemView.swift in Sources */,
@@ -638,8 +646,8 @@
 				BDC43BB527E8DC70007F9207 /* StagesView.swift in Sources */,
 				BDDA406E27DF9EA4000BAE32 /* PersistenceController.swift in Sources */,
 				BD32CA6127E340C90011EBF9 /* TimePeriod.swift in Sources */,
-				BD3B81EE27F0C86400823F45 /* Ingredient+CoreDataClass.swift in Sources */,
 				BD2C1BE827E1E5EE00769FD0 /* HealthStore.swift in Sources */,
+				BD51988627F45C5D00E9A9E4 /* MealPlan+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -813,6 +821,7 @@
 				DEVELOPMENT_TEAM = 4AS9B963FQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Barcode scanning";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Display calorie information";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -844,6 +853,7 @@
 				DEVELOPMENT_TEAM = 4AS9B963FQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Barcode scanning";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Display calorie information";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -979,6 +989,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BD51989027F4630200E9A9E4 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BD51989127F4630200E9A9E4 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD51989027F4630200E9A9E4 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		BDDA404D27DF774C000BAE32 /* Main.xcdatamodeld */ = {

@@ -49,6 +49,21 @@ class IngredientTests: XCTestCase {
         XCTAssertEqual(ingredient.wrappedUnit, "")
     }
     
+    func test_Ingredient_WhenEanIsNotNil_WrappedEanShouldReturnEan() {
+        let ingredient = Ingredient(context: persistenceController.container.viewContext)
+        let ean = "123456789"
+        
+        ingredient.ean = ean
+        
+        XCTAssertEqual(ingredient.wrappedEan, ean)
+    }
+    
+    func test_Ingredient_WhenEanIsNil_WrappedEanShouldReturnUnknownEan() {
+        let ingredient = Ingredient(context: persistenceController.container.viewContext)
+        
+        XCTAssertEqual(ingredient.wrappedEan, "Unknown ean")
+    }
+    
     func test_Ingredient_WhenCreated_RecipeIngredientsArrayShouldReturnEmptyArray() {
         let ingredient = Ingredient(context: persistenceController.container.viewContext)
         

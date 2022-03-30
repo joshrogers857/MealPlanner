@@ -2,7 +2,7 @@
 //  Ingredient+CoreDataProperties.swift
 //  MealPlanner
 //
-//  Created by Joshua Rogers on 27/03/2022.
+//  Created by Joshua Rogers on 30/03/2022.
 //
 //
 
@@ -27,6 +27,7 @@ extension Ingredient {
     @NSManaged public var saturates: Double
     @NSManaged public var sugars: Double
     @NSManaged public var unit: String?
+    @NSManaged public var ean: String?
     @NSManaged public var recipeIngredients: NSSet?
 
     public var wrappedName: String {
@@ -35,6 +36,10 @@ extension Ingredient {
     
     public var wrappedUnit: String {
         unit ?? ""
+    }
+    
+    public var wrappedEan: String {
+        ean ?? "Unknown ean"
     }
 }
 

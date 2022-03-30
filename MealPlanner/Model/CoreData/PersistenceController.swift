@@ -1090,6 +1090,20 @@ struct PersistenceController {
         recipe15.addToRecipeIngredients(recipeIngredient59)
         recipe15.addToRecipeIngredients(recipeIngredient60)
         recipe15.addToRecipeIngredients(recipeIngredient61)
+        
+        let ketchup = Ingredient(context: container.viewContext)
+        ketchup.name = "Heinz Tomato Ketchup"
+        ketchup.ean = "50457236"
+        ketchup.unit = "ml"
+        ketchup.quantity = 1
+        ketchup.calories = 1
+        ketchup.carbs = 0.3
+        ketchup.fat = 0.0
+        ketchup.fibre = 0.0
+        ketchup.protein = 0.0
+        ketchup.salt = 0.01
+        ketchup.saturates = 0.0
+        ketchup.sugars = 0.2
     }
     
     static func prePopulatePreview(using container: NSPersistentContainer) {

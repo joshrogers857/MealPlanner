@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+import CodeScanner
+
 struct AddNewRecipeAddIngredientView: View {
     @Environment(\.managedObjectContext) private var moc
     @FocusState private var keyboardIsFocused: Bool
@@ -14,6 +16,7 @@ struct AddNewRecipeAddIngredientView: View {
     @Binding var quantities: [Int16]
     @Binding var ingredients: [Ingredient]
     @Binding var isShowing: Bool
+    @State private var isShowingScanner = false
     
     @State private var quantity: Int16? = nil
     @State private var ingredient: Ingredient? = nil
@@ -30,6 +33,13 @@ struct AddNewRecipeAddIngredientView: View {
             Text("Add Ingredient")
                 .font(.largeTitle)
                 .padding(.top, 8)
+                .padding(.bottom, 4)
+            
+            Button {
+                isShowingScanner = true
+            } label: {
+                Label("Scan barcode", systemImage: "camera")
+            }
             
             Form {
                 Section {
@@ -86,6 +96,24 @@ struct AddNewRecipeAddIngredientView: View {
                 
                 Button("Done") {
                     keyboardIsFocused = false
+                }
+            }
+        }
+        .sheet(isPresented: $isShowingScanner) {
+            CodeScannerView(
+                codeTypes: [.ean8, .ean13],
+                showViewfinder: true
+            ) {
+                response in
+                
+                if case let .success(result) = response {
+                    for ingredient in ingredientList {
+                        if(ingredient.ean == result.string) {
+                            self.ingredient = ingredient
+                        }
+                    }
+                    
+                    isShowingScanner = false
                 }
             }
         }
