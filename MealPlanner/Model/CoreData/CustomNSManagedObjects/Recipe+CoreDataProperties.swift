@@ -26,7 +26,13 @@ extension Recipe {
     @NSManaged public var recipeIngredients: NSSet?
 
     public var wrappedName: String {
-        name ?? "Unknown name"
+        get {
+            name ?? "Unknown name"
+        }
+        
+        set {
+            name = newValue
+        }
     }
     
     public var wrappedTag: String {

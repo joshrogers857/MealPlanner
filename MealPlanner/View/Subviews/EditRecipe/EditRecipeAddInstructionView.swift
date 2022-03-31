@@ -1,16 +1,19 @@
 //
-//  AddNewRecipeAddInstructionView.swift
+//  EditRecipeAddInstructionView.swift
 //  MealPlanner
 //
-//  Created by Joshua Rogers on 29/03/2022.
+//  Created by Joshua Rogers on 31/03/2022.
 //
 
 import SwiftUI
 
-struct AddNewRecipeAddInstructionView: View {
+struct EditRecipeAddInstructionView: View {
+    
+    @Environment(\.managedObjectContext) private var moc
     @FocusState private var keyboardIsFocused: Bool
     
-    @Binding var instructionBodies: [String]
+    var recipe: Recipe
+    var instructions: [Instruction]
     @Binding var isShowing: Bool
     
     @State private var instructionBody = ""
@@ -26,7 +29,17 @@ struct AddNewRecipeAddInstructionView: View {
                     .focused($keyboardIsFocused)
                 
                 Button {
-                    instructionBodies.append(instructionBody)
+                    let instruction = Instruction(context: moc)
+                    
+                    if(instructions.last != nil) {
+                        instruction.stepNumber = (instructions.last!.stepNumber + 1)
+                    }
+                    
+                    instruction.body = instructionBody
+                    
+                    recipe.addToInstructions(instruction)
+                    
+                    PersistenceController.shared.save()
                     
                     isShowing = false
                 } label: {
@@ -47,8 +60,8 @@ struct AddNewRecipeAddInstructionView: View {
     }
 }
 
-/* struct AddNewRecipeAddInstructionView_Previews: PreviewProvider {
+/*struct EditRecipeAddInstructionView_Previews: PreviewProvider {
     static var previews: some View {
-        AddNewRecipeAddInstructionView()
+        EditRecipeAddInstructionView()
     }
-} */
+}*/

@@ -814,4 +814,13 @@ class RecipeTests: XCTestCase {
         
         XCTAssertEqual(Double(result1 / 4), result2)
     }
+    
+    func test_Recipe_WhenSettingWrappedName_NameShouldUpdate() {
+        let recipe = Recipe(context: persistenceController.container.viewContext)
+        let name = "test"
+        
+        recipe.wrappedName = name
+        
+        XCTAssertEqual(recipe.name, name)
+    }
 }

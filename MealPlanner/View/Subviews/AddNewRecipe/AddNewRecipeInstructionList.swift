@@ -37,10 +37,6 @@ struct AddNewRecipeInstructionList: View {
                         
                         Button {
                             instructionBodies.removeAll(where: { $0 == instructionBody })
-                            
-                            /*for (index, instruction) in instructions.enumerated() {
-                                instruction.stepNumber = Int16((index + 1))
-                            }*/
                         } label: {
                             Label("Delete ingredient", systemImage: "trash.fill")
                                 .labelStyle(.iconOnly)
