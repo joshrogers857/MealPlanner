@@ -346,6 +346,40 @@
 			<key>uniqueIdentifier</key>
 			<string>2A14C552-F1A6-4022-AC4E-920405D82C34</string>
 		</dict>
+		<key>32557378-26B2-41B4-B162-2C2AF10CD742</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.IndexBuildLog</string>
+			<key>fileName</key>
+			<string>32557378-26B2-41B4-B162-2C2AF10CD742.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>MealPlanner Build Preparation</string>
+			<key>timeStartedRecording</key>
+			<real>670420505.53897905</real>
+			<key>timeStoppedRecording</key>
+			<real>670420505.56026304</real>
+			<key>title</key>
+			<string>MealPlanner Build Preparation</string>
+			<key>uniqueIdentifier</key>
+			<string>32557378-26B2-41B4-B162-2C2AF10CD742</string>
+		</dict>
 		<key>35444E76-2D4A-4AED-97F9-1C255E12AA3B</key>
 		<dict>
 			<key>className</key>
@@ -1399,6 +1433,40 @@
 			<string>MealPlanner Build Preparation</string>
 			<key>uniqueIdentifier</key>
 			<string>D5499A02-4AE1-414A-909D-5D6F6B351180</string>
+		</dict>
+		<key>D549F26B-919E-4B61-A3CB-9BB6A1ABA395</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.IndexBuildLog</string>
+			<key>fileName</key>
+			<string>D549F26B-919E-4B61-A3CB-9BB6A1ABA395.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>MealPlanner Build Preparation</string>
+			<key>timeStartedRecording</key>
+			<real>670420606.29050303</real>
+			<key>timeStoppedRecording</key>
+			<real>670420606.30810797</real>
+			<key>title</key>
+			<string>MealPlanner Build Preparation</string>
+			<key>uniqueIdentifier</key>
+			<string>D549F26B-919E-4B61-A3CB-9BB6A1ABA395</string>
 		</dict>
 		<key>DBF70674-A75E-4D68-A457-A3A8DB0D4618</key>
 		<dict>

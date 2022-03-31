@@ -18,6 +18,7 @@ struct EditRecipeView: View {
     @State private var preparationTime: Double
     @State private var cookingTime: Double
     @State private var serves: Int16
+    @State private var tag: RecipeTag
     @State private var listType: String = "Ingredients"
     
     var body: some View {
@@ -51,8 +52,8 @@ struct EditRecipeView: View {
                         .focused($keyboardIsFocused)
                 }
                 
-                /* Section("Tag") {
-                    Picker("Tag", selection: $recipe.tag) {
+                Section("Tag") {
+                    Picker("Tag", selection: $tag) {
                         ForEach(RecipeTag.allCases, id: \.self) {
                             value in
                             
@@ -66,7 +67,7 @@ struct EditRecipeView: View {
                     Text("Ingredients").tag("Ingredients")
                     Text("Instructions").tag("Instructions")
                 }
-                .pickerStyle(.segmented)*/
+                .pickerStyle(.segmented)
             }
         .navigationTitle("Edit \(recipe.wrappedName)")
         .toolbar {
@@ -86,6 +87,7 @@ struct EditRecipeView: View {
                 recipe.preparationTime = preparationTime
                 recipe.cookingTime = cookingTime
                 recipe.serves = serves
+                recipe.tag = tag.rawValue
                 
                 PersistenceController.shared.save()
             }
@@ -100,6 +102,7 @@ struct EditRecipeView: View {
         preparationTime = recipe.preparationTime
         cookingTime = recipe.cookingTime
         serves = recipe.serves
+        tag = RecipeTag(rawValue: recipe.tag ?? "Untagged") ?? RecipeTag.untagged
     }
 }
 
