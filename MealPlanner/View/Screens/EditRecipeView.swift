@@ -20,6 +20,8 @@ struct EditRecipeView: View {
     @State private var serves: Int16
     @State private var tag: RecipeTag
     @State private var listType: String = "Ingredients"
+    @State private var ingredients: [RecipeIngredient]
+    @State private var instructions: [Instruction]
     
     var body: some View {
             Form {
@@ -68,6 +70,12 @@ struct EditRecipeView: View {
                     Text("Instructions").tag("Instructions")
                 }
                 .pickerStyle(.segmented)
+                
+                if(listType == "Ingredients") {
+                    EditRecipeIngredientListView(ingredients: $ingredients)
+                } else {
+                    EditRecipeInstructionListView(recipe: recipe, instructions: $instructions)
+                }
             }
         .navigationTitle("Edit \(recipe.wrappedName)")
         .toolbar {
@@ -103,6 +111,8 @@ struct EditRecipeView: View {
         cookingTime = recipe.cookingTime
         serves = recipe.serves
         tag = RecipeTag(rawValue: recipe.tag ?? "Untagged") ?? RecipeTag.untagged
+        ingredients = recipe.recipeIngredientsArray
+        instructions = recipe.instructionsArray
     }
 }
 
