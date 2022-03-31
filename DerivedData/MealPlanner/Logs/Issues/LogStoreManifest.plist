@@ -6,35 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>0F65D52F-032C-44D1-927C-8529588A16D3</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.target</string>
-			<key>fileName</key>
-			<string>0F65D52F-032C-44D1-927C-8529588A16D3.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>signature</key>
-			<string>CodeScanner_CodeScanner-cbawkjzkbmakrheyabecoojbripv</string>
-			<key>timeStartedRecording</key>
-			<real>670418249.57017303</real>
-			<key>timeStoppedRecording</key>
-			<real>670418249.95715702</real>
-			<key>title</key>
-			<string>Build target CodeScanner_CodeScanner</string>
-			<key>uniqueIdentifier</key>
-			<string>0F65D52F-032C-44D1-927C-8529588A16D3</string>
-		</dict>
-		<key>3517FCB0-D7B5-47EF-BE8B-A80F672DBBD0</key>
+		<key>4307DB98-D1A1-4ED4-B815-994A3C3BD968</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -43,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>3517FCB0-D7B5-47EF-BE8B-A80F672DBBD0.xcactivitylog</string>
+			<string>4307DB98-D1A1-4ED4-B815-994A3C3BD968.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -54,69 +26,13 @@
 			<key>signature</key>
 			<string>MealPlanner-cnavxnuytvfcyngzxneikxxwqyxs</string>
 			<key>timeStartedRecording</key>
-			<real>670425105.00346696</real>
+			<real>670425924.98269403</real>
 			<key>timeStoppedRecording</key>
-			<real>670425105.79453897</real>
+			<real>670425925.93039</real>
 			<key>title</key>
 			<string>Build target MealPlanner</string>
 			<key>uniqueIdentifier</key>
-			<string>3517FCB0-D7B5-47EF-BE8B-A80F672DBBD0</string>
-		</dict>
-		<key>9122D118-AA65-4C67-BFC1-188169A7F20E</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.bundle</string>
-			<key>fileName</key>
-			<string>9122D118-AA65-4C67-BFC1-188169A7F20E.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>signature</key>
-			<string>MealPlannerUITests-cnavxnuytvfcyngzxneikxxwqyxs</string>
-			<key>timeStartedRecording</key>
-			<real>670417612.44721699</real>
-			<key>timeStoppedRecording</key>
-			<real>670417613.732494</real>
-			<key>title</key>
-			<string>Build target MealPlannerUITests</string>
-			<key>uniqueIdentifier</key>
-			<string>9122D118-AA65-4C67-BFC1-188169A7F20E</string>
-		</dict>
-		<key>9D936A4A-055E-4878-85F3-5778C187CAC6</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.bundle</string>
-			<key>fileName</key>
-			<string>9D936A4A-055E-4878-85F3-5778C187CAC6.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>signature</key>
-			<string>MealPlannerTests-cnavxnuytvfcyngzxneikxxwqyxs</string>
-			<key>timeStartedRecording</key>
-			<real>670417612.74312103</real>
-			<key>timeStoppedRecording</key>
-			<real>670417613.47510004</real>
-			<key>title</key>
-			<string>Build target MealPlannerTests</string>
-			<key>uniqueIdentifier</key>
-			<string>9D936A4A-055E-4878-85F3-5778C187CAC6</string>
+			<string>4307DB98-D1A1-4ED4-B815-994A3C3BD968</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

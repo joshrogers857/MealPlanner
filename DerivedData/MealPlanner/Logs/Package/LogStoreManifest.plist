@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>2ED2567E-DD1B-403A-BBB5-8415F3B2CD94</key>
+		<key>0D92A93A-8270-4A66-998A-6DE40FF5D0F4</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.PackageLog</string>
 			<key>fileName</key>
-			<string>2ED2567E-DD1B-403A-BBB5-8415F3B2CD94.xcactivitylog</string>
+			<string>0D92A93A-8270-4A66-998A-6DE40FF5D0F4.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -26,15 +26,15 @@
 			<key>signature</key>
 			<string>Resolve Packages</string>
 			<key>timeStartedRecording</key>
-			<real>670416959.73076797</real>
+			<real>670425715.24851704</real>
 			<key>timeStoppedRecording</key>
-			<real>670416960.23545897</real>
+			<real>670425715.79641497</real>
 			<key>title</key>
 			<string>Resolve Packages</string>
 			<key>uniqueIdentifier</key>
-			<string>2ED2567E-DD1B-403A-BBB5-8415F3B2CD94</string>
+			<string>0D92A93A-8270-4A66-998A-6DE40FF5D0F4</string>
 		</dict>
-		<key>DBBB35CF-A45A-450E-BEA9-D4C11191F55C</key>
+		<key>C8EF9DB3-68DE-45CD-BE98-5567E926DEEB</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -43,7 +43,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.PackageLog</string>
 			<key>fileName</key>
-			<string>DBBB35CF-A45A-450E-BEA9-D4C11191F55C.xcactivitylog</string>
+			<string>C8EF9DB3-68DE-45CD-BE98-5567E926DEEB.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -54,13 +54,13 @@
 			<key>signature</key>
 			<string>Resolve Packages</string>
 			<key>timeStartedRecording</key>
-			<real>670413254.67844498</real>
+			<real>670425640.34154606</real>
 			<key>timeStoppedRecording</key>
-			<real>670413254.727072</real>
+			<real>670425640.38409901</real>
 			<key>title</key>
 			<string>Resolve Packages</string>
 			<key>uniqueIdentifier</key>
-			<string>DBBB35CF-A45A-450E-BEA9-D4C11191F55C</string>
+			<string>C8EF9DB3-68DE-45CD-BE98-5567E926DEEB</string>
 		</dict>
 	</dict>
 </dict>
