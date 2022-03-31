@@ -42,6 +42,13 @@ struct RecipeSummaryView: View {
         }
         .navigationTitle(recipe.wrappedName)
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .primaryAction) {
+                NavigationLink(destination: EditRecipeView()) {
+                    Text("Edit")
+                }
+            }
+        }
     }
 }
 
