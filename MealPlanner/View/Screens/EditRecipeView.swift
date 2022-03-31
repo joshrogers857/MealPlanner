@@ -72,7 +72,7 @@ struct EditRecipeView: View {
                 .pickerStyle(.segmented)
                 
                 if(listType == "Ingredients") {
-                    EditRecipeIngredientListView(ingredients: $ingredients)
+                    EditRecipeIngredientListView(recipe: recipe, ingredients: $ingredients)
                 } else {
                     EditRecipeInstructionListView(recipe: recipe, instructions: $instructions)
                 }

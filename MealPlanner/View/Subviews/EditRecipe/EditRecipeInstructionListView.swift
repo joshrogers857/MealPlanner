@@ -27,24 +27,36 @@ struct EditRecipeInstructionListView: View {
                 }
             }
             
-            ForEach(instructions, id: \.self) {
-                instruction in
-                
-                HStack {
-                    Text("\(instruction.stepNumber). \(instruction.wrappedBody)")
-                
-                    Spacer()
+            if(instructions.isEmpty) {
+                Text("No instructions")
+            } else {
+                ForEach(instructions, id: \.self) {
+                    instruction in
                     
-                    Button {
-                        moc.delete(instruction)
+                    HStack {
+                        Text("\(instruction.stepNumber). \(instruction.wrappedBody)")
+                    
+                        Spacer()
                         
-                        PersistenceController.shared.save()
-                    } label: {
-                        Label("Delete instruction", systemImage: "trash.fill")
-                            .labelStyle(.iconOnly)
+                        Button {
+                            moc.delete(instruction)
+                            
+                            PersistenceController.shared.save()
+                            
+                            let instructions = recipe.instructionsArray
+                            
+                            for (index, instruction) in instructions.enumerated() {
+                                instruction.stepNumber = Int16(index + 1)
+                            }
+                            
+                            PersistenceController.shared.save()
+                        } label: {
+                            Label("Delete instruction", systemImage: "trash.fill")
+                                .labelStyle(.iconOnly)
+                        }
                     }
+                    
                 }
-                
             }
         }
         .sheet(isPresented: $isShowing) {

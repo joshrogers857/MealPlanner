@@ -10,10 +10,23 @@ import SwiftUI
 struct EditRecipeIngredientListView: View {
     @Environment(\.managedObjectContext) private var moc
     
+    var recipe: Recipe
     @Binding var ingredients: [RecipeIngredient]
+    @State private var isShowing = false
     
     var body: some View {
         List {
+            HStack {
+                Spacer()
+                
+                Button {
+                    isShowing = true
+                } label: {
+                    Label("Add ingredient", systemImage: "plus")
+                        .labelStyle(.iconOnly)
+                }
+            }
+            
             if(ingredients.isEmpty) {
                 Text("No ingredients")
             } else {
@@ -40,6 +53,9 @@ struct EditRecipeIngredientListView: View {
                     }
                 }
             }
+        }
+        .sheet(isPresented: $isShowing) {
+            EditRecipeAddIngredientView(recipe: recipe, isShowing: $isShowing)
         }
     }
 }
