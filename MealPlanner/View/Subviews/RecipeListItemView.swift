@@ -12,20 +12,22 @@ struct RecipeListItemView: View {
     let scaledTo: Int?
     
     var body: some View {
-        NavigationLink(destination: RecipeSummaryView(recipe: recipe[0], scaledTo: scaledTo)) {
-            HStack {
-                ZStack {
-                    Color.black
-                        .frame(width: 102, height: 62, alignment: .leading)
-                
-                    Image(decorative: recipe[0].wrappedName)
-                        .resizable()
-                        .frame(width: 100, height: 60, alignment: .leading)
+        if(recipe.first != nil) {
+            NavigationLink(destination: RecipeSummaryView(recipe: recipe[0], scaledTo: scaledTo)) {
+                HStack {
+                    ZStack {
+                        Color.black
+                            .frame(width: 102, height: 62, alignment: .leading)
+                    
+                        Image(decorative: recipe[0].wrappedName)
+                            .resizable()
+                            .frame(width: 100, height: 60, alignment: .leading)
+                    }
+                    
+                    Text(recipe[0].wrappedName)
+                        .tag(recipe[0].wrappedName)
+                        .padding()
                 }
-                
-                Text(recipe[0].wrappedName)
-                    .tag(recipe[0].wrappedName)
-                    .padding()
             }
         }
     }

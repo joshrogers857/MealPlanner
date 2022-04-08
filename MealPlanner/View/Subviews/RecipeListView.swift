@@ -27,7 +27,7 @@ struct RecipeListView: View {
                         
                         RecipeListItemView(recipe: recipe, scaledTo: nil)
                     }
-                    .onDelete(perform: delete)
+                    .onDelete(perform: deleteBreakfast)
                 }
                 
                 Section("Lunch") {
@@ -36,7 +36,7 @@ struct RecipeListView: View {
                         
                         RecipeListItemView(recipe: recipe, scaledTo: nil)
                     }
-                    .onDelete(perform: delete)
+                    .onDelete(perform: deleteLunch)
                 }
                 
                 Section("Dinner") {
@@ -45,7 +45,7 @@ struct RecipeListView: View {
                         
                         RecipeListItemView(recipe: recipe, scaledTo: nil)
                     }
-                    .onDelete(perform: delete)
+                    .onDelete(perform: deleteDinner)
                 }
                 
                 Section("Untagged") {
@@ -54,7 +54,7 @@ struct RecipeListView: View {
                         
                         RecipeListItemView(recipe: recipe, scaledTo: nil)
                     }
-                    .onDelete(perform: delete)
+                    .onDelete(perform: deleteUntagged)
                 }
             }
         }
@@ -113,17 +113,65 @@ struct RecipeListView: View {
         )
     }
     
-    func delete(at offsets: IndexSet) {
+    func deleteBreakfast(at offsets: IndexSet) {
         for index in offsets {
-            for instruction in recipeList[index].instructionsArray {
+            for instruction in breakfastRecipes[index].instructionsArray {
                 moc.delete(instruction)
             }
             
-            for recipeIngredient in recipeList[index].recipeIngredientsArray {
+            for recipeIngredient in breakfastRecipes[index].recipeIngredientsArray {
                 moc.delete(recipeIngredient)
             }
             
-            moc.delete(recipeList[index])
+            moc.delete(breakfastRecipes[index])
+            
+            PersistenceController.shared.save()
+        }
+    }
+    
+    func deleteLunch(at offsets: IndexSet) {
+        for index in offsets {
+            for instruction in lunchRecipes[index].instructionsArray {
+                moc.delete(instruction)
+            }
+            
+            for recipeIngredient in lunchRecipes[index].recipeIngredientsArray {
+                moc.delete(recipeIngredient)
+            }
+            
+            moc.delete(lunchRecipes[index])
+            
+            PersistenceController.shared.save()
+        }
+    }
+    
+    func deleteDinner(at offsets: IndexSet) {
+        for index in offsets {
+            for instruction in dinnerRecipes[index].instructionsArray {
+                moc.delete(instruction)
+            }
+            
+            for recipeIngredient in dinnerRecipes[index].recipeIngredientsArray {
+                moc.delete(recipeIngredient)
+            }
+            
+            moc.delete(dinnerRecipes[index])
+            
+            PersistenceController.shared.save()
+        }
+    }
+    
+    func deleteUntagged(at offsets: IndexSet) {
+        for index in offsets {
+            for instruction in untaggedRecipes[index].instructionsArray {
+                moc.delete(instruction)
+            }
+            
+            for recipeIngredient in untaggedRecipes[index].recipeIngredientsArray {
+                moc.delete(recipeIngredient)
+            }
+            
+            moc.delete(untaggedRecipes[index])
             
             PersistenceController.shared.save()
         }
