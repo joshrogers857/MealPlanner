@@ -15,17 +15,17 @@ struct MealPlanService {
         
         let breakfast = MealPlanStage(context: moc)
         breakfast.name = "Breakfast"
-        breakfast.listPosition = 1
+        breakfast.listPosition = 0
         breakfast.numberEating = 1
         
         let lunch = MealPlanStage(context: moc)
         lunch.name = "Lunch"
-        lunch.listPosition = 2
+        lunch.listPosition = 1
         lunch.numberEating = 1
         
         let dinner = MealPlanStage(context: moc)
         dinner.name = "Dinner"
-        dinner.listPosition = 3
+        dinner.listPosition = 2
         dinner.numberEating = 1
         
         mealPlan.addToStages(breakfast)
