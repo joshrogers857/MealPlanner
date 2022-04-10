@@ -44,18 +44,6 @@ struct MealPlanView: View {
             }
         }
     }
-    
-    private func dateToString(_ date: Date) -> (String, String) {
-        let df = DateFormatter()
-        df.dateFormat = "dd/MM/YYYY"
-        
-        let calendar = Calendar.current
-        let hour = calendar.component(.hour, from: date)
-        let minute = calendar.component(.minute, from: date)
-        let second = calendar.component(.second, from: date)
-        
-        return (df.string(from: date), "\(hour):\(minute):\(second)")
-    }
 }
 
 /*struct MealPlanView_Previews: PreviewProvider {
