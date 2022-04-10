@@ -1,5 +1,5 @@
 //
-//  MealPlanList.swift
+//  MealPlanListView.swift
 //  MealPlanner
 //
 //  Created by Joshua Rogers on 21/03/2022.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MealPlanList: View {
+struct MealPlanListView: View {
     @EnvironmentObject private var selectedDate: SelectedDate
     @Environment(\.managedObjectContext) private var moc
     @FetchRequest private var mealPlan: FetchedResults<MealPlan>
@@ -55,9 +55,9 @@ struct MealPlanList: View {
     }
 }
 
-struct MealPlanList_Previews: PreviewProvider {
+struct MealPlanListView_Previews: PreviewProvider {
     static var previews: some View {
-        MealPlanList(selectedDate: Date.now)
+        MealPlanListView(selectedDate: Date.now)
             .environmentObject(SelectedDate())
     }
 }

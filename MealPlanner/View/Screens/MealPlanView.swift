@@ -20,7 +20,7 @@ struct MealPlanView: View {
                 
                 Spacer()
                 
-                MealPlanList(selectedDate: selectedDate.date)
+                MealPlanListView(selectedDate: selectedDate.date)
                 
                 Spacer()
             }
