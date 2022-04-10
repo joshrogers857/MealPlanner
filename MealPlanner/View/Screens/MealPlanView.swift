@@ -10,12 +10,6 @@ import SwiftUI
 struct MealPlanView: View {
     @EnvironmentObject private var selectedDate: SelectedDate
     @Binding var refresh: Bool
-    //@FetchRequest private var mealPlans: FetchedResults<MealPlan>
-    //@FetchRequest private var mealPlanStages: FetchedResults<MealPlanStage>
-    //@FetchRequest private var recipes: FetchedResults<Recipe>
-    //@FetchRequest private var recipeIngredients: FetchedResults<RecipeIngredient>
-    //@FetchRequest private var ingredients: FetchedResults<Ingredient>
-    //@FetchRequest private var instructions: FetchedResults<Instruction>
     
     @Environment(\.managedObjectContext) private var moc
     
@@ -29,42 +23,6 @@ struct MealPlanView: View {
                 MealPlanList(selectedDate: selectedDate.date)
                 
                 Spacer()
-                
-                /*List {
-                    ForEach(instructions) {
-                        instruction in
-                        
-                        Text(instruction.wrappedBody)
-                    }
-                }*/
-                
-                /*Button("DELETE ALL") {
-                    for plan in mealPlans {
-                        moc.delete(plan)
-                    }
-                    
-                    for stage in mealPlanStages {
-                        moc.delete(stage)
-                    }
-                    
-                    for recipe in recipes {
-                        moc.delete(recipe)
-                    }
-                    
-                    for recipeIngredient in recipeIngredients {
-                        moc.delete(recipeIngredient)
-                    }
-                    
-                    for ingredient in ingredients {
-                        moc.delete(ingredient)
-                    }
-                    
-                    for instruction in instructions {
-                        moc.delete(instruction)
-                    }
-                    
-                    PersistenceController.shared.save()
-                }*/
             }
             .navigationTitle("Meal Plan")
             .toolbar {
@@ -78,37 +36,14 @@ struct MealPlanView: View {
                     }
                 }
             }
+            /*.onAppear {
+                PersistenceController.clearDatabase(using: moc)
+            }*/
             .onDisappear {
                 refresh = true
             }
         }
     }
-    
-    /*init() {
-        /* _mealPlans = FetchRequest<MealPlan>(
-            sortDescriptors: []
-        )
-        
-        _mealPlanStages = FetchRequest<MealPlanStage>(
-            sortDescriptors: []
-        )
-        
-        _recipes = FetchRequest<Recipe>(
-            sortDescriptors: []
-        )
-        
-        _recipeIngredients = FetchRequest<RecipeIngredient>(
-            sortDescriptors: []
-        )
-        
-        _ingredients = FetchRequest<Ingredient>(
-            sortDescriptors: []
-        ) */
-        
-        _instructions = FetchRequest<Instruction>(
-            sortDescriptors: []
-        )
-    }*/
     
     private func dateToString(_ date: Date) -> (String, String) {
         let df = DateFormatter()

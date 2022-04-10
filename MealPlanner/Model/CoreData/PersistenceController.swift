@@ -56,6 +56,58 @@ struct PersistenceController {
         }
     }
     
+    static func clearDatabase(using context: NSManagedObjectContext) {
+        let mealPlanFetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "MealPlan")
+        let mealPlanStageFetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "MealPlanStage")
+        let recipeFetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Recipe")
+        let recipeIngredientFetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "RecipeIngredient")
+        let ingredientFetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Ingredient")
+        let instructionFetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Instruction")
+        
+        let mealPlanDeleteRequest = NSBatchDeleteRequest(fetchRequest: mealPlanFetchRequest)
+        let mealPlanStageDeleteRequest = NSBatchDeleteRequest(fetchRequest: mealPlanStageFetchRequest)
+        let recipeDeleteRequest = NSBatchDeleteRequest(fetchRequest: recipeFetchRequest)
+        let recipeIngredientDeleteRequest = NSBatchDeleteRequest(fetchRequest: recipeIngredientFetchRequest)
+        let ingredientDeleteRequest = NSBatchDeleteRequest(fetchRequest: ingredientFetchRequest)
+        let instructionDeleteRequest = NSBatchDeleteRequest(fetchRequest: instructionFetchRequest)
+        
+        do {
+            try context.execute(mealPlanDeleteRequest)
+        } catch {
+            //handle errors here
+        }
+        
+        do {
+            try context.execute(mealPlanStageDeleteRequest)
+        } catch {
+            //handle errors here
+        }
+        
+        do {
+            try context.execute(recipeDeleteRequest)
+        } catch {
+            //handle errors here
+        }
+        
+        do {
+            try context.execute(recipeIngredientDeleteRequest)
+        } catch {
+            //handle errors here
+        }
+        
+        do {
+            try context.execute(ingredientDeleteRequest)
+        } catch {
+            //handle errors here
+        }
+        
+        do {
+            try context.execute(instructionDeleteRequest)
+        } catch {
+            //handle errors here
+        }
+    }
+    
     static func prePopulate(using container: NSPersistentContainer) {
         
         let recipe1 = Recipe(context: container.viewContext)
