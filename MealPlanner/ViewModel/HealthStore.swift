@@ -9,6 +9,8 @@ import Foundation
 import HealthKit
 
 class HealthStore: ObservableObject {
+    
+    //Singleton object to be used throughout the app
     static let shared = HealthStore()
     
     private(set) var store: HKHealthStore?
@@ -19,6 +21,7 @@ class HealthStore: ObservableObject {
     }
     
     private init() {
+        //Check if healthkit is available on the device. If not, set store to nil
         if HKHealthStore.isHealthDataAvailable() {
             store = HKHealthStore()
             
@@ -42,6 +45,8 @@ class HealthStore: ObservableObject {
     }
     
     func activeCaloriesQuery(startDate: Date, endDate: Date) {
+        
+        //Create sample type
         guard let activeEnergyType = HKSampleType.quantityType(
             forIdentifier: .activeEnergyBurned
         ) else {
@@ -49,8 +54,10 @@ class HealthStore: ObservableObject {
             fatalError("*** Unable to get the active energy type ***")
         }
 
+        //Create predicate
         let today = HKQuery.predicateForSamples(withStart: startDate, end: endDate, options: [])
         
+        //Query using sample type and predicate
         let query = HKStatisticsQuery(
             quantityType: activeEnergyType,
             quantitySamplePredicate: today,
@@ -58,7 +65,7 @@ class HealthStore: ObservableObject {
         ) { (query, statisticsOrNil, errorOrNil) in
             
             let sum = statisticsOrNil?.sumQuantity()
-            let totalActiveCalories = sum?.doubleValue(for: HKUnit.largeCalorie())
+            let totalActiveCalories = sum?.doubleValue(for: HKUnit.largeCalorie()) //Specify unit to use
             
             DispatchQueue.main.async {
                 self.activeCalories = totalActiveCalories ?? 0.0
@@ -69,6 +76,8 @@ class HealthStore: ObservableObject {
     }
     
     func basalCaloriesQuery(startDate: Date, endDate: Date) {
+        
+        //Create sample type
         guard let basalEnergyType = HKSampleType.quantityType(
             forIdentifier: .basalEnergyBurned
         ) else {
@@ -76,8 +85,10 @@ class HealthStore: ObservableObject {
             fatalError("*** Unable to get the basal energy type ***")
         }
 
+        //Create predicate
         let today = HKQuery.predicateForSamples(withStart: startDate, end: endDate, options: [])
         
+        //Query using sample type and predicate
         let query = HKStatisticsQuery(
             quantityType: basalEnergyType,
             quantitySamplePredicate: today,
@@ -85,7 +96,7 @@ class HealthStore: ObservableObject {
         ) { (query, statisticsOrNil, errorOrNil) in
             
             let sum = statisticsOrNil?.sumQuantity()
-            let totalBasalCalories = sum?.doubleValue(for: HKUnit.largeCalorie())
+            let totalBasalCalories = sum?.doubleValue(for: HKUnit.largeCalorie()) //Specify unit to use
             
             DispatchQueue.main.async {
                 self.basalCalories = totalBasalCalories ?? 0.0

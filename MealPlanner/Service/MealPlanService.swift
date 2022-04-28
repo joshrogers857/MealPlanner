@@ -13,6 +13,7 @@ struct MealPlanService {
         let mealPlan = MealPlan(context: moc)
         mealPlan.date = date
         
+        //Add breakfast, lunch, and dinner stages automatically
         let breakfast = MealPlanStage(context: moc)
         breakfast.name = "Breakfast"
         breakfast.listPosition = 0

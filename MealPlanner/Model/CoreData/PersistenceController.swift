@@ -74,37 +74,37 @@ struct PersistenceController {
         do {
             try context.execute(mealPlanDeleteRequest)
         } catch {
-            //handle errors here
+            print(error.localizedDescription)
         }
         
         do {
             try context.execute(mealPlanStageDeleteRequest)
         } catch {
-            //handle errors here
+            print(error.localizedDescription)
         }
         
         do {
             try context.execute(recipeDeleteRequest)
         } catch {
-            //handle errors here
+            print(error.localizedDescription)
         }
         
         do {
             try context.execute(recipeIngredientDeleteRequest)
         } catch {
-            //handle errors here
+            print(error.localizedDescription)
         }
         
         do {
             try context.execute(ingredientDeleteRequest)
         } catch {
-            //handle errors here
+            print(error.localizedDescription)
         }
         
         do {
             try context.execute(instructionDeleteRequest)
         } catch {
-            //handle errors here
+            print(error.localizedDescription)
         }
     }
     

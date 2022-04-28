@@ -90,6 +90,7 @@ struct StagesView: View {
     }
     
     //Adapted from: https://stackoverflow.com/a/62239979/11821338
+    //Update the listPosition properties of the entities to be in the correct order after rearranging the list. Allows them to remain in series (1,2,3,4,5,etc.)
     func move(from source: IndexSet, to destination: Int) {
         
         var revisedItems: [MealPlanStage] = stages.map{ $0 }

@@ -41,6 +41,7 @@ struct ShoppingListView: View {
         // Start
         // Code adapted from: https://stackoverflow.com/a/71482203/11821338
         // and https://www.reddit.com/r/swift/comments/7oqkbp/get_the_date_of_the_next_sunday/
+        //Get all meal plans from the current date up to the next Sunday
         
         let calendar = Calendar.current
         
