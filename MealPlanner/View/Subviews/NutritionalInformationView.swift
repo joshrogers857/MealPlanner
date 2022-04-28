@@ -15,14 +15,14 @@ struct NutritionalInformationView: View {
     
     var body: some View {
         Group {
-            Text("Calories: \(mealPlans.reduce(0) { $0 + $1.caloriesPerPerson})")
-            NutritionListItemView(primaryText: "Carbs: \(mealPlans.reduce(0) { $0 + $1.carbsPerPerson})g", recommended: "260g")
-            NutritionListItemView(primaryText: "Fat: \(mealPlans.reduce(0) { $0 + $1.fatPerPerson})g", recommended: "less than 70g")
-            NutritionListItemView(primaryText: "Fibre: \(mealPlans.reduce(0) { $0 + $1.fibrePerPerson})g", recommended: "30g")
-            NutritionListItemView(primaryText: "Protein: \(mealPlans.reduce(0) { $0 + $1.proteinPerPerson})g", recommended: "50g")
-            NutritionListItemView(primaryText: "Salt: \(mealPlans.reduce(0) { $0 + $1.saltPerPerson})g", recommended: "less than 6g")
-            NutritionListItemView(primaryText: "Saturates: \(mealPlans.reduce(0) { $0 + $1.saturatesPerPerson})g", recommended: "less than 20g")
-            NutritionListItemView(primaryText: "Sugars: \(mealPlans.reduce(0) { $0 + $1.sugarsPerPerson})g", recommended: "90g")
+            Text("Calories: \(round(mealPlans.reduce(0) { $0 + $1.caloriesPerPerson} * 100) / 100)")
+            NutritionListItemView(primaryText: "Carbs: \(round(mealPlans.reduce(0) { $0 + $1.carbsPerPerson} * 100) / 100)g", recommended: "260g")
+            NutritionListItemView(primaryText: "Fat: \(round(mealPlans.reduce(0) { $0 + $1.fatPerPerson} * 100) / 100)g", recommended: "less than 70g")
+            NutritionListItemView(primaryText: "Fibre: \(round(mealPlans.reduce(0) { $0 + $1.fibrePerPerson} * 100) / 100)g", recommended: "30g")
+            NutritionListItemView(primaryText: "Protein: \(round(mealPlans.reduce(0) { $0 + $1.proteinPerPerson} * 100) / 100)g", recommended: "50g")
+            NutritionListItemView(primaryText: "Salt: \(round(mealPlans.reduce(0) { $0 + $1.saltPerPerson} * 100) / 100)g", recommended: "less than 6g")
+            NutritionListItemView(primaryText: "Saturates: \(round(mealPlans.reduce(0) { $0 + $1.saturatesPerPerson} * 100) / 100)g", recommended: "less than 20g")
+            NutritionListItemView(primaryText: "Sugars: \(round(mealPlans.reduce(0) { $0 + $1.sugarsPerPerson} * 100) / 100)g", recommended: "90g")
         }
         .onChange(of: refresh) {
             newValue in

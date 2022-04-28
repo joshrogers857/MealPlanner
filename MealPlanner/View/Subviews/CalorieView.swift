@@ -19,9 +19,9 @@ struct CalorieView: View {
                 .padding()
         } else {
             Group {
-                Text("Active calories: \(healthStore.activeCalories)")
-                Text("Basal calories: \(healthStore.basalCalories)")
-                Text("Total calories: \(healthStore.totalCalories)")
+                Text("Active calories: \(round(healthStore.activeCalories * 100) / 100)")
+                Text("Basal calories: \(round(healthStore.basalCalories * 100) / 100)")
+                Text("Total calories: \(round(healthStore.totalCalories * 100) / 100)")
                 
                 VStack(alignment: .leading) {
                     Text("Recommended: \(UserDefaults.standard.string(forKey: "sex") == "Male" ? 2500 : 2000)/day")

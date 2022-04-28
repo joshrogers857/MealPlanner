@@ -39,9 +39,9 @@ struct ShoppingListService {
         
         for total in totals {
             if(total.1?.quantity ?? 0 > 1) {
-                strings.append("\(total.0)x \(total.1?.quantity ?? 0)\(total.1?.wrappedUnit ?? "Unknown") \(total.1?.wrappedName ?? "Unknown")")
+                strings.append("\(round(total.0 * 100) / 100)x \(total.1?.quantity ?? 0)\(total.1?.wrappedUnit ?? "Unknown") \(total.1?.wrappedName ?? "Unknown")")
             } else {
-                strings.append("\(total.0)\(total.1?.wrappedUnit ?? "Unknown") \(total.1?.wrappedName ?? "Unknown")")
+                strings.append("\(round(total.0 * 100) / 100)\(total.1?.wrappedUnit ?? "Unknown") \(total.1?.wrappedName ?? "Unknown")")
             }
         }
         

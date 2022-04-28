@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>209CBFF9-808B-4912-B387-10B8A2A9C457</key>
+		<key>2B4D6B1A-6D0B-458F-BDA8-380CF6B79190</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -15,119 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.bundle</string>
 			<key>fileName</key>
-			<string>209CBFF9-808B-4912-B387-10B8A2A9C457.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>signature</key>
-			<string>MealPlannerTests-cnavxnuytvfcyngzxneikxxwqyxs</string>
-			<key>timeStartedRecording</key>
-			<real>671111171.87816203</real>
-			<key>timeStoppedRecording</key>
-			<real>671111172.55633295</real>
-			<key>title</key>
-			<string>Build target MealPlannerTests</string>
-			<key>uniqueIdentifier</key>
-			<string>209CBFF9-808B-4912-B387-10B8A2A9C457</string>
-		</dict>
-		<key>329BE76F-C0E7-456F-BAFC-C00832228A14</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
-			<key>fileName</key>
-			<string>329BE76F-C0E7-456F-BAFC-C00832228A14.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>signature</key>
-			<string>MealPlanner-cnavxnuytvfcyngzxneikxxwqyxs</string>
-			<key>timeStartedRecording</key>
-			<real>671299387.92895401</real>
-			<key>timeStoppedRecording</key>
-			<real>671299389.71140695</real>
-			<key>title</key>
-			<string>Build target MealPlanner</string>
-			<key>uniqueIdentifier</key>
-			<string>329BE76F-C0E7-456F-BAFC-C00832228A14</string>
-		</dict>
-		<key>4EE120AE-5747-4CED-A1A6-79FA8A2FA330</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.target</string>
-			<key>fileName</key>
-			<string>4EE120AE-5747-4CED-A1A6-79FA8A2FA330.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>signature</key>
-			<string>CodeScanner-cbawkjzkbmakrheyabecoojbripv</string>
-			<key>timeStartedRecording</key>
-			<real>671285114.46422994</real>
-			<key>timeStoppedRecording</key>
-			<real>671285118.63027501</real>
-			<key>title</key>
-			<string>Build target CodeScanner</string>
-			<key>uniqueIdentifier</key>
-			<string>4EE120AE-5747-4CED-A1A6-79FA8A2FA330</string>
-		</dict>
-		<key>69507414-5EA7-422A-BC74-08405C6A52AC</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.target</string>
-			<key>fileName</key>
-			<string>69507414-5EA7-422A-BC74-08405C6A52AC.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>signature</key>
-			<string>CodeScanner_CodeScanner-cbawkjzkbmakrheyabecoojbripv</string>
-			<key>timeStartedRecording</key>
-			<real>671285116.343647</real>
-			<key>timeStoppedRecording</key>
-			<real>671285117.09374201</real>
-			<key>title</key>
-			<string>Build target CodeScanner_CodeScanner</string>
-			<key>uniqueIdentifier</key>
-			<string>69507414-5EA7-422A-BC74-08405C6A52AC</string>
-		</dict>
-		<key>C2237E66-8158-449A-AED0-676AA83699C2</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.bundle</string>
-			<key>fileName</key>
-			<string>C2237E66-8158-449A-AED0-676AA83699C2.xcactivitylog</string>
+			<string>2B4D6B1A-6D0B-458F-BDA8-380CF6B79190.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -138,13 +26,125 @@
 			<key>signature</key>
 			<string>MealPlannerUITests-cnavxnuytvfcyngzxneikxxwqyxs</string>
 			<key>timeStartedRecording</key>
-			<real>671111171.55736804</real>
+			<real>672661170.29456604</real>
 			<key>timeStoppedRecording</key>
-			<real>671111172.76522696</real>
+			<real>672661173.85409999</real>
 			<key>title</key>
 			<string>Build target MealPlannerUITests</string>
 			<key>uniqueIdentifier</key>
-			<string>C2237E66-8158-449A-AED0-676AA83699C2</string>
+			<string>2B4D6B1A-6D0B-458F-BDA8-380CF6B79190</string>
+		</dict>
+		<key>4036EF61-967A-4162-A2A8-16C8A49F9161</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.target</string>
+			<key>fileName</key>
+			<string>4036EF61-967A-4162-A2A8-16C8A49F9161.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>CodeScanner-cbawkjzkbmakrheyabecoojbripv</string>
+			<key>timeStartedRecording</key>
+			<real>672853368.080778</real>
+			<key>timeStoppedRecording</key>
+			<real>672853370.63250899</real>
+			<key>title</key>
+			<string>Build target CodeScanner</string>
+			<key>uniqueIdentifier</key>
+			<string>4036EF61-967A-4162-A2A8-16C8A49F9161</string>
+		</dict>
+		<key>9430336F-BEB3-4EBD-A0E7-745816AA6EE0</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.target</string>
+			<key>fileName</key>
+			<string>9430336F-BEB3-4EBD-A0E7-745816AA6EE0.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>CodeScanner_CodeScanner-cbawkjzkbmakrheyabecoojbripv</string>
+			<key>timeStartedRecording</key>
+			<real>672853368.08109105</real>
+			<key>timeStoppedRecording</key>
+			<real>672853369.04329205</real>
+			<key>title</key>
+			<string>Build target CodeScanner_CodeScanner</string>
+			<key>uniqueIdentifier</key>
+			<string>9430336F-BEB3-4EBD-A0E7-745816AA6EE0</string>
+		</dict>
+		<key>BE4DD228-9D3E-4A0F-BA85-10D0D096EB5A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>BE4DD228-9D3E-4A0F-BA85-10D0D096EB5A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>MealPlanner-cnavxnuytvfcyngzxneikxxwqyxs</string>
+			<key>timeStartedRecording</key>
+			<real>672855016.57077599</real>
+			<key>timeStoppedRecording</key>
+			<real>672855018.49537206</real>
+			<key>title</key>
+			<string>Build target MealPlanner</string>
+			<key>uniqueIdentifier</key>
+			<string>BE4DD228-9D3E-4A0F-BA85-10D0D096EB5A</string>
+		</dict>
+		<key>D074354A-9781-44CE-801C-01EDE90F0E1A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.bundle</string>
+			<key>fileName</key>
+			<string>D074354A-9781-44CE-801C-01EDE90F0E1A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>MealPlannerTests-cnavxnuytvfcyngzxneikxxwqyxs</string>
+			<key>timeStartedRecording</key>
+			<real>672661172.972018</real>
+			<key>timeStoppedRecording</key>
+			<real>672661173.648283</real>
+			<key>title</key>
+			<string>Build target MealPlannerTests</string>
+			<key>uniqueIdentifier</key>
+			<string>D074354A-9781-44CE-801C-01EDE90F0E1A</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

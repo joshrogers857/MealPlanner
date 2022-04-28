@@ -6,10 +6,10 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>62475404-E0F3-46FD-A1A7-29204949B5F8</key>
+		<key>D7C78080-087B-46B5-996D-9C79556EB3D1</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>8DFC8998-1046-4005-A000-6419E7DD6A55</string>
+			<string>28C0C913-8739-41E9-9C35-F252CFB24FE0</string>
 			<key>auxiliaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -22,7 +22,7 @@
 			<key>domainType</key>
 			<string>com.apple.dt.unit.cocoaUnitTest</string>
 			<key>fileName</key>
-			<string>Test-MealPlanner-2022.04.08_12-46-10-+0100.xcresult</string>
+			<string>Test-MealPlanner-2022.04.26_11-19-28-+0100.xcresult</string>
 			<key>hasAuxiliaryLog</key>
 			<true/>
 			<key>hasPrimaryLog</key>
@@ -41,13 +41,13 @@
 			<key>signature</key>
 			<string>Test MealPlanner</string>
 			<key>timeStartedRecording</key>
-			<real>671111170.11779499</real>
+			<real>672661168.83248305</real>
 			<key>timeStoppedRecording</key>
 			<real>0.0</real>
 			<key>title</key>
 			<string>Test MealPlanner</string>
 			<key>uniqueIdentifier</key>
-			<string>62475404-E0F3-46FD-A1A7-29204949B5F8</string>
+			<string>D7C78080-087B-46B5-996D-9C79556EB3D1</string>
 		</dict>
 	</dict>
 </dict>
