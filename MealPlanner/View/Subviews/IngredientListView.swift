@@ -24,7 +24,11 @@ struct IngredientListView: View {
                 ForEach(ingredientList, id: \.self) {
                     ingredient in
                     
-                    Text(ingredient.wrappedName)
+                    if(ingredient.quantity > 1) {
+                        Text("\(ingredient.quantity)\(ingredient.wrappedUnit) \(ingredient.wrappedName)")
+                    } else {
+                        Text(ingredient.wrappedName)
+                    }
                 }
             }
         }

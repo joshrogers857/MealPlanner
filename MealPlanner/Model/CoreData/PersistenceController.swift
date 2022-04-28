@@ -51,7 +51,7 @@ struct PersistenceController {
             do {
                 try context.save()
             } catch {
-                fatalError()
+                print(error.localizedDescription)
             }
         }
     }
