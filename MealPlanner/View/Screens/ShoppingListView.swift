@@ -15,11 +15,17 @@ struct ShoppingListView: View {
     
     var body: some View {
         NavigationView {
-            List {
-                ForEach(shoppingListService.totalIngredients(mealPlans: mealPlans), id: \.self) {
-                    ingredient in
-                    
-                    Text(ingredient)
+            Group {
+                if(mealPlans.isEmpty) {
+                    Text("No meal plans found")
+                } else {
+                    List {
+                        ForEach(shoppingListService.totalIngredients(mealPlans: mealPlans), id: \.self) {
+                            ingredient in
+                            
+                            Text(ingredient)
+                        }
+                    }
                 }
             }
             .navigationTitle("Shopping List")
