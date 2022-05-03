@@ -25,9 +25,6 @@
 		BD2B0F1027C556C800D3CD6A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2B0F0F27C556C800D3CD6A /* MainView.swift */; };
 		BD2B0F1227C556C900D3CD6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD2B0F1127C556C900D3CD6A /* Assets.xcassets */; };
 		BD2B0F1527C556C900D3CD6A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD2B0F1427C556C900D3CD6A /* Preview Assets.xcassets */; };
-		BD2B0F2427C556C900D3CD6A /* MealPlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2B0F2327C556C900D3CD6A /* MealPlannerTests.swift */; };
-		BD2B0F2E27C556C900D3CD6A /* MealPlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2B0F2D27C556C900D3CD6A /* MealPlannerUITests.swift */; };
-		BD2B0F3027C556C900D3CD6A /* MealPlannerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2B0F2F27C556C900D3CD6A /* MealPlannerUITestsLaunchTests.swift */; };
 		BD2C1BE327E1E24200769FD0 /* NutritionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2C1BE227E1E24200769FD0 /* NutritionView.swift */; };
 		BD2C1BE527E1E27500769FD0 /* CalorieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2C1BE427E1E27500769FD0 /* CalorieView.swift */; };
 		BD2C1BE827E1E5EE00769FD0 /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2C1BE727E1E5EE00769FD0 /* HealthStore.swift */; };
@@ -125,10 +122,7 @@
 		BD2B0F1127C556C900D3CD6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD2B0F1427C556C900D3CD6A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BD2B0F1F27C556C900D3CD6A /* MealPlannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MealPlannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD2B0F2327C556C900D3CD6A /* MealPlannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlannerTests.swift; sourceTree = "<group>"; };
 		BD2B0F2927C556C900D3CD6A /* MealPlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MealPlannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD2B0F2D27C556C900D3CD6A /* MealPlannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlannerUITests.swift; sourceTree = "<group>"; };
-		BD2B0F2F27C556C900D3CD6A /* MealPlannerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlannerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BD2C1BE227E1E24200769FD0 /* NutritionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionView.swift; sourceTree = "<group>"; };
 		BD2C1BE427E1E27500769FD0 /* CalorieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieView.swift; sourceTree = "<group>"; };
 		BD2C1BE727E1E5EE00769FD0 /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
@@ -272,7 +266,6 @@
 			children = (
 				BD2B0F0C27C556C800D3CD6A /* MealPlanner */,
 				BD2B0F2227C556C900D3CD6A /* MealPlannerTests */,
-				BD2B0F2C27C556C900D3CD6A /* MealPlannerUITests */,
 				BD2B0F0B27C556C800D3CD6A /* Products */,
 				BD2C1BEA27E1ED9F00769FD0 /* Frameworks */,
 			);
@@ -317,18 +310,8 @@
 			children = (
 				BD018C6627E0D83800508661 /* Service */,
 				BD2FD3B927DB6C44004BABB9 /* Model */,
-				BD2B0F2327C556C900D3CD6A /* MealPlannerTests.swift */,
 			);
 			path = MealPlannerTests;
-			sourceTree = "<group>";
-		};
-		BD2B0F2C27C556C900D3CD6A /* MealPlannerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				BD2B0F2D27C556C900D3CD6A /* MealPlannerUITests.swift */,
-				BD2B0F2F27C556C900D3CD6A /* MealPlannerUITestsLaunchTests.swift */,
-			);
-			path = MealPlannerUITests;
 			sourceTree = "<group>";
 		};
 		BD2C1BE627E1E5CA00769FD0 /* ViewModel */ = {
@@ -692,7 +675,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDD9EA3327E352B60025CDAE /* IngredientTests.swift in Sources */,
-				BD2B0F2427C556C900D3CD6A /* MealPlannerTests.swift in Sources */,
 				BDA4A7AB27F1C0C30049B153 /* IngredientServiceTests.swift in Sources */,
 				BD018C6A27E0D87200508661 /* MealPlanServiceTests.swift in Sources */,
 				BDD9EA3527E355430025CDAE /* MealPlanTests.swift in Sources */,
@@ -708,8 +690,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD2B0F3027C556C900D3CD6A /* MealPlannerUITestsLaunchTests.swift in Sources */,
-				BD2B0F2E27C556C900D3CD6A /* MealPlannerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
